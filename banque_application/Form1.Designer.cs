@@ -155,6 +155,8 @@
             this.btnValiderTransfere.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValiderTransfere.ForeColor = System.Drawing.Color.White;
             this.btnValiderTransfere.Location = new System.Drawing.Point(90, 583);
+            this.btnValiderTransfere.MaximumSize = new System.Drawing.Size(287, 42);
+            this.btnValiderTransfere.MinimumSize = new System.Drawing.Size(287, 42);
             this.btnValiderTransfere.Name = "btnValiderTransfere";
             this.btnValiderTransfere.Size = new System.Drawing.Size(287, 42);
             this.btnValiderTransfere.TabIndex = 53;
@@ -170,6 +172,8 @@
             this.BackgroundImage = global::banque_application.Properties.Resources.buy_real_instagram_followers_https___buyrealsocialmarketing_com_instagram;
             this.ClientSize = new System.Drawing.Size(1006, 829);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(1028, 885);
+            this.MinimumSize = new System.Drawing.Size(1028, 885);
             this.Name = "Form1";
             this.Text = "Page de connexion";
             this.panel1.ResumeLayout(false);

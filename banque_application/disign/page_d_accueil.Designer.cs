@@ -43,7 +43,6 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -51,6 +50,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -59,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -67,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDeconnexion
@@ -76,11 +77,12 @@
             this.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeconnexion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeconnexion.ForeColor = System.Drawing.Color.White;
-            this.btnDeconnexion.Location = new System.Drawing.Point(63, 691);
+            this.btnDeconnexion.Location = new System.Drawing.Point(32, 691);
             this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(175, 67);
+            this.btnDeconnexion.Size = new System.Drawing.Size(206, 67);
             this.btnDeconnexion.TabIndex = 54;
             this.btnDeconnexion.Text = "Déconnexion";
+            this.btnDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeconnexion.UseVisualStyleBackColor = false;
             // 
             // btnCredit
@@ -89,12 +91,13 @@
             this.btnCredit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnCredit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCredit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCredit.ForeColor = System.Drawing.Color.Lime;
-            this.btnCredit.Location = new System.Drawing.Point(63, 491);
+            this.btnCredit.ForeColor = System.Drawing.Color.White;
+            this.btnCredit.Location = new System.Drawing.Point(32, 491);
             this.btnCredit.Name = "btnCredit";
-            this.btnCredit.Size = new System.Drawing.Size(175, 67);
+            this.btnCredit.Size = new System.Drawing.Size(206, 67);
             this.btnCredit.TabIndex = 54;
             this.btnCredit.Text = "Crédit";
+            this.btnCredit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCredit.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -104,11 +107,12 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(63, 407);
+            this.button2.Location = new System.Drawing.Point(32, 407);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 67);
+            this.button2.Size = new System.Drawing.Size(206, 67);
             this.button2.TabIndex = 54;
             this.button2.Text = "Retrait";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             // 
             // btnDepot
@@ -118,11 +122,12 @@
             this.btnDepot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDepot.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDepot.ForeColor = System.Drawing.Color.White;
-            this.btnDepot.Location = new System.Drawing.Point(63, 320);
+            this.btnDepot.Location = new System.Drawing.Point(32, 320);
             this.btnDepot.Name = "btnDepot";
-            this.btnDepot.Size = new System.Drawing.Size(175, 67);
+            this.btnDepot.Size = new System.Drawing.Size(206, 67);
             this.btnDepot.TabIndex = 54;
             this.btnDepot.Text = "Dépôt";
+            this.btnDepot.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDepot.UseVisualStyleBackColor = false;
             // 
             // btnDashboard
@@ -132,11 +137,12 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(63, 228);
+            this.btnDashboard.Location = new System.Drawing.Point(32, 228);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(175, 67);
+            this.btnDashboard.Size = new System.Drawing.Size(206, 67);
             this.btnDashboard.TabIndex = 54;
             this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
@@ -146,13 +152,15 @@
             this.btnAccueil.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnAccueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccueil.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccueil.ForeColor = System.Drawing.Color.White;
-            this.btnAccueil.Location = new System.Drawing.Point(63, 146);
+            this.btnAccueil.ForeColor = System.Drawing.Color.Lime;
+            this.btnAccueil.Location = new System.Drawing.Point(32, 146);
             this.btnAccueil.Name = "btnAccueil";
-            this.btnAccueil.Size = new System.Drawing.Size(175, 67);
+            this.btnAccueil.Size = new System.Drawing.Size(206, 67);
             this.btnAccueil.TabIndex = 54;
             this.btnAccueil.Text = "Accueil";
+            this.btnAccueil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccueil.UseVisualStyleBackColor = false;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // btnTransfert
             // 
@@ -161,16 +169,19 @@
             this.btnTransfert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTransfert.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransfert.ForeColor = System.Drawing.Color.White;
-            this.btnTransfert.Location = new System.Drawing.Point(63, 589);
+            this.btnTransfert.Location = new System.Drawing.Point(32, 589);
             this.btnTransfert.Name = "btnTransfert";
-            this.btnTransfert.Size = new System.Drawing.Size(175, 67);
+            this.btnTransfert.Size = new System.Drawing.Size(206, 67);
             this.btnTransfert.TabIndex = 54;
             this.btnTransfert.Text = "Transfert";
+            this.btnTransfert.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTransfert.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.pictureBox16);
             this.panel2.Controls.Add(this.pictureBox12);
             this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.pictureBox10);
@@ -185,7 +196,6 @@
             this.panel2.Controls.Add(this.btnDashboard);
             this.panel2.Controls.Add(this.btnAccueil);
             this.panel2.Controls.Add(this.btnTransfert);
-            this.panel2.Controls.Add(this.pictureBox15);
             this.panel2.Location = new System.Drawing.Point(-11, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(287, 779);
@@ -261,17 +271,6 @@
             this.pictureBox14.TabIndex = 55;
             this.pictureBox14.TabStop = false;
             // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox15.Image = global::banque_application.Properties.Resources.bank_logo;
-            this.pictureBox15.Location = new System.Drawing.Point(32, 30);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(90, 84);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::banque_application.Properties.Resources.Trade_Market_Logo_Design_Template_Finance_Logo_With_Arrow_Template_Download_on_Pngtree;
@@ -342,10 +341,34 @@
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.label5.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(101)))));
+            this.label5.Location = new System.Drawing.Point(124, 54);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 27);
+            this.label5.TabIndex = 57;
+            this.label5.Text = "GROWTH";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox16.Image = global::banque_application.Properties.Resources.Growth_Logo_Template1;
+            this.pictureBox16.Location = new System.Drawing.Point(32, 25);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(90, 84);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 56;
+            this.pictureBox16.TabStop = false;
+            // 
             // page_d_accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1311, 780);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox7);
@@ -358,6 +381,7 @@
             this.Name = "page_d_accueil";
             this.Text = "accuel_b";
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -365,7 +389,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -373,6 +396,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,7 +417,6 @@
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnAccueil;
         private System.Windows.Forms.Button btnTransfert;
-        private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -402,5 +425,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox16;
     }
 }

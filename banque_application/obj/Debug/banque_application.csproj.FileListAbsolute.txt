@@ -33,7 +33,6 @@ D:\vs 2015 project\banque_application\banque_application\bin\Debug\es\DevExpress
 D:\vs 2015 project\banque_application\banque_application\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
 D:\vs 2015 project\banque_application\banque_application\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.csprojResolveAssemblyReference.cache
-D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.comptabilté.resources
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.credit.resources
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.depot.resources
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.guichetAccueil.resources
@@ -47,3 +46,4 @@ D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_applic
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.exe.licenses
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.exe
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.pdb
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.comptabilte.resources

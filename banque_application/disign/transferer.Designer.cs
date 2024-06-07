@@ -59,6 +59,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtNumCompteDeb = new System.Windows.Forms.RichTextBox();
             this.txtMontant = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -72,7 +73,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -198,6 +198,7 @@
             this.btnAccueil.TabIndex = 54;
             this.btnAccueil.Text = "Accueil";
             this.btnAccueil.UseVisualStyleBackColor = false;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // btnTransfert
             // 
@@ -430,6 +431,18 @@
             this.txtMontant.TabIndex = 36;
             this.txtMontant.Text = "";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.label5.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(101)))));
+            this.label5.Location = new System.Drawing.Point(124, 59);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 27);
+            this.label5.TabIndex = 54;
+            this.label5.Text = "GROWTH";
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::banque_application.Properties.Resources.téléchargement__1_;
@@ -560,18 +573,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.label5.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(60)))), ((int)(((byte)(101)))));
-            this.label5.Location = new System.Drawing.Point(124, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 27);
-            this.label5.TabIndex = 54;
-            this.label5.Text = "GROWTH";
             // 
             // transferer
             // 

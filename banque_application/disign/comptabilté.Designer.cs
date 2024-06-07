@@ -1,6 +1,6 @@
 ﻿namespace banque_application.disign
 {
-    partial class comptabilté
+    partial class comptabilte
     {
         /// <summary> 
         /// Required designer variable.
@@ -522,7 +522,7 @@
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
-            // comptabilté
+            // comptabilte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -539,7 +539,7 @@
             this.Controls.Add(this.label5);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "comptabilté";
+            this.Name = "comptabilte";
             this.Size = new System.Drawing.Size(1333, 799);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace banque_application.disign
 {
-    public partial class comptabilté : UserControl
+    public partial class comptabilte : UserControl
     {
-        public comptabilté()
+        public comptabilte()
         {
             InitializeComponent();
         }
