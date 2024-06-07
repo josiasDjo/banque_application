@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="disign\connexionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="disign\connexionPage.Designer.cs">
+      <DependentUpon>connexionPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="disign\page_d_accueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="disign\connexionPage.resx">
+      <DependentUpon>connexionPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="disign\page_d_accueil.resx">
       <DependentUpon>page_d_accueil.cs</DependentUpon>
     </EmbeddedResource>

@@ -17,6 +17,7 @@ namespace banque_application
         public Form1()
         {
             InitializeComponent();
+            afficheAccueil();
         }
 
         private void btnValiderTransfere_Click(object sender, EventArgs e)
@@ -29,6 +30,13 @@ namespace banque_application
             this.Size = new Size(1100, 590);
             page_d_accueil pgAcc = new page_d_accueil();
             pgAcc.Show();
+        }
+        public void afficheAccueil()
+        {
+            connexionPage cnnPage = new connexionPage();
+
+            panel1_ConnexionShow.Controls.Clear();
+            panel1_ConnexionShow.Controls.Add(cnnPage);
         }
     }
 }
