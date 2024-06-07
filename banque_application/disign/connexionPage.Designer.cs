@@ -57,9 +57,9 @@
             this.panel1.Controls.Add(this.txtNomDeb);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.btnValiderConnexion);
-            this.panel1.Location = new System.Drawing.Point(283, 84);
+            this.panel1.Location = new System.Drawing.Point(289, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(473, 693);
+            this.panel1.Size = new System.Drawing.Size(473, 615);
             this.panel1.TabIndex = 1;
             // 
             // comboBox1
@@ -154,7 +154,7 @@
             this.btnValiderConnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnValiderConnexion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValiderConnexion.ForeColor = System.Drawing.Color.White;
-            this.btnValiderConnexion.Location = new System.Drawing.Point(90, 583);
+            this.btnValiderConnexion.Location = new System.Drawing.Point(99, 524);
             this.btnValiderConnexion.MaximumSize = new System.Drawing.Size(287, 42);
             this.btnValiderConnexion.MinimumSize = new System.Drawing.Size(287, 42);
             this.btnValiderConnexion.Name = "btnValiderConnexion";

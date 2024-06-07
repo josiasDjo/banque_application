@@ -20,8 +20,16 @@ namespace banque_application.disign
 
         private void btnValiderTransfere_Click(object sender, EventArgs e)
         {
+
             Form1 frm1 = new Form1();
             frm1.openFen();
+
+            frm1.Size = new Size(1100, 590);
+
+            accueil_page pgAcc = new accueil_page();
+
+            frm1.panel1_ConnexionShow.Controls.Clear();
+            frm1.panel1_ConnexionShow.Controls.Add(pgAcc);
         }
     }
 }
