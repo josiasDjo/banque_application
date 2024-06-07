@@ -26,8 +26,10 @@ namespace banque_application.disign
         private void btnDashboard_Click(object sender, EventArgs e)
         {          
             comptabilte compt = new comptabilte();
-            compt.Show();
-            this.Close();        }
+
+            pageAccueilContenu.Controls.Clear();
+            pageAccueilContenu.Controls.Add(compt);
+        }
 
         private void btnAccueil_Click(object sender, EventArgs e)
         {
@@ -35,7 +37,26 @@ namespace banque_application.disign
         }
         public void closeFen()
         {
-            frm1.Close();
+            tsAccu contenuAccueil = new tsAccu();
+
+            pageAccueilContenu.Controls.Clear();
+            pageAccueilContenu.Controls.Add(contenuAccueil);
+        }
+
+        private void btnTransfert_Click(object sender, EventArgs e)
+        {
+            transferer transferContenu = new transferer();
+
+            pageAccueilContenu.Controls.Clear();
+            pageAccueilContenu.Controls.Add(transferContenu);
+        }
+
+        private void btnCredit_Click(object sender, EventArgs e)
+        {
+            credit creditContenu = new credit();
+
+            pageAccueilContenu.Controls.Clear();
+            pageAccueilContenu.Controls.Add(creditContenu);
         }
     }
 }

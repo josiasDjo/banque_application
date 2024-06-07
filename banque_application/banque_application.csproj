@@ -112,6 +112,12 @@
     <Compile Include="disign\transferer.Designer.cs">
       <DependentUpon>transferer.cs</DependentUpon>
     </Compile>
+    <Compile Include="disign\tsAccu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="disign\tsAccu.Designer.cs">
+      <DependentUpon>tsAccu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="disign\transferer.resx">
       <DependentUpon>transferer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="disign\tsAccu.resx">
+      <DependentUpon>tsAccu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

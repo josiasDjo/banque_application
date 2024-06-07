@@ -47,3 +47,4 @@ D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_applic
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.exe
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.pdb
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.comptabilte.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.tsAccu.resources

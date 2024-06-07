@@ -22,10 +22,12 @@ namespace banque_application
         private void btnValiderTransfere_Click(object sender, EventArgs e)
         {
             openFen();
-            //this.Close();
+            
         }
         public void openFen()
         {
+            Form1 frm1 = new Form1();
+            frm1.Close();
             page_d_accueil pgAcc = new page_d_accueil();
             pgAcc.Show();
         }

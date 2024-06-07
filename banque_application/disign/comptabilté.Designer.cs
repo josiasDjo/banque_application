@@ -46,22 +46,6 @@
             this.statistiquePanel = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.dataGridViewTransaction = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDeconnexion = new System.Windows.Forms.Button();
-            this.btnCredit = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnDepot = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnTransfert = new System.Windows.Forms.Button();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -69,15 +53,6 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransaction)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,7 +62,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(310, 15);
+            this.label5.Location = new System.Drawing.Point(44, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(224, 29);
             this.label5.TabIndex = 2;
@@ -97,7 +72,7 @@
             // 
             this.dateToDay.AutoSize = true;
             this.dateToDay.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateToDay.Location = new System.Drawing.Point(311, 54);
+            this.dateToDay.Location = new System.Drawing.Point(45, 52);
             this.dateToDay.Name = "dateToDay";
             this.dateToDay.Size = new System.Drawing.Size(51, 19);
             this.dateToDay.TabIndex = 3;
@@ -112,7 +87,7 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Location = new System.Drawing.Point(315, 95);
+            this.panel2.Location = new System.Drawing.Point(49, 93);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(192, 98);
             this.panel2.TabIndex = 4;
@@ -159,7 +134,7 @@
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel3.Location = new System.Drawing.Point(560, 95);
+            this.panel3.Location = new System.Drawing.Point(294, 93);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(192, 98);
             this.panel3.TabIndex = 4;
@@ -207,7 +182,7 @@
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel4.Location = new System.Drawing.Point(816, 95);
+            this.panel4.Location = new System.Drawing.Point(550, 93);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(192, 98);
             this.panel4.TabIndex = 4;
@@ -251,7 +226,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(310, 223);
+            this.label14.Location = new System.Drawing.Point(44, 221);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(132, 24);
             this.label14.TabIndex = 2;
@@ -260,7 +235,7 @@
             // statistiquePanel
             // 
             this.statistiquePanel.BackColor = System.Drawing.Color.White;
-            this.statistiquePanel.Location = new System.Drawing.Point(315, 260);
+            this.statistiquePanel.Location = new System.Drawing.Point(49, 258);
             this.statistiquePanel.Name = "statistiquePanel";
             this.statistiquePanel.Size = new System.Drawing.Size(453, 163);
             this.statistiquePanel.TabIndex = 5;
@@ -269,7 +244,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(311, 439);
+            this.label15.Location = new System.Drawing.Point(45, 437);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(259, 24);
             this.label15.TabIndex = 2;
@@ -281,213 +256,11 @@
             this.dataGridViewTransaction.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewTransaction.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewTransaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTransaction.Location = new System.Drawing.Point(315, 477);
+            this.dataGridViewTransaction.Location = new System.Drawing.Point(49, 475);
             this.dataGridViewTransaction.Name = "dataGridViewTransaction";
             this.dataGridViewTransaction.RowTemplate.Height = 28;
             this.dataGridViewTransaction.Size = new System.Drawing.Size(933, 286);
             this.dataGridViewTransaction.TabIndex = 6;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Controls.Add(this.pictureBox11);
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox13);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnDeconnexion);
-            this.panel1.Controls.Add(this.btnCredit);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.btnDepot);
-            this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Controls.Add(this.btnAccueil);
-            this.panel1.Controls.Add(this.btnTransfert);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(287, 799);
-            this.panel1.TabIndex = 19;
-            // 
-            // btnDeconnexion
-            // 
-            this.btnDeconnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnDeconnexion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeconnexion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeconnexion.ForeColor = System.Drawing.Color.White;
-            this.btnDeconnexion.Location = new System.Drawing.Point(63, 691);
-            this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(175, 67);
-            this.btnDeconnexion.TabIndex = 54;
-            this.btnDeconnexion.Text = "Déconnexion";
-            this.btnDeconnexion.UseVisualStyleBackColor = false;
-            // 
-            // btnCredit
-            // 
-            this.btnCredit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnCredit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnCredit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCredit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCredit.ForeColor = System.Drawing.Color.White;
-            this.btnCredit.Location = new System.Drawing.Point(63, 491);
-            this.btnCredit.Name = "btnCredit";
-            this.btnCredit.Size = new System.Drawing.Size(175, 67);
-            this.btnCredit.TabIndex = 54;
-            this.btnCredit.Text = "Crédit";
-            this.btnCredit.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(63, 407);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 67);
-            this.button2.TabIndex = 54;
-            this.button2.Text = "Retrait";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // btnDepot
-            // 
-            this.btnDepot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnDepot.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnDepot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDepot.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepot.ForeColor = System.Drawing.Color.White;
-            this.btnDepot.Location = new System.Drawing.Point(63, 320);
-            this.btnDepot.Name = "btnDepot";
-            this.btnDepot.Size = new System.Drawing.Size(175, 67);
-            this.btnDepot.TabIndex = 54;
-            this.btnDepot.Text = "Dépôt";
-            this.btnDepot.UseVisualStyleBackColor = false;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.Lime;
-            this.btnDashboard.Location = new System.Drawing.Point(63, 228);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(175, 67);
-            this.btnDashboard.TabIndex = 54;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // btnAccueil
-            // 
-            this.btnAccueil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnAccueil.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnAccueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccueil.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccueil.ForeColor = System.Drawing.Color.White;
-            this.btnAccueil.Location = new System.Drawing.Point(63, 146);
-            this.btnAccueil.Name = "btnAccueil";
-            this.btnAccueil.Size = new System.Drawing.Size(175, 67);
-            this.btnAccueil.TabIndex = 54;
-            this.btnAccueil.Text = "Accueil";
-            this.btnAccueil.UseVisualStyleBackColor = false;
-            // 
-            // btnTransfert
-            // 
-            this.btnTransfert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnTransfert.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnTransfert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTransfert.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTransfert.ForeColor = System.Drawing.Color.White;
-            this.btnTransfert.Location = new System.Drawing.Point(63, 589);
-            this.btnTransfert.Name = "btnTransfert";
-            this.btnTransfert.Size = new System.Drawing.Size(175, 67);
-            this.btnTransfert.TabIndex = 54;
-            this.btnTransfert.Text = "Transfert";
-            this.btnTransfert.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::banque_application.Properties.Resources.Icon_Clipart_Transparent_Background__Vector_Logout_Icon__Logout_Icons__Exit__Interface_PNG_Image_For_Free_Download;
-            this.pictureBox12.Location = new System.Drawing.Point(32, 700);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 55;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::banque_application.Properties.Resources.Logo_Du_Comptable_PNG___Compte__Comptable__La_Comptabilité_PNG_et_vecteur_pour_téléchargement_gratuit;
-            this.pictureBox11.Location = new System.Drawing.Point(32, 599);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 55;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::banque_application.Properties.Resources.Download_premium_psd___image_of_Investment_finance_line_icon_psd_by_Aew_about_dollar_sign_money__home__receitas_finance__finance__and_coin_2891000;
-            this.pictureBox10.Location = new System.Drawing.Point(32, 497);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 55;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::banque_application.Properties.Resources.Premium_Photo___Dollar_Sign_Isolated_Dolar_symbol_on_Round_green_icon_3D_rendering;
-            this.pictureBox13.Location = new System.Drawing.Point(32, 413);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 55;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::banque_application.Properties.Resources.Premium_Vector___Cash_icon_design_illustration_vector_template;
-            this.pictureBox9.Location = new System.Drawing.Point(32, 328);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 55;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::banque_application.Properties.Resources.Performance_Enablement_and_Empowerment___TalentCulture;
-            this.pictureBox7.Location = new System.Drawing.Point(32, 234);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 55;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::banque_application.Properties.Resources.Red_house_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 151);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Image = global::banque_application.Properties.Resources.bank_logo;
-            this.pictureBox5.Location = new System.Drawing.Point(32, 30);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(90, 84);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -524,10 +297,8 @@
             // 
             // comptabilte
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridViewTransaction);
             this.Controls.Add(this.statistiquePanel);
             this.Controls.Add(this.panel4);
@@ -540,7 +311,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "comptabilte";
-            this.Size = new System.Drawing.Size(1333, 799);
+            this.Size = new System.Drawing.Size(1037, 784);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -548,15 +319,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransaction)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -587,21 +349,5 @@
         private System.Windows.Forms.Panel statistiquePanel;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dataGridViewTransaction;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnDeconnexion;
-        private System.Windows.Forms.Button btnCredit;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnDepot;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnTransfert;
-        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
