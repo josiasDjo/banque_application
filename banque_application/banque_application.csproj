@@ -34,15 +34,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v23.2, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v23.2.Core, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v23.2, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.WinterJoySkin, Version=1.0.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.Win.WinterJoySkin.1.0.2\lib\net452\DevExpress.WinterJoySkin.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -59,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="disign\page_d_accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="disign\page_d_accueil.Designer.cs">
+      <DependentUpon>page_d_accueil.cs</DependentUpon>
+    </Compile>
     <Compile Include="disign\comptabilté.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,12 +93,6 @@
     </Compile>
     <Compile Include="disign\guichetAccueil.Designer.cs">
       <DependentUpon>guichetAccueil.cs</DependentUpon>
-    </Compile>
-    <Compile Include="disign\page_d_accueil.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="disign\page_d_accueil.Designer.cs">
-      <DependentUpon>page_d_accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="disign\retrait.cs">
       <SubType>UserControl</SubType>
@@ -115,6 +120,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="disign\page_d_accueil.resx">
+      <DependentUpon>page_d_accueil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="disign\comptabilté.resx">
       <DependentUpon>comptabilté.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,9 +134,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="disign\guichetAccueil.resx">
       <DependentUpon>guichetAccueil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="disign\page_d_accueil.resx">
-      <DependentUpon>page_d_accueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="disign\retrait.resx">
       <DependentUpon>retrait.cs</DependentUpon>
@@ -142,6 +147,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -174,6 +180,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bank_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Growth Logo Template.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy real instagram followers_https___buyrealsocialmarketing_com_instagram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageBanque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4bed41e3-2ed9-4553-b5e1-a18d324e8fe3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download premium psd _ image of Investment finance line icon psd by Aew about dollar sign money, home, receitas finance, finance, and coin 2891000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0fb444f0-d206-497a-96cc-b7467f7b563b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Du Comptable PNG , Compte, Comptable, La Comptabilité PNG et vecteur pour téléchargement gratuit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premium Photo _ Dollar Sign Isolated Dolar symbol on Round green icon 3D rendering.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trade Market Logo Design Template Finance Logo With Arrow Template Download on Pngtree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premium Vector _ Cash icon design illustration vector template.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Performance Enablement and Empowerment - TalentCulture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red house icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon Clipart Transparent Background, Vector Logout Icon, Logout Icons, Exit, Interface PNG Image For Free Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Withdraw money from ATM slot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Withdraw Money Icon for free.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar Signs Money Clipart PNG Images, Money Icon Isolated Dollar Cash Illustration, Money Icons, Dollar Icons, Cash Icons PNG Image For Free Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Financial Profit free icons designed by Smashicons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sales free vector icons designed by Freepik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cost Reduction- Decrease Dollar Icon_ Vector Symbol Image Isolated on Background Stock Vector - Illustration of deduction, instagram_ 136052881.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Growth Logo Template1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using banque_application;
+using banque_application.disign;
 
 namespace banque_application
 {
@@ -15,6 +17,12 @@ namespace banque_application
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnValiderTransfere_Click(object sender, EventArgs e)
+        {
+            page_d_accueil pgAcc = new page_d_accueil();
+            pgAcc.Show();
         }
     }
 }
