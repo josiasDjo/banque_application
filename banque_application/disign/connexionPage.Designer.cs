@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNomDeb = new System.Windows.Forms.RichTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnValiderTransfere = new System.Windows.Forms.Button();
+            this.btnValiderConnexion = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +56,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtNomDeb);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.btnValiderTransfere);
+            this.panel1.Controls.Add(this.btnValiderConnexion);
             this.panel1.Location = new System.Drawing.Point(283, 84);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(473, 693);
@@ -149,19 +149,20 @@
             this.label13.TabIndex = 54;
             this.label13.Text = "Nom";
             // 
-            // btnValiderTransfere
+            // btnValiderConnexion
             // 
-            this.btnValiderTransfere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnValiderTransfere.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValiderTransfere.ForeColor = System.Drawing.Color.White;
-            this.btnValiderTransfere.Location = new System.Drawing.Point(90, 583);
-            this.btnValiderTransfere.MaximumSize = new System.Drawing.Size(287, 42);
-            this.btnValiderTransfere.MinimumSize = new System.Drawing.Size(287, 42);
-            this.btnValiderTransfere.Name = "btnValiderTransfere";
-            this.btnValiderTransfere.Size = new System.Drawing.Size(287, 42);
-            this.btnValiderTransfere.TabIndex = 53;
-            this.btnValiderTransfere.Text = "Valider";
-            this.btnValiderTransfere.UseVisualStyleBackColor = false;
+            this.btnValiderConnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnValiderConnexion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValiderConnexion.ForeColor = System.Drawing.Color.White;
+            this.btnValiderConnexion.Location = new System.Drawing.Point(90, 583);
+            this.btnValiderConnexion.MaximumSize = new System.Drawing.Size(287, 42);
+            this.btnValiderConnexion.MinimumSize = new System.Drawing.Size(287, 42);
+            this.btnValiderConnexion.Name = "btnValiderConnexion";
+            this.btnValiderConnexion.Size = new System.Drawing.Size(287, 42);
+            this.btnValiderConnexion.TabIndex = 53;
+            this.btnValiderConnexion.Text = "Valider";
+            this.btnValiderConnexion.UseVisualStyleBackColor = false;
+            this.btnValiderConnexion.Click += new System.EventHandler(this.btnValiderTransfere_Click);
             // 
             // connexionPage
             // 
@@ -190,6 +191,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox txtNomDeb;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnValiderTransfere;
+        private System.Windows.Forms.Button btnValiderConnexion;
     }
 }

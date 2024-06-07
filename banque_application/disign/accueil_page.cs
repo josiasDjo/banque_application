@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using banque_application;
 
 namespace banque_application.disign
 {
-    public partial class connexionPage : UserControl
+    public partial class accueil_page : UserControl
     {
-        public connexionPage()
+        public accueil_page()
         {
             InitializeComponent();
-        }
-
-        private void btnValiderTransfere_Click(object sender, EventArgs e)
-        {
-            Form1 frm1 = new Form1();
-            frm1.openFen();
         }
     }
 }

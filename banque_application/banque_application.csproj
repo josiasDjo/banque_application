@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="disign\accueil_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="disign\accueil_page.Designer.cs">
+      <DependentUpon>accueil_page.cs</DependentUpon>
+    </Compile>
     <Compile Include="disign\connexionPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="disign\accueil_page.resx">
+      <DependentUpon>accueil_page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="disign\connexionPage.resx">
       <DependentUpon>connexionPage.cs</DependentUpon>
     </EmbeddedResource>

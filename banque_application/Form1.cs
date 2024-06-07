@@ -28,8 +28,11 @@ namespace banque_application
         public void openFen()
         {
             this.Size = new Size(1100, 590);
-            page_d_accueil pgAcc = new page_d_accueil();
-            pgAcc.Show();
+            accueil_page pgAcc = new accueil_page();
+
+            panel1_ConnexionShow.Controls.Clear();
+            panel1_ConnexionShow.Controls.Add(pgAcc);
+            
         }
         public void afficheAccueil()
         {
