@@ -311,7 +311,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "comptabilte";
-            this.Size = new System.Drawing.Size(1037, 784);
+            this.Size = new System.Drawing.Size(1202, 784);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);

@@ -285,10 +285,11 @@
             // 
             // pageAccueilContenu
             // 
-            this.pageAccueilContenu.AutoScroll = true;
-            this.pageAccueilContenu.Location = new System.Drawing.Point(274, -3);
+            this.pageAccueilContenu.AllowDrop = true;
+            this.pageAccueilContenu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pageAccueilContenu.Location = new System.Drawing.Point(275, -3);
             this.pageAccueilContenu.Name = "pageAccueilContenu";
-            this.pageAccueilContenu.Size = new System.Drawing.Size(1037, 784);
+            this.pageAccueilContenu.Size = new System.Drawing.Size(1202, 784);
             this.pageAccueilContenu.TabIndex = 28;
             // 
             // page_d_accueil
@@ -296,9 +297,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1311, 780);
+            this.ClientSize = new System.Drawing.Size(1479, 780);
             this.Controls.Add(this.pageAccueilContenu);
             this.Controls.Add(this.panel2);
+            this.MaximumSize = new System.Drawing.Size(1501, 836);
+            this.MinimumSize = new System.Drawing.Size(1501, 836);
             this.Name = "page_d_accueil";
             this.Text = "accuel_b";
             this.panel2.ResumeLayout(false);
