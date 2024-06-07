@@ -32,7 +32,6 @@ D:\vs 2015 project\banque_application\banque_application\bin\Debug\de\DevExpress
 D:\vs 2015 project\banque_application\banque_application\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
 D:\vs 2015 project\banque_application\banque_application\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
 D:\vs 2015 project\banque_application\banque_application\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
-D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.csprojResolveAssemblyReference.cache
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.credit.resources
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.depot.resources
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.guichetAccueil.resources
