@@ -36,7 +36,7 @@
             this.panel1_ConnexionShow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1_ConnexionShow.Location = new System.Drawing.Point(0, 0);
             this.panel1_ConnexionShow.Name = "panel1_ConnexionShow";
-            this.panel1_ConnexionShow.Size = new System.Drawing.Size(1084, 829);
+            this.panel1_ConnexionShow.Size = new System.Drawing.Size(1084, 814);
             this.panel1_ConnexionShow.TabIndex = 0;
             // 
             // Form1
@@ -44,12 +44,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1084, 829);
+            this.ClientSize = new System.Drawing.Size(1084, 814);
             this.Controls.Add(this.panel1_ConnexionShow);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1028, 885);
+            this.MinimumSize = new System.Drawing.Size(1028, 870);
             this.Name = "Form1";
-            this.Text = "Page de connexion";
+            this.Text = "GROWTH";
             this.ResumeLayout(false);
 
         }
