@@ -172,7 +172,7 @@
             this.BackgroundImage = global::banque_application.Properties.Resources.buy_real_instagram_followers_https___buyrealsocialmarketing_com_instagram;
             this.ClientSize = new System.Drawing.Size(1006, 829);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(1028, 885);
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1028, 885);
             this.Name = "Form1";
             this.Text = "Page de connexion";

@@ -33,7 +33,7 @@ namespace banque_application.disign
 
         private void btnAccueil_Click(object sender, EventArgs e)
         {
-
+            closeFen();
         }
         public void closeFen()
         {

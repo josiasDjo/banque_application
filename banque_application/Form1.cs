@@ -26,8 +26,7 @@ namespace banque_application
         }
         public void openFen()
         {
-            Form1 frm1 = new Form1();
-            frm1.Close();
+            this.Size = new Size(1201, 500);
             page_d_accueil pgAcc = new page_d_accueil();
             pgAcc.Show();
         }
