@@ -309,9 +309,9 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label5);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "comptabilte";
-            this.Size = new System.Drawing.Size(1079, 683);
+            this.Size = new System.Drawing.Size(1213, 836);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

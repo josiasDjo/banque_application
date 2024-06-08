@@ -36,7 +36,9 @@ namespace banque_application
         public void openFen()
         {                      
             MessageBox.Show("openFen is True");
-            this.Size = new Size(1100, 590);
+            this.Size = new Size(1000, 570);
+            this.MaximumSize = new Size(1000, 570);
+            this.MinimumSize = new Size(1000, 570);
             accueil_page pgAcc = new accueil_page();
 
             panel1_ConnexionShow.Controls.Clear();
