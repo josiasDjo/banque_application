@@ -46,6 +46,7 @@
             this.btnAccueil = new System.Windows.Forms.Button();
             this.btnTransfert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1_showData_accueil = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -173,6 +174,7 @@
             this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeconnexion.UseVisualStyleBackColor = false;
+            this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
             // 
             // btnCredit
             // 
@@ -188,6 +190,7 @@
             this.btnCredit.Text = "Crédit";
             this.btnCredit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCredit.UseVisualStyleBackColor = false;
+            this.btnCredit.Click += new System.EventHandler(this.btnCredit_Click);
             // 
             // button2
             // 
@@ -203,6 +206,7 @@
             this.button2.Text = "Retrait";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnDepot
             // 
@@ -218,6 +222,7 @@
             this.btnDepot.Text = "Dépôt";
             this.btnDepot.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDepot.UseVisualStyleBackColor = false;
+            this.btnDepot.Click += new System.EventHandler(this.btnDepot_Click);
             // 
             // btnDashboard
             // 
@@ -233,6 +238,7 @@
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnAccueil
             // 
@@ -248,6 +254,7 @@
             this.btnAccueil.Text = "Accueil";
             this.btnAccueil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccueil.UseVisualStyleBackColor = false;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // btnTransfert
             // 
@@ -263,6 +270,7 @@
             this.btnTransfert.Text = "Transfert";
             this.btnTransfert.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTransfert.UseVisualStyleBackColor = false;
+            this.btnTransfert.Click += new System.EventHandler(this.btnTransfert_Click);
             // 
             // panel2
             // 
@@ -289,10 +297,18 @@
             this.panel2.Size = new System.Drawing.Size(279, 838);
             this.panel2.TabIndex = 29;
             // 
+            // panel1_showData_accueil
+            // 
+            this.panel1_showData_accueil.Location = new System.Drawing.Point(285, 0);
+            this.panel1_showData_accueil.Name = "panel1_showData_accueil";
+            this.panel1_showData_accueil.Size = new System.Drawing.Size(1213, 836);
+            this.panel1_showData_accueil.TabIndex = 30;
+            // 
             // accueil_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel1_showData_accueil);
             this.Controls.Add(this.panel2);
             this.Name = "accueil_page";
             this.Size = new System.Drawing.Size(1501, 836);
@@ -330,5 +346,6 @@
         private System.Windows.Forms.Button btnAccueil;
         private System.Windows.Forms.Button btnTransfert;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1_showData_accueil;
     }
 }

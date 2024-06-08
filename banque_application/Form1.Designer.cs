@@ -33,6 +33,7 @@
             // 
             // panel1_ConnexionShow
             // 
+            this.panel1_ConnexionShow.BackColor = System.Drawing.Color.White;
             this.panel1_ConnexionShow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1_ConnexionShow.Location = new System.Drawing.Point(0, 0);
             this.panel1_ConnexionShow.Name = "panel1_ConnexionShow";

@@ -17,7 +17,15 @@ namespace banque_application
         public Form1()
         {
             InitializeComponent();
-            afficheAccueil();
+            connexionPage connPage = new connexionPage();
+
+            if (IsAccessible)
+            {
+                afficheAccueil();
+            } else
+            {
+                openFen();
+            }
         }
 
         private void btnValiderTransfere_Click(object sender, EventArgs e)
@@ -26,7 +34,8 @@ namespace banque_application
             
         }
         public void openFen()
-        {
+        {                      
+            MessageBox.Show("openFen is True");
             this.Size = new Size(1100, 590);
             accueil_page pgAcc = new accueil_page();
 

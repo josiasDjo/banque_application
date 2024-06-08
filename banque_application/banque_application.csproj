@@ -76,12 +76,6 @@
     <Compile Include="disign\connexionPage.Designer.cs">
       <DependentUpon>connexionPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="disign\page_d_accueil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="disign\page_d_accueil.Designer.cs">
-      <DependentUpon>page_d_accueil.cs</DependentUpon>
-    </Compile>
     <Compile Include="disign\comptabilté.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,9 +137,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="disign\connexionPage.resx">
       <DependentUpon>connexionPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="disign\page_d_accueil.resx">
-      <DependentUpon>page_d_accueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="disign\comptabilté.resx">
       <DependentUpon>comptabilté.cs</DependentUpon>
