@@ -29,15 +29,7 @@
         private void InitializeComponent()
         {
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pageAccueilContenu = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDeconnexion = new System.Windows.Forms.Button();
             this.btnCredit = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -47,15 +39,23 @@
             this.btnTransfert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1_showData_accueil = new System.Windows.Forms.Panel();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -70,77 +70,6 @@
             this.label5.TabIndex = 57;
             this.label5.Text = "GROWTH";
             // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox16.Image = global::banque_application.Properties.Resources.Growth_Logo_Template1;
-            this.pictureBox16.Location = new System.Drawing.Point(32, 25);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(90, 84);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 56;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::banque_application.Properties.Resources.Icon_Clipart_Transparent_Background__Vector_Logout_Icon__Logout_Icons__Exit__Interface_PNG_Image_For_Free_Download;
-            this.pictureBox12.Location = new System.Drawing.Point(32, 700);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 55;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::banque_application.Properties.Resources.Logo_Du_Comptable_PNG___Compte__Comptable__La_Comptabilité_PNG_et_vecteur_pour_téléchargement_gratuit;
-            this.pictureBox11.Location = new System.Drawing.Point(32, 599);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 55;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::banque_application.Properties.Resources.Download_premium_psd___image_of_Investment_finance_line_icon_psd_by_Aew_about_dollar_sign_money__home__receitas_finance__finance__and_coin_2891000;
-            this.pictureBox10.Location = new System.Drawing.Point(32, 497);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 55;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::banque_application.Properties.Resources.Download_Withdraw_Money_Icon_for_free;
-            this.pictureBox13.Location = new System.Drawing.Point(32, 413);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 55;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::banque_application.Properties.Resources.Dollar_Signs_Money_Clipart_PNG_Images__Money_Icon_Isolated_Dollar_Cash_Illustration__Money_Icons__Dollar_Icons__Cash_Icons_PNG_Image_For_Free_Download;
-            this.pictureBox9.Location = new System.Drawing.Point(32, 328);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 55;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::banque_application.Properties.Resources.Trade_Market_Logo_Design_Template_Finance_Logo_With_Arrow_Template_Download_on_Pngtree;
-            this.pictureBox14.Location = new System.Drawing.Point(32, 151);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 55;
-            this.pictureBox14.TabStop = false;
-            // 
             // pageAccueilContenu
             // 
             this.pageAccueilContenu.AllowDrop = true;
@@ -149,16 +78,6 @@
             this.pageAccueilContenu.Name = "pageAccueilContenu";
             this.pageAccueilContenu.Size = new System.Drawing.Size(753, 805);
             this.pageAccueilContenu.TabIndex = 30;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::banque_application.Properties.Resources.Performance_Enablement_and_Empowerment___TalentCulture;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 234);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
             // 
             // btnDeconnexion
             // 
@@ -299,10 +218,91 @@
             // 
             // panel1_showData_accueil
             // 
-            this.panel1_showData_accueil.Location = new System.Drawing.Point(285, 0);
+            this.panel1_showData_accueil.Location = new System.Drawing.Point(278, 0);
             this.panel1_showData_accueil.Name = "panel1_showData_accueil";
-            this.panel1_showData_accueil.Size = new System.Drawing.Size(1213, 836);
+            this.panel1_showData_accueil.Size = new System.Drawing.Size(1220, 836);
             this.panel1_showData_accueil.TabIndex = 30;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox16.Image = global::banque_application.Properties.Resources.Growth_Logo_Template1;
+            this.pictureBox16.Location = new System.Drawing.Point(32, 25);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(90, 84);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 56;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::banque_application.Properties.Resources.Icon_Clipart_Transparent_Background__Vector_Logout_Icon__Logout_Icons__Exit__Interface_PNG_Image_For_Free_Download;
+            this.pictureBox12.Location = new System.Drawing.Point(32, 700);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 55;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::banque_application.Properties.Resources.Logo_Du_Comptable_PNG___Compte__Comptable__La_Comptabilité_PNG_et_vecteur_pour_téléchargement_gratuit;
+            this.pictureBox11.Location = new System.Drawing.Point(32, 599);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 55;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::banque_application.Properties.Resources.Download_premium_psd___image_of_Investment_finance_line_icon_psd_by_Aew_about_dollar_sign_money__home__receitas_finance__finance__and_coin_2891000;
+            this.pictureBox10.Location = new System.Drawing.Point(32, 497);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 55;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::banque_application.Properties.Resources.Download_Withdraw_Money_Icon_for_free;
+            this.pictureBox13.Location = new System.Drawing.Point(32, 413);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 55;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::banque_application.Properties.Resources.Dollar_Signs_Money_Clipart_PNG_Images__Money_Icon_Isolated_Dollar_Cash_Illustration__Money_Icons__Dollar_Icons__Cash_Icons_PNG_Image_For_Free_Download;
+            this.pictureBox9.Location = new System.Drawing.Point(32, 328);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 55;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::banque_application.Properties.Resources.Performance_Enablement_and_Empowerment___TalentCulture;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 234);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::banque_application.Properties.Resources.Trade_Market_Logo_Design_Template_Finance_Logo_With_Arrow_Template_Download_on_Pngtree;
+            this.pictureBox14.Location = new System.Drawing.Point(32, 151);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 55;
+            this.pictureBox14.TabStop = false;
             // 
             // accueil_page
             // 
@@ -312,16 +312,16 @@
             this.Controls.Add(this.panel2);
             this.Name = "accueil_page";
             this.Size = new System.Drawing.Size(1501, 836);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -15,6 +15,7 @@ namespace banque_application.disign
         public accueil_page()
         {
             InitializeComponent();
+            accueilPageMoney();
         }
 
         private void btnDepot_Click(object sender, EventArgs e)
@@ -67,6 +68,10 @@ namespace banque_application.disign
         }
 
         private void btnAccueil_Click(object sender, EventArgs e)
+        {
+            accueilPageMoney();
+        }
+        public void accueilPageMoney()
         {
             tsAccu accueilPageMoney = new tsAccu();
 
