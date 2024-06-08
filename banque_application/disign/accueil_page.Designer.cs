@@ -165,7 +165,7 @@
             this.btnAccueil.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnAccueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccueil.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccueil.ForeColor = System.Drawing.Color.Lime;
+            this.btnAccueil.ForeColor = System.Drawing.Color.White;
             this.btnAccueil.Location = new System.Drawing.Point(32, 146);
             this.btnAccueil.Name = "btnAccueil";
             this.btnAccueil.Size = new System.Drawing.Size(206, 67);

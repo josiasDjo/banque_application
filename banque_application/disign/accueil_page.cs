@@ -52,6 +52,7 @@ namespace banque_application.disign
 
         private void btnTransfert_Click(object sender, EventArgs e)
         {
+            //this.btnTransfert.ForeColor = System.Drawing.Color.Lime;
             transferer transf = new transferer();
 
             panel1_showData_accueil.Controls.Clear();
@@ -73,6 +74,8 @@ namespace banque_application.disign
         }
         public void accueilPageMoney()
         {
+            //this.btnAccueil.ForeColor = System.Drawing.Color.Lime;
+
             tsAccu accueilPageMoney = new tsAccu();
 
             panel1_showData_accueil.Controls.Clear();

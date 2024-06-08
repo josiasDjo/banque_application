@@ -19,13 +19,9 @@ namespace banque_application
             InitializeComponent();
             connexionPage connPage = new connexionPage();
 
-            if (IsAccessible)
-            {
-                afficheAccueil();
-            } else
-            {
-                openFen();
-            }
+            afficheAccueil();
+            openFen();
+
         }
 
         private void btnValiderTransfere_Click(object sender, EventArgs e)
