@@ -70,17 +70,17 @@
     <Compile Include="disign\accueil_page.Designer.cs">
       <DependentUpon>accueil_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="disign\comptabilité.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="disign\comptabilité.Designer.cs">
+      <DependentUpon>comptabilité.cs</DependentUpon>
+    </Compile>
     <Compile Include="disign\connexionPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="disign\connexionPage.Designer.cs">
       <DependentUpon>connexionPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="disign\comptabilté.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="disign\comptabilté.Designer.cs">
-      <DependentUpon>comptabilté.cs</DependentUpon>
     </Compile>
     <Compile Include="disign\credit.cs">
       <SubType>UserControl</SubType>
@@ -135,11 +135,11 @@
     <EmbeddedResource Include="disign\accueil_page.resx">
       <DependentUpon>accueil_page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="disign\comptabilité.resx">
+      <DependentUpon>comptabilité.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="disign\connexionPage.resx">
       <DependentUpon>connexionPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="disign\comptabilté.resx">
-      <DependentUpon>comptabilté.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="disign\credit.resx">
       <DependentUpon>credit.cs</DependentUpon>
