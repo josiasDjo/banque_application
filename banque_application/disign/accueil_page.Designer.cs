@@ -38,7 +38,6 @@
             this.btnAccueil = new System.Windows.Forms.Button();
             this.btnTransfert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1_showData_accueil = new System.Windows.Forms.Panel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -47,6 +46,7 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.panel1_showData_accueil = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -216,13 +216,6 @@
             this.panel2.Size = new System.Drawing.Size(279, 838);
             this.panel2.TabIndex = 29;
             // 
-            // panel1_showData_accueil
-            // 
-            this.panel1_showData_accueil.Location = new System.Drawing.Point(278, 0);
-            this.panel1_showData_accueil.Name = "panel1_showData_accueil";
-            this.panel1_showData_accueil.Size = new System.Drawing.Size(1220, 836);
-            this.panel1_showData_accueil.TabIndex = 30;
-            // 
             // pictureBox16
             // 
             this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -303,6 +296,13 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 55;
             this.pictureBox14.TabStop = false;
+            // 
+            // panel1_showData_accueil
+            // 
+            this.panel1_showData_accueil.Location = new System.Drawing.Point(278, -2);
+            this.panel1_showData_accueil.Name = "panel1_showData_accueil";
+            this.panel1_showData_accueil.Size = new System.Drawing.Size(1220, 838);
+            this.panel1_showData_accueil.TabIndex = 30;
             // 
             // accueil_page
             // 

@@ -37,20 +37,19 @@ namespace banque_application
             panel1_ConnexionShow.BackgroundImage = null;
             panel1_ConnexionShow.Visible = false;
 
-            secondPanelAccueil.Visible = true;
 
-            MessageBox.Show("openFen is True");
-            this.Size = new Size(1000, 570);
-            this.MaximumSize = new Size(1000, 570);
-            this.MinimumSize = new Size(1000, 570);
-            accueil_page pgAcc = new accueil_page();
-
+            //MessageBox.Show("openFen is True");
+            //this.Size = new Size(1000, 836);
+            //this.MaximumSize = new Size(1000, 836);
+            //this.MinimumSize = new Size(1000, 836);           
             
         }
         public void afficheAccueil()
         {
-            //panel1_ConnexionShow.Visible = true;
-            //secondPanelAccueil.Visible = false;
+            this.Size = new Size(1000, 580);
+            this.MaximumSize = new Size(1000, 580);
+            this.MinimumSize = new Size(1000, 580);
+
             connexionPage cnnPage = new connexionPage();
 
             panel1_ConnexionShow.Controls.Clear();

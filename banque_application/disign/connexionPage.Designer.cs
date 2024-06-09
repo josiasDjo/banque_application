@@ -57,9 +57,9 @@
             this.panel1.Controls.Add(this.txtNomDeb);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.btnValiderConnexion);
-            this.panel1.Location = new System.Drawing.Point(289, 37);
+            this.panel1.Location = new System.Drawing.Point(525, 87);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(473, 615);
+            this.panel1.Size = new System.Drawing.Size(495, 642);
             this.panel1.TabIndex = 1;
             // 
             // comboBox1
@@ -71,7 +71,7 @@
             "Directeur des ressources humaines",
             "Guichetier",
             "Database Manager"});
-            this.comboBox1.Location = new System.Drawing.Point(66, 458);
+            this.comboBox1.Location = new System.Drawing.Point(70, 414);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(347, 28);
             this.comboBox1.TabIndex = 61;
@@ -79,17 +79,16 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::banque_application.Properties.Resources.Growth_Logo_Template1;
-            this.pictureBox1.Location = new System.Drawing.Point(196, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(178, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(116, 95);
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
             // 
             // txtNumCompteDeb
             // 
             this.txtNumCompteDeb.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumCompteDeb.Location = new System.Drawing.Point(66, 370);
+            this.txtNumCompteDeb.Location = new System.Drawing.Point(70, 337);
             this.txtNumCompteDeb.Name = "txtNumCompteDeb";
             this.txtNumCompteDeb.Size = new System.Drawing.Size(347, 38);
             this.txtNumCompteDeb.TabIndex = 57;
@@ -98,7 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 435);
+            this.label1.Location = new System.Drawing.Point(66, 391);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 55;
@@ -107,7 +106,7 @@
             // txtPhoneDeb
             // 
             this.txtPhoneDeb.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhoneDeb.Location = new System.Drawing.Point(66, 288);
+            this.txtPhoneDeb.Location = new System.Drawing.Point(70, 255);
             this.txtPhoneDeb.Name = "txtPhoneDeb";
             this.txtPhoneDeb.Size = new System.Drawing.Size(347, 38);
             this.txtPhoneDeb.TabIndex = 58;
@@ -116,7 +115,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(62, 348);
+            this.label9.Location = new System.Drawing.Point(66, 315);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 20);
             this.label9.TabIndex = 55;
@@ -125,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 266);
+            this.label2.Location = new System.Drawing.Point(66, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 56;
@@ -134,7 +133,7 @@
             // txtNomDeb
             // 
             this.txtNomDeb.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomDeb.Location = new System.Drawing.Point(66, 215);
+            this.txtNomDeb.Location = new System.Drawing.Point(70, 182);
             this.txtNomDeb.Name = "txtNomDeb";
             this.txtNomDeb.Size = new System.Drawing.Size(347, 38);
             this.txtNomDeb.TabIndex = 59;
@@ -143,7 +142,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(62, 192);
+            this.label13.Location = new System.Drawing.Point(66, 159);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(42, 20);
             this.label13.TabIndex = 54;
@@ -154,7 +153,7 @@
             this.btnValiderConnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnValiderConnexion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValiderConnexion.ForeColor = System.Drawing.Color.White;
-            this.btnValiderConnexion.Location = new System.Drawing.Point(99, 524);
+            this.btnValiderConnexion.Location = new System.Drawing.Point(101, 470);
             this.btnValiderConnexion.MaximumSize = new System.Drawing.Size(287, 42);
             this.btnValiderConnexion.MinimumSize = new System.Drawing.Size(287, 42);
             this.btnValiderConnexion.Name = "btnValiderConnexion";
@@ -171,7 +170,7 @@
             this.BackgroundImage = global::banque_application.Properties.Resources.buy_real_instagram_followers_https___buyrealsocialmarketing_com_instagram;
             this.Controls.Add(this.panel1);
             this.Name = "connexionPage";
-            this.Size = new System.Drawing.Size(1028, 885);
+            this.Size = new System.Drawing.Size(1501, 836);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
