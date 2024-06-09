@@ -29,16 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1_ConnexionShow = new System.Windows.Forms.Panel();
+            this.secondPanelAccueil = new System.Windows.Forms.Panel();
+            this.panel1_ConnexionShow.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1_ConnexionShow
             // 
             this.panel1_ConnexionShow.BackColor = System.Drawing.Color.White;
+            this.panel1_ConnexionShow.Controls.Add(this.secondPanelAccueil);
             this.panel1_ConnexionShow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1_ConnexionShow.Location = new System.Drawing.Point(0, 0);
             this.panel1_ConnexionShow.Name = "panel1_ConnexionShow";
             this.panel1_ConnexionShow.Size = new System.Drawing.Size(1006, 1050);
             this.panel1_ConnexionShow.TabIndex = 0;
+            // 
+            // secondPanelAccueil
+            // 
+            this.secondPanelAccueil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.secondPanelAccueil.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.secondPanelAccueil.Location = new System.Drawing.Point(0, 0);
+            this.secondPanelAccueil.Name = "secondPanelAccueil";
+            this.secondPanelAccueil.Size = new System.Drawing.Size(1006, 1050);
+            this.secondPanelAccueil.TabIndex = 0;
             // 
             // Form1
             // 
@@ -53,6 +65,7 @@
             this.MinimumSize = new System.Drawing.Size(1028, 1006);
             this.Name = "Form1";
             this.Text = "GROWTH";
+            this.panel1_ConnexionShow.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -60,6 +73,8 @@
         #endregion
 
         public System.Windows.Forms.Panel panel1_ConnexionShow;
+        private System.Windows.Forms.Panel secondPanelAccueil;
+        //public System.Windows.Forms.Panel panel1_Accueil_one_Show;
     }
 }
 
