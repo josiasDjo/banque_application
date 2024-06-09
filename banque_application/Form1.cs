@@ -30,8 +30,15 @@ namespace banque_application
         }
         public void openFen()
         {
+            //panel1_ConnexionShow.Visible = false;
+
+            //this.panel1_ConnexionShow.Controls.Clear();
+            panel1_ConnexionShow.Controls.Clear();
+            panel1_ConnexionShow.BackgroundImage = null;
             panel1_ConnexionShow.Visible = false;
+
             secondPanelAccueil.Visible = true;
+
             MessageBox.Show("openFen is True");
             this.Size = new Size(1000, 570);
             this.MaximumSize = new Size(1000, 570);
@@ -42,7 +49,8 @@ namespace banque_application
         }
         public void afficheAccueil()
         {
-            secondPanelAccueil.Visible = false;
+            //panel1_ConnexionShow.Visible = true;
+            //secondPanelAccueil.Visible = false;
             connexionPage cnnPage = new connexionPage();
 
             panel1_ConnexionShow.Controls.Clear();

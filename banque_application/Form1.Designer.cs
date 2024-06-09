@@ -46,10 +46,10 @@
             // secondPanelAccueil
             // 
             this.secondPanelAccueil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.secondPanelAccueil.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.secondPanelAccueil.Location = new System.Drawing.Point(0, 0);
+            this.secondPanelAccueil.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.secondPanelAccueil.Location = new System.Drawing.Point(0, 787);
             this.secondPanelAccueil.Name = "secondPanelAccueil";
-            this.secondPanelAccueil.Size = new System.Drawing.Size(1006, 1050);
+            this.secondPanelAccueil.Size = new System.Drawing.Size(1006, 263);
             this.secondPanelAccueil.TabIndex = 0;
             // 
             // Form1

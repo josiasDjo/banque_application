@@ -23,12 +23,15 @@ namespace banque_application.disign
             Form1 frm1 = new Form1();
             frm1.openFen();
 
-            frm1.Size = new Size(1100, 590);
-
             accueil_page pgAcc = new accueil_page();
 
-            frm1.panel1_ConnexionShow.Controls.Clear();
-            frm1.panel1_ConnexionShow.Controls.Add(pgAcc);
+            this.Controls.Clear();
+            BackgroundImage = null;
+            this.Controls.Add(pgAcc);
+
+            this.Size = new Size(1000, 570);
+            this.MaximumSize = new Size(1000, 570);
+            this.MinimumSize = new Size(1000, 570);
         }
     }
 }
