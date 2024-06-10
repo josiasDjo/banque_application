@@ -55,6 +55,7 @@
             this.txtdateNaissance = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSalaire = new System.Windows.Forms.RichTextBox();
+            this.messageError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -293,6 +294,17 @@
             this.txtSalaire.TabIndex = 84;
             this.txtSalaire.Text = "";
             // 
+            // messageError
+            // 
+            this.messageError.AutoSize = true;
+            this.messageError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messageError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.messageError.Location = new System.Drawing.Point(524, 46);
+            this.messageError.Name = "messageError";
+            this.messageError.Size = new System.Drawing.Size(81, 20);
+            this.messageError.TabIndex = 75;
+            this.messageError.Text = "Message";
+            // 
             // service_personnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -320,6 +332,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNomEm);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.messageError);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "service_personnel";
@@ -362,5 +375,6 @@
         private System.Windows.Forms.DateTimePicker txtdateNaissance;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox txtSalaire;
+        private System.Windows.Forms.Label messageError;
     }
 }

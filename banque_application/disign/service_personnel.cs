@@ -14,10 +14,15 @@ namespace banque_application.disign
     {
         public service_personnel()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
         public void send()
         {
+            Random idRandom = new Random();
+            int idEnd = idRandom.Next();
+            messageError.Text = "Check send";
+            //MessageBox.Show("Nombre : " + idEnd);
+
             //btnValiderCredit.BackColor = Color.Green;
             string nom = txtNomEm.Text;
             string postNom = txtPostNomEm.Text;
@@ -35,6 +40,7 @@ namespace banque_application.disign
         private void btnValiderCredit_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Fonctionne !" );
+            send();
         }
     }
 }
