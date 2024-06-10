@@ -56,7 +56,9 @@ namespace banque_application.disign
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            accueil_page accueilP = new accueil_page();
+            this.Controls.Clear();
+            this.Controls.Add(accueilP);
         }
     }
 }

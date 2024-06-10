@@ -15,7 +15,7 @@ namespace banque_application.disign
         public accueil_page()
         {
             InitializeComponent();
-            accueilPageMoney();
+            dashboard();
         }
 
         private void btnDepot_Click(object sender, EventArgs e)
@@ -28,12 +28,15 @@ namespace banque_application.disign
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            dashboard();
+        }
+        private void dashboard()
+        {
             comptabilte compt = new comptabilte();
 
             panel1_showData_accueil.Controls.Clear();
             panel1_showData_accueil.Controls.Add(compt);
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             retrait retraitArgent = new retrait();
@@ -87,10 +90,10 @@ namespace banque_application.disign
         {
             //this.btnAccueil.ForeColor = System.Drawing.Color.Lime;
 
-            tsAccu accueilPageMoney = new tsAccu();
+            pageAccueilPrinc accueilPagePrinc = new pageAccueilPrinc();
 
-            panel1_showData_accueil.Controls.Clear();
-            panel1_showData_accueil.Controls.Add(accueilPageMoney);
+            this.Controls.Clear();
+            this.Controls.Add(accueilPagePrinc);         
         }
     }
 }
