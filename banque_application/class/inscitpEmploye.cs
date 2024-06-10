@@ -7,10 +7,13 @@ using banque_application;
 
 namespace banque_application
 {
-    partial class service_personnel
+    public partial class service_personnel
     {
         //Form1 frm1 = new Form1();
-        
-        
+        public void sendData()
+        {
+            string nom = txtNom.Text(); 
+        }
+
     }
 }

@@ -35,24 +35,26 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtNumCompte = new System.Windows.Forms.RichTextBox();
-            this.txtMontantCredit = new System.Windows.Forms.RichTextBox();
+            this.txtPoste = new System.Windows.Forms.RichTextBox();
+            this.txtPhoneEm = new System.Windows.Forms.RichTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtAdresse = new System.Windows.Forms.RichTextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.RichTextBox();
+            this.txtPostNomEm = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtPrenom = new System.Windows.Forms.RichTextBox();
+            this.txtPrenomEm = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.RichTextBox();
+            this.txtNomEm = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.txtdateEmbauche = new System.Windows.Forms.DateTimePicker();
+            this.txtdateNaissance = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSalaire = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -65,7 +67,7 @@
             this.btnValiderCredit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnValiderCredit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValiderCredit.ForeColor = System.Drawing.Color.White;
-            this.btnValiderCredit.Location = new System.Drawing.Point(473, 634);
+            this.btnValiderCredit.Location = new System.Drawing.Point(473, 701);
             this.btnValiderCredit.Name = "btnValiderCredit";
             this.btnValiderCredit.Size = new System.Drawing.Size(323, 47);
             this.btnValiderCredit.TabIndex = 94;
@@ -123,26 +125,26 @@
             this.pictureBox3.TabIndex = 93;
             this.pictureBox3.TabStop = false;
             // 
-            // txtNumCompte
+            // txtPoste
             // 
-            this.txtNumCompte.Location = new System.Drawing.Point(22, 483);
-            this.txtNumCompte.Name = "txtNumCompte";
-            this.txtNumCompte.Size = new System.Drawing.Size(774, 40);
-            this.txtNumCompte.TabIndex = 84;
-            this.txtNumCompte.Text = "";
+            this.txtPoste.Location = new System.Drawing.Point(22, 483);
+            this.txtPoste.Name = "txtPoste";
+            this.txtPoste.Size = new System.Drawing.Size(774, 40);
+            this.txtPoste.TabIndex = 84;
+            this.txtPoste.Text = "";
             // 
-            // txtMontantCredit
+            // txtPhoneEm
             // 
-            this.txtMontantCredit.Location = new System.Drawing.Point(22, 399);
-            this.txtMontantCredit.Name = "txtMontantCredit";
-            this.txtMontantCredit.Size = new System.Drawing.Size(774, 40);
-            this.txtMontantCredit.TabIndex = 82;
-            this.txtMontantCredit.Text = "";
+            this.txtPhoneEm.Location = new System.Drawing.Point(22, 399);
+            this.txtPhoneEm.Name = "txtPhoneEm";
+            this.txtPhoneEm.Size = new System.Drawing.Size(774, 40);
+            this.txtPhoneEm.TabIndex = 82;
+            this.txtPhoneEm.Text = "";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(451, 542);
+            this.label12.Location = new System.Drawing.Point(451, 609);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(135, 20);
             this.label12.TabIndex = 81;
@@ -174,13 +176,13 @@
             this.label16.TabIndex = 79;
             this.label16.Text = "Téléphone";
             // 
-            // txtPhone
+            // txtPostNomEm
             // 
-            this.txtPhone.Location = new System.Drawing.Point(21, 183);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(774, 40);
-            this.txtPhone.TabIndex = 85;
-            this.txtPhone.Text = "";
+            this.txtPostNomEm.Location = new System.Drawing.Point(21, 183);
+            this.txtPostNomEm.Name = "txtPostNomEm";
+            this.txtPostNomEm.Size = new System.Drawing.Size(774, 40);
+            this.txtPostNomEm.TabIndex = 85;
+            this.txtPostNomEm.Text = "";
             // 
             // label8
             // 
@@ -191,13 +193,13 @@
             this.label8.TabIndex = 78;
             this.label8.Text = "Adresse";
             // 
-            // txtPrenom
+            // txtPrenomEm
             // 
-            this.txtPrenom.Location = new System.Drawing.Point(21, 254);
-            this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(774, 40);
-            this.txtPrenom.TabIndex = 87;
-            this.txtPrenom.Text = "";
+            this.txtPrenomEm.Location = new System.Drawing.Point(21, 254);
+            this.txtPrenomEm.Name = "txtPrenomEm";
+            this.txtPrenomEm.Size = new System.Drawing.Size(774, 40);
+            this.txtPrenomEm.TabIndex = 87;
+            this.txtPrenomEm.Text = "";
             // 
             // label7
             // 
@@ -208,13 +210,13 @@
             this.label7.TabIndex = 77;
             this.label7.Text = "Post-Nom";
             // 
-            // txtNom
+            // txtNomEm
             // 
-            this.txtNom.Location = new System.Drawing.Point(21, 108);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(774, 40);
-            this.txtNom.TabIndex = 86;
-            this.txtNom.Text = "";
+            this.txtNomEm.Location = new System.Drawing.Point(21, 108);
+            this.txtNomEm.Name = "txtNomEm";
+            this.txtNomEm.Size = new System.Drawing.Size(774, 40);
+            this.txtNomEm.TabIndex = 86;
+            this.txtNomEm.Text = "";
             // 
             // label6
             // 
@@ -254,50 +256,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 542);
+            this.label1.Location = new System.Drawing.Point(19, 609);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 20);
             this.label1.TabIndex = 80;
             this.label1.Text = "Date de naissance";
             // 
-            // dateTimePicker1
+            // txtdateEmbauche
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(455, 570);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(340, 26);
-            this.dateTimePicker1.TabIndex = 95;
+            this.txtdateEmbauche.Location = new System.Drawing.Point(455, 637);
+            this.txtdateEmbauche.Name = "txtdateEmbauche";
+            this.txtdateEmbauche.Size = new System.Drawing.Size(340, 26);
+            this.txtdateEmbauche.TabIndex = 95;
             // 
-            // dateTimePicker2
+            // txtdateNaissance
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(21, 571);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(340, 26);
-            this.dateTimePicker2.TabIndex = 96;
+            this.txtdateNaissance.Location = new System.Drawing.Point(21, 638);
+            this.txtdateNaissance.Name = "txtdateNaissance";
+            this.txtdateNaissance.Size = new System.Drawing.Size(340, 26);
+            this.txtdateNaissance.TabIndex = 96;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 531);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 20);
+            this.label2.TabIndex = 80;
+            this.label2.Text = "Salaire";
+            // 
+            // txtSalaire
+            // 
+            this.txtSalaire.Location = new System.Drawing.Point(22, 554);
+            this.txtSalaire.Name = "txtSalaire";
+            this.txtSalaire.Size = new System.Drawing.Size(774, 40);
+            this.txtSalaire.TabIndex = 84;
+            this.txtSalaire.Text = "";
             // 
             // service_personnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtdateNaissance);
+            this.Controls.Add(this.txtdateEmbauche);
             this.Controls.Add(this.btnValiderCredit);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.txtNumCompte);
-            this.Controls.Add(this.txtMontantCredit);
+            this.Controls.Add(this.txtSalaire);
+            this.Controls.Add(this.txtPoste);
+            this.Controls.Add(this.txtPhoneEm);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAdresse);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtPostNomEm);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtPrenom);
+            this.Controls.Add(this.txtPrenomEm);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtNom);
+            this.Controls.Add(this.txtNomEm);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -321,23 +342,25 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.RichTextBox txtNumCompte;
-        private System.Windows.Forms.RichTextBox txtMontantCredit;
+        private System.Windows.Forms.RichTextBox txtPoste;
+        private System.Windows.Forms.RichTextBox txtPhoneEm;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RichTextBox txtAdresse;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.RichTextBox txtPhone;
+        private System.Windows.Forms.RichTextBox txtPostNomEm;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RichTextBox txtPrenom;
+        private System.Windows.Forms.RichTextBox txtPrenomEm;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox txtNom;
+        private System.Windows.Forms.RichTextBox txtNomEm;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker txtdateEmbauche;
+        private System.Windows.Forms.DateTimePicker txtdateNaissance;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RichTextBox txtSalaire;
     }
 }

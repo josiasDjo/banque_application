@@ -16,10 +16,25 @@ namespace banque_application.disign
         {
             InitializeComponent();
         }
+        public void send()
+        {
+            //btnValiderCredit.BackColor = Color.Green;
+            string nom = txtNomEm.Text;
+            string postNom = txtPostNomEm.Text;
+            string prenom = txtPrenomEm.Text;
+            string adresse = txtAdresse.Text;
+            string phone = txtPhoneEm.Text;
+            string poste = txtPoste.Text;
+            decimal salaire = decimal.Parse(txtSalaire.Text);
+            //DateTime dateNaissance = txtdateNaissance.Value;
+            //DateTime dateEmbauche = txtdateEmbauche.Value;
+
+            MessageBox.Show("Date de naissance : " + nom + ", Date d'embauche : " + prenom);
+        }
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Fonctionne !" );
         }
     }
 }
