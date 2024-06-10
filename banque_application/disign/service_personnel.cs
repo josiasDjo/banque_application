@@ -34,7 +34,7 @@ namespace banque_application.disign
             //DateTime dateNaissance = txtdateNaissance.Value;
             //DateTime dateEmbauche = txtdateEmbauche.Value;
 
-            MessageBox.Show("Date de naissance : " + nom + ", Date d'embauche : " + prenom);
+            MessageBox.Show("Date de naissance : " + idEnd + ", Date d'embauche : " + prenom);
         }
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
