@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using banque_application;
 using banque_application.disign;
+using System.Data.SqlClient;
 
 namespace banque_application
 {
@@ -54,6 +55,22 @@ namespace banque_application
 
             panel1_ConnexionShow.Controls.Clear();
             panel1_ConnexionShow.Controls.Add(cnnPage);
+
+            connexionDb conndb = new connexionDb();
+
+            try
+            {
+                conndb.connDb();
+            } catch (SqlException exc)
+            {
+                MessageBox.Show("Erreur : " + exc);
+            } finally
+            {
+                conndb.reqSql.Close();
+            }
+
+
+            
         }
 
     }

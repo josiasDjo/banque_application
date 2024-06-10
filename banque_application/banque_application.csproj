@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="class\connexionDb.cs" />
+    <Compile Include="COMPTABILITE_BANQUE_EXAMENDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>COMPTABILITE_BANQUE_EXAMENDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="disign\accueil_page.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,6 +182,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="COMPTABILITE_BANQUE_EXAMENDataSet.xsc">
+      <DependentUpon>COMPTABILITE_BANQUE_EXAMENDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="COMPTABILITE_BANQUE_EXAMENDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>COMPTABILITE_BANQUE_EXAMENDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="COMPTABILITE_BANQUE_EXAMENDataSet.xss">
+      <DependentUpon>COMPTABILITE_BANQUE_EXAMENDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -190,9 +207,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="class\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Fichier 3%404xbank.png" />
   </ItemGroup>
