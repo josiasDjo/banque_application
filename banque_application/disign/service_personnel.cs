@@ -31,6 +31,8 @@ namespace banque_application.disign
             decimal salaire = decimal.Parse(txtSalaire.Text);
 
             string dateNaissance = txtdateNaissance.Value.ToString("yyyy-MM-dd");
+            string dateEmbauche = txtdateEmbauche.Value.ToString("yyyy-MM-dd");
+
             string matricule = prenom + "_" + dateMatricule + poste + idEnd;
 
             MessageBox.Show("Matricule : " + matricule + " Date de naissance : " + dateNaissance);
