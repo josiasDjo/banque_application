@@ -35,32 +35,36 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnValiderCredit = new System.Windows.Forms.Button();
+            this.btnValiderClient = new System.Windows.Forms.Button();
             this.txtDevise = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1_payement = new System.Windows.Forms.DateTimePicker();
-            this.txtObjetCredit = new System.Windows.Forms.RichTextBox();
-            this.txtAdresseEmployeur = new System.Windows.Forms.RichTextBox();
-            this.txtNumCompte = new System.Windows.Forms.RichTextBox();
-            this.txtMontantCredit = new System.Windows.Forms.RichTextBox();
-            this.txtPosteOccupe = new System.Windows.Forms.RichTextBox();
+            this.dateNaissanceCli = new System.Windows.Forms.DateTimePicker();
+            this.txtSolde = new System.Windows.Forms.RichTextBox();
+            this.txtEmail = new System.Windows.Forms.RichTextBox();
+            this.txtNumCarte = new System.Windows.Forms.RichTextBox();
+            this.txtTypeCompte = new System.Windows.Forms.RichTextBox();
+            this.txtNumeroCompte = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtEmployeur = new System.Windows.Forms.RichTextBox();
+            this.txtPhone = new System.Windows.Forms.RichTextBox();
             this.txtAdresse = new System.Windows.Forms.RichTextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.RichTextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtPrenom = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtPostNom = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtNom = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTypeCarte = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -124,17 +128,17 @@
             this.pictureBox3.TabIndex = 116;
             this.pictureBox3.TabStop = false;
             // 
-            // btnValiderCredit
+            // btnValiderClient
             // 
-            this.btnValiderCredit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.btnValiderCredit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValiderCredit.ForeColor = System.Drawing.Color.White;
-            this.btnValiderCredit.Location = new System.Drawing.Point(550, 659);
-            this.btnValiderCredit.Name = "btnValiderCredit";
-            this.btnValiderCredit.Size = new System.Drawing.Size(396, 47);
-            this.btnValiderCredit.TabIndex = 146;
-            this.btnValiderCredit.Text = "Valider";
-            this.btnValiderCredit.UseVisualStyleBackColor = false;
+            this.btnValiderClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnValiderClient.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValiderClient.ForeColor = System.Drawing.Color.White;
+            this.btnValiderClient.Location = new System.Drawing.Point(492, 679);
+            this.btnValiderClient.Name = "btnValiderClient";
+            this.btnValiderClient.Size = new System.Drawing.Size(396, 47);
+            this.btnValiderClient.TabIndex = 146;
+            this.btnValiderClient.Text = "Valider";
+            this.btnValiderClient.UseVisualStyleBackColor = false;
             // 
             // txtDevise
             // 
@@ -142,62 +146,62 @@
             this.txtDevise.Items.AddRange(new object[] {
             "USD",
             "FC"});
-            this.txtDevise.Location = new System.Drawing.Point(489, 572);
+            this.txtDevise.Location = new System.Drawing.Point(491, 522);
             this.txtDevise.Name = "txtDevise";
             this.txtDevise.Size = new System.Drawing.Size(397, 28);
             this.txtDevise.TabIndex = 145;
             // 
-            // dateTimePicker1_payement
+            // dateNaissanceCli
             // 
-            this.dateTimePicker1_payement.Location = new System.Drawing.Point(490, 387);
-            this.dateTimePicker1_payement.Name = "dateTimePicker1_payement";
-            this.dateTimePicker1_payement.Size = new System.Drawing.Size(396, 26);
-            this.dateTimePicker1_payement.TabIndex = 144;
+            this.dateNaissanceCli.Location = new System.Drawing.Point(490, 354);
+            this.dateNaissanceCli.Name = "dateNaissanceCli";
+            this.dateNaissanceCli.Size = new System.Drawing.Size(396, 26);
+            this.dateNaissanceCli.TabIndex = 144;
             // 
-            // txtObjetCredit
+            // txtSolde
             // 
-            this.txtObjetCredit.Location = new System.Drawing.Point(490, 490);
-            this.txtObjetCredit.Name = "txtObjetCredit";
-            this.txtObjetCredit.Size = new System.Drawing.Size(396, 40);
-            this.txtObjetCredit.TabIndex = 140;
-            this.txtObjetCredit.Text = "";
+            this.txtSolde.Location = new System.Drawing.Point(491, 429);
+            this.txtSolde.Name = "txtSolde";
+            this.txtSolde.Size = new System.Drawing.Size(396, 40);
+            this.txtSolde.TabIndex = 140;
+            this.txtSolde.Text = "";
             // 
-            // txtAdresseEmployeur
+            // txtEmail
             // 
-            this.txtAdresseEmployeur.Location = new System.Drawing.Point(490, 292);
-            this.txtAdresseEmployeur.Name = "txtAdresseEmployeur";
-            this.txtAdresseEmployeur.Size = new System.Drawing.Size(396, 40);
-            this.txtAdresseEmployeur.TabIndex = 138;
-            this.txtAdresseEmployeur.Text = "";
+            this.txtEmail.Location = new System.Drawing.Point(490, 262);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(396, 40);
+            this.txtEmail.TabIndex = 138;
+            this.txtEmail.Text = "";
             // 
-            // txtNumCompte
+            // txtNumCarte
             // 
-            this.txtNumCompte.Location = new System.Drawing.Point(31, 662);
-            this.txtNumCompte.Name = "txtNumCompte";
-            this.txtNumCompte.Size = new System.Drawing.Size(396, 40);
-            this.txtNumCompte.TabIndex = 137;
-            this.txtNumCompte.Text = "";
+            this.txtNumCarte.Location = new System.Drawing.Point(31, 510);
+            this.txtNumCarte.Name = "txtNumCarte";
+            this.txtNumCarte.Size = new System.Drawing.Size(396, 40);
+            this.txtNumCarte.TabIndex = 137;
+            this.txtNumCarte.Text = "";
             // 
-            // txtMontantCredit
+            // txtTypeCompte
             // 
-            this.txtMontantCredit.Location = new System.Drawing.Point(31, 492);
-            this.txtMontantCredit.Name = "txtMontantCredit";
-            this.txtMontantCredit.Size = new System.Drawing.Size(396, 40);
-            this.txtMontantCredit.TabIndex = 134;
-            this.txtMontantCredit.Text = "";
+            this.txtTypeCompte.Location = new System.Drawing.Point(31, 429);
+            this.txtTypeCompte.Name = "txtTypeCompte";
+            this.txtTypeCompte.Size = new System.Drawing.Size(396, 40);
+            this.txtTypeCompte.TabIndex = 134;
+            this.txtTypeCompte.Text = "";
             // 
-            // txtPosteOccupe
+            // txtNumeroCompte
             // 
-            this.txtPosteOccupe.Location = new System.Drawing.Point(31, 373);
-            this.txtPosteOccupe.Name = "txtPosteOccupe";
-            this.txtPosteOccupe.Size = new System.Drawing.Size(396, 40);
-            this.txtPosteOccupe.TabIndex = 133;
-            this.txtPosteOccupe.Text = "";
+            this.txtNumeroCompte.Location = new System.Drawing.Point(31, 341);
+            this.txtNumeroCompte.Name = "txtNumeroCompte";
+            this.txtNumeroCompte.Size = new System.Drawing.Size(396, 40);
+            this.txtNumeroCompte.TabIndex = 133;
+            this.txtNumeroCompte.Text = "";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(486, 361);
+            this.label10.Location = new System.Drawing.Point(486, 328);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(142, 20);
             this.label10.TabIndex = 132;
@@ -206,7 +210,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(486, 545);
+            this.label12.Location = new System.Drawing.Point(487, 499);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(57, 20);
             this.label12.TabIndex = 130;
@@ -215,19 +219,19 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(486, 467);
+            this.label11.Location = new System.Drawing.Point(487, 406);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 20);
+            this.label11.Size = new System.Drawing.Size(123, 20);
             this.label11.TabIndex = 131;
-            this.label11.Text = "Objet du crédit";
+            this.label11.Text = "Solde (Montant)";
             // 
-            // txtEmployeur
+            // txtPhone
             // 
-            this.txtEmployeur.Location = new System.Drawing.Point(31, 294);
-            this.txtEmployeur.Name = "txtEmployeur";
-            this.txtEmployeur.Size = new System.Drawing.Size(396, 40);
-            this.txtEmployeur.TabIndex = 135;
-            this.txtEmployeur.Text = "";
+            this.txtPhone.Location = new System.Drawing.Point(31, 262);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(396, 40);
+            this.txtPhone.TabIndex = 135;
+            this.txtPhone.Text = "";
             // 
             // txtAdresse
             // 
@@ -240,16 +244,16 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(27, 639);
+            this.label18.Location = new System.Drawing.Point(27, 487);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(144, 20);
+            this.label18.Size = new System.Drawing.Size(143, 20);
             this.label18.TabIndex = 129;
-            this.label18.Text = "Numéro de compte";
+            this.label18.Text = "Numéro de la carte";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(27, 469);
+            this.label16.Location = new System.Drawing.Point(27, 406);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(122, 20);
             this.label16.TabIndex = 127;
@@ -258,7 +262,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(27, 350);
+            this.label15.Location = new System.Drawing.Point(27, 318);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(144, 20);
             this.label15.TabIndex = 126;
@@ -267,7 +271,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(27, 271);
+            this.label14.Location = new System.Drawing.Point(27, 239);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(84, 20);
             this.label14.TabIndex = 125;
@@ -276,19 +280,19 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(486, 269);
+            this.label9.Location = new System.Drawing.Point(486, 239);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(48, 20);
             this.label9.TabIndex = 124;
             this.label9.Text = "Email";
             // 
-            // txtPhone
+            // txtPrenom
             // 
-            this.txtPhone.Location = new System.Drawing.Point(31, 176);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(396, 40);
-            this.txtPhone.TabIndex = 141;
-            this.txtPhone.Text = "";
+            this.txtPrenom.Location = new System.Drawing.Point(31, 176);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(396, 40);
+            this.txtPrenom.TabIndex = 141;
+            this.txtPrenom.Text = "";
             // 
             // label8
             // 
@@ -299,13 +303,13 @@
             this.label8.TabIndex = 123;
             this.label8.Text = "Adresse";
             // 
-            // txtPrenom
+            // txtPostNom
             // 
-            this.txtPrenom.Location = new System.Drawing.Point(490, 95);
-            this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(396, 40);
-            this.txtPrenom.TabIndex = 143;
-            this.txtPrenom.Text = "";
+            this.txtPostNom.Location = new System.Drawing.Point(490, 95);
+            this.txtPostNom.Name = "txtPostNom";
+            this.txtPostNom.Size = new System.Drawing.Size(396, 40);
+            this.txtPostNom.TabIndex = 143;
+            this.txtPostNom.Text = "";
             // 
             // label7
             // 
@@ -316,13 +320,13 @@
             this.label7.TabIndex = 122;
             this.label7.Text = "Prénom";
             // 
-            // richTextBox1
+            // txtNom
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(31, 97);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(396, 40);
-            this.richTextBox1.TabIndex = 142;
-            this.richTextBox1.Text = "";
+            this.txtNom.Location = new System.Drawing.Point(31, 97);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(396, 40);
+            this.txtNom.TabIndex = 142;
+            this.txtNom.Text = "";
             // 
             // label6
             // 
@@ -353,33 +357,71 @@
             this.label5.TabIndex = 117;
             this.label5.Text = "Informations Personnelles";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 576);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 20);
+            this.label1.TabIndex = 129;
+            this.label1.Text = "Type de carte";
+            // 
+            // txtTypeCarte
+            // 
+            this.txtTypeCarte.Location = new System.Drawing.Point(31, 599);
+            this.txtTypeCarte.Name = "txtTypeCarte";
+            this.txtTypeCarte.Size = new System.Drawing.Size(396, 40);
+            this.txtTypeCarte.TabIndex = 137;
+            this.txtTypeCarte.Text = "";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(486, 576);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 20);
+            this.label2.TabIndex = 129;
+            this.label2.Text = "Code de sécurité";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(490, 599);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(396, 40);
+            this.txtPassword.TabIndex = 137;
+            this.txtPassword.Text = "";
+            // 
             // guichetAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnValiderCredit);
+            this.Controls.Add(this.btnValiderClient);
             this.Controls.Add(this.txtDevise);
-            this.Controls.Add(this.dateTimePicker1_payement);
-            this.Controls.Add(this.txtObjetCredit);
-            this.Controls.Add(this.txtAdresseEmployeur);
-            this.Controls.Add(this.txtNumCompte);
-            this.Controls.Add(this.txtMontantCredit);
-            this.Controls.Add(this.txtPosteOccupe);
+            this.Controls.Add(this.dateNaissanceCli);
+            this.Controls.Add(this.txtSolde);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtTypeCarte);
+            this.Controls.Add(this.txtNumCarte);
+            this.Controls.Add(this.txtTypeCompte);
+            this.Controls.Add(this.txtNumeroCompte);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtEmployeur);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAdresse);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtPrenom);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtPostNom);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtNom);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -407,31 +449,35 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnValiderCredit;
+        private System.Windows.Forms.Button btnValiderClient;
         private System.Windows.Forms.ComboBox txtDevise;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1_payement;
-        private System.Windows.Forms.RichTextBox txtObjetCredit;
-        private System.Windows.Forms.RichTextBox txtAdresseEmployeur;
-        private System.Windows.Forms.RichTextBox txtNumCompte;
-        private System.Windows.Forms.RichTextBox txtMontantCredit;
-        private System.Windows.Forms.RichTextBox txtPosteOccupe;
+        private System.Windows.Forms.DateTimePicker dateNaissanceCli;
+        private System.Windows.Forms.RichTextBox txtSolde;
+        private System.Windows.Forms.RichTextBox txtEmail;
+        private System.Windows.Forms.RichTextBox txtNumCarte;
+        private System.Windows.Forms.RichTextBox txtTypeCompte;
+        private System.Windows.Forms.RichTextBox txtNumeroCompte;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RichTextBox txtEmployeur;
+        private System.Windows.Forms.RichTextBox txtPhone;
         private System.Windows.Forms.RichTextBox txtAdresse;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RichTextBox txtPhone;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox txtPrenom;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RichTextBox txtPostNom;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox txtNom;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox txtTypeCarte;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RichTextBox txtPassword;
     }
 }

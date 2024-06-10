@@ -289,7 +289,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::banque_application.Properties.Resources.Trade_Market_Logo_Design_Template_Finance_Logo_With_Arrow_Template_Download_on_Pngtree;
+            this.pictureBox14.Image = global::banque_application.Properties.Resources.Red_house_icon1;
             this.pictureBox14.Location = new System.Drawing.Point(32, 151);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(49, 49);
