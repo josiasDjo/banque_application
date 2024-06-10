@@ -106,11 +106,11 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::banque_application.Properties.Resources.Premium_Vector___Cash_icon_design_illustration_vector_template;
-            this.pictureBox2.Location = new System.Drawing.Point(35, 26);
+            this.pictureBox2.Image = global::banque_application.Properties.Resources.Growth_Logo_Template1;
+            this.pictureBox2.Location = new System.Drawing.Point(252, 141);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1158, 655);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.Size = new System.Drawing.Size(709, 554);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
             // 

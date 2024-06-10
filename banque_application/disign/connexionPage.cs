@@ -33,5 +33,6 @@ namespace banque_application.disign
             this.MaximumSize = new Size(1000, 570);
             this.MinimumSize = new Size(1000, 570);
         }
+
     }
 }
