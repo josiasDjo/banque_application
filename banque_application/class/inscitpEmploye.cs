@@ -42,7 +42,7 @@ namespace banque_application.disign
             connDb.connDb();
             try
             {
-                
+                string req = "INSERT INTO tEmploye";
             } catch (SqlException exc)
             {
                 MessageBox.Show("Une erreur s'est produite : " + exc);
