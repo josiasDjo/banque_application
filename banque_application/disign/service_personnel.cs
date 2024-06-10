@@ -16,31 +16,10 @@ namespace banque_application.disign
         {
             InitializeComponent();           
         }
-        public void send()
-        {
-            string dateMatricule = (DateTime.Today.Year).ToString();
-            Random idRandom = new Random();
-            string idEnd = idRandom.Next(1000).ToString();
-
-            string nom = txtNomEm.Text;
-            string postNom = txtPostNomEm.Text;
-            string prenom = txtPrenomEm.Text;
-            string adresse = txtAdresse.Text;
-            string phone = txtPhoneEm.Text;
-            string poste = txtPoste.Text;
-            decimal salaire = decimal.Parse(txtSalaire.Text);
-
-            string dateNaissance = txtdateNaissance.Value.ToString("yyyy-MM-dd");
-            string dateEmbauche = txtdateEmbauche.Value.ToString("yyyy-MM-dd");
-
-            string matricule = prenom + "_" + dateMatricule + poste + idEnd;
-
-            MessageBox.Show("Matricule : " + matricule + " Date de naissance : " + dateNaissance);
-        }
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
         {
-            send();
+            collectData();
         }
     }
 }
