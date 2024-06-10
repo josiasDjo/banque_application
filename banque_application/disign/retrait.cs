@@ -16,5 +16,10 @@ namespace banque_application.disign
         {
             InitializeComponent();
         }
+
+        private void retrait_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

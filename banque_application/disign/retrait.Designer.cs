@@ -286,6 +286,7 @@
             this.Controls.Add(this.label5);
             this.Name = "retrait";
             this.Size = new System.Drawing.Size(1202, 784);
+            this.Load += new System.EventHandler(this.retrait_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
