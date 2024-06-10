@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace banque_application
 {
-    class inscriptClient
+    public class inscriptClient
     {
         
     }

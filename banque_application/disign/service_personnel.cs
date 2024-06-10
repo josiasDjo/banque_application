@@ -16,5 +16,10 @@ namespace banque_application.disign
         {
             InitializeComponent();
         }
+
+        private void btnValiderCredit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
