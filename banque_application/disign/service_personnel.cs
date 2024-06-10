@@ -18,12 +18,10 @@ namespace banque_application.disign
         }
         public void send()
         {
+            string dateMatricule = (DateTime.Today.Year).ToString();
             Random idRandom = new Random();
-            int idEnd = idRandom.Next();
-            messageError.Text = "Check send";
-            //MessageBox.Show("Nombre : " + idEnd);
+            string idEnd = idRandom.Next(1000).ToString();
 
-            //btnValiderCredit.BackColor = Color.Green;
             string nom = txtNomEm.Text;
             string postNom = txtPostNomEm.Text;
             string prenom = txtPrenomEm.Text;
@@ -31,10 +29,11 @@ namespace banque_application.disign
             string phone = txtPhoneEm.Text;
             string poste = txtPoste.Text;
             decimal salaire = decimal.Parse(txtSalaire.Text);
-            //DateTime dateNaissance = txtdateNaissance.Value;
-            //DateTime dateEmbauche = txtdateEmbauche.Value;
 
-            MessageBox.Show("Date de naissance : " + idEnd + ", Date d'embauche : " + prenom);
+            string dateNaissance = txtdateNaissance.Value.ToString();
+            string matricule = prenom + "_" + dateMatricule + poste + idEnd;
+
+            MessageBox.Show("Matricule : " + matricule + " Date de naissance : " + dateNaissance);
         }
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
