@@ -12,7 +12,7 @@ namespace banque_application
         //Form1 frm1 = new Form1();
         public void sendData()
         {
-            string nom = txtNom.Text(); 
+
         }
 
     }
