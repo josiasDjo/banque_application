@@ -61,7 +61,18 @@ namespace banque_application.disign
 
         private void btnDeconnexion_Click(object sender, EventArgs e)
         {
+            Form1 frm1 = new Form1();
+            frm1.openFen();
 
+            connexionPage cnnPage = new connexionPage();
+
+            this.Controls.Clear();
+            BackgroundImage = null;
+            this.Controls.Add(cnnPage);
+
+            this.Size = new Size(1000, 570);
+            this.MaximumSize = new Size(1000, 570);
+            this.MinimumSize = new Size(1000, 570);
         }
         private void afficherAccueil ()
         {
