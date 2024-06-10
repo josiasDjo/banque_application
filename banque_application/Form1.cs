@@ -69,6 +69,10 @@ namespace banque_application
                 conndb.reqSql.Close();
             }         
         }
+        public void sendD()
+        {
+            //string nom = txtNom.Text;
+        }
 
     }
 }
