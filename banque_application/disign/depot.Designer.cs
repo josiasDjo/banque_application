@@ -73,7 +73,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::banque_application.Properties.Resources.téléchargement__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(1053, 532);
+            this.pictureBox6.Location = new System.Drawing.Point(1068, 630);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(90, 72);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -83,7 +83,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::banque_application.Properties.Resources.Premium_Photo___Dollar_Sign_Isolated_Dolar_symbol_on_Round_green_icon_3D_rendering;
-            this.pictureBox8.Location = new System.Drawing.Point(1053, 409);
+            this.pictureBox8.Location = new System.Drawing.Point(1068, 507);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(90, 72);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -93,7 +93,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::banque_application.Properties.Resources.Logo_Du_Comptable_PNG___Compte__Comptable__La_Comptabilité_PNG_et_vecteur_pour_téléchargement_gratuit;
-            this.pictureBox5.Location = new System.Drawing.Point(1053, 275);
+            this.pictureBox5.Location = new System.Drawing.Point(1068, 373);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(90, 72);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -103,7 +103,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::banque_application.Properties.Resources._0fb444f0_d206_497a_96cc_b7467f7b563b;
-            this.pictureBox4.Location = new System.Drawing.Point(1053, 143);
+            this.pictureBox4.Location = new System.Drawing.Point(1068, 241);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(90, 72);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,7 +113,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::banque_application.Properties.Resources.Download_premium_psd___image_of_Investment_finance_line_icon_psd_by_Aew_about_dollar_sign_money__home__receitas_finance__finance__and_coin_2891000;
-            this.pictureBox3.Location = new System.Drawing.Point(1053, 34);
+            this.pictureBox3.Location = new System.Drawing.Point(1068, 105);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(90, 72);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

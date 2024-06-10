@@ -92,7 +92,7 @@
             this.txtPrenomCre.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrenomCre.Location = new System.Drawing.Point(92, 642);
             this.txtPrenomCre.Name = "txtPrenomCre";
-            this.txtPrenomCre.Size = new System.Drawing.Size(702, 38);
+            this.txtPrenomCre.Size = new System.Drawing.Size(847, 40);
             this.txtPrenomCre.TabIndex = 40;
             this.txtPrenomCre.Text = "";
             // 
@@ -101,7 +101,7 @@
             this.txtNumCompteCre.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumCompteCre.Location = new System.Drawing.Point(92, 705);
             this.txtNumCompteCre.Name = "txtNumCompteCre";
-            this.txtNumCompteCre.Size = new System.Drawing.Size(702, 38);
+            this.txtNumCompteCre.Size = new System.Drawing.Size(847, 40);
             this.txtNumCompteCre.TabIndex = 37;
             this.txtNumCompteCre.Text = "";
             // 
@@ -110,7 +110,7 @@
             this.txtNomCre.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomCre.Location = new System.Drawing.Point(92, 571);
             this.txtNomCre.Name = "txtNomCre";
-            this.txtNomCre.Size = new System.Drawing.Size(702, 38);
+            this.txtNomCre.Size = new System.Drawing.Size(847, 40);
             this.txtNomCre.TabIndex = 35;
             this.txtNomCre.Text = "";
             // 
@@ -139,7 +139,7 @@
             this.txtAdresseDeb.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdresseDeb.Location = new System.Drawing.Point(91, 208);
             this.txtAdresseDeb.Name = "txtAdresseDeb";
-            this.txtAdresseDeb.Size = new System.Drawing.Size(702, 38);
+            this.txtAdresseDeb.Size = new System.Drawing.Size(847, 40);
             this.txtAdresseDeb.TabIndex = 36;
             this.txtAdresseDeb.Text = "";
             // 
@@ -167,7 +167,7 @@
             this.txtPhoneDeb.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneDeb.Location = new System.Drawing.Point(91, 275);
             this.txtPhoneDeb.Name = "txtPhoneDeb";
-            this.txtPhoneDeb.Size = new System.Drawing.Size(702, 38);
+            this.txtPhoneDeb.Size = new System.Drawing.Size(847, 40);
             this.txtPhoneDeb.TabIndex = 42;
             this.txtPhoneDeb.Text = "";
             // 
@@ -185,7 +185,7 @@
             this.txtPrenomDeb.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrenomDeb.Location = new System.Drawing.Point(91, 139);
             this.txtPrenomDeb.Name = "txtPrenomDeb";
-            this.txtPrenomDeb.Size = new System.Drawing.Size(702, 38);
+            this.txtPrenomDeb.Size = new System.Drawing.Size(847, 40);
             this.txtPrenomDeb.TabIndex = 44;
             this.txtPrenomDeb.Text = "";
             // 
@@ -204,7 +204,7 @@
             this.txtNomDeb.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomDeb.Location = new System.Drawing.Point(91, 77);
             this.txtNomDeb.Name = "txtNomDeb";
-            this.txtNomDeb.Size = new System.Drawing.Size(702, 38);
+            this.txtNomDeb.Size = new System.Drawing.Size(847, 40);
             this.txtNomDeb.TabIndex = 43;
             this.txtNomDeb.Text = "";
             // 
@@ -275,7 +275,7 @@
             this.txtNumCompteDeb.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumCompteDeb.Location = new System.Drawing.Point(91, 346);
             this.txtNumCompteDeb.Name = "txtNumCompteDeb";
-            this.txtNumCompteDeb.Size = new System.Drawing.Size(702, 38);
+            this.txtNumCompteDeb.Size = new System.Drawing.Size(847, 40);
             this.txtNumCompteDeb.TabIndex = 42;
             this.txtNumCompteDeb.Text = "";
             // 
@@ -284,14 +284,14 @@
             this.txtMontant.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMontant.Location = new System.Drawing.Point(91, 409);
             this.txtMontant.Name = "txtMontant";
-            this.txtMontant.Size = new System.Drawing.Size(702, 38);
+            this.txtMontant.Size = new System.Drawing.Size(847, 40);
             this.txtMontant.TabIndex = 36;
             this.txtMontant.Text = "";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::banque_application.Properties.Resources.téléchargement__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(1063, 643);
+            this.pictureBox6.Location = new System.Drawing.Point(1068, 632);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(90, 72);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,7 +301,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::banque_application.Properties.Resources.Premium_Photo___Dollar_Sign_Isolated_Dolar_symbol_on_Round_green_icon_3D_rendering;
-            this.pictureBox8.Location = new System.Drawing.Point(1063, 520);
+            this.pictureBox8.Location = new System.Drawing.Point(1068, 509);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(90, 72);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -311,7 +311,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::banque_application.Properties.Resources.Logo_Du_Comptable_PNG___Compte__Comptable__La_Comptabilité_PNG_et_vecteur_pour_téléchargement_gratuit;
-            this.pictureBox5.Location = new System.Drawing.Point(1063, 386);
+            this.pictureBox5.Location = new System.Drawing.Point(1068, 375);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(90, 72);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -321,7 +321,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::banque_application.Properties.Resources._0fb444f0_d206_497a_96cc_b7467f7b563b;
-            this.pictureBox4.Location = new System.Drawing.Point(1063, 254);
+            this.pictureBox4.Location = new System.Drawing.Point(1068, 243);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(90, 72);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -331,7 +331,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::banque_application.Properties.Resources.Download_premium_psd___image_of_Investment_finance_line_icon_psd_by_Aew_about_dollar_sign_money__home__receitas_finance__finance__and_coin_2891000;
-            this.pictureBox3.Location = new System.Drawing.Point(1063, 145);
+            this.pictureBox3.Location = new System.Drawing.Point(1068, 105);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(90, 72);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
