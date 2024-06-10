@@ -216,7 +216,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Red house icon1.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Fichier 3%404xbank.png" />
   </ItemGroup>

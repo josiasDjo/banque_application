@@ -98,7 +98,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::banque_application.Properties.Resources.Performance_Enablement_and_Empowerment___TalentCulture;
+            this.pictureBox1.Image = global::banque_application.Properties.Resources.Sales_free_vector_icons_designed_by_Freepik;
             this.pictureBox1.Location = new System.Drawing.Point(57, 160);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 49);
@@ -108,7 +108,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::banque_application.Properties.Resources.Trade_Market_Logo_Design_Template_Finance_Logo_With_Arrow_Template_Download_on_Pngtree;
+            this.pictureBox14.Image = global::banque_application.Properties.Resources.Red_house_icon1;
             this.pictureBox14.Location = new System.Drawing.Point(57, 77);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(49, 49);
