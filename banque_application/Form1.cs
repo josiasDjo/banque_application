@@ -67,10 +67,7 @@ namespace banque_application
             } finally
             {
                 conndb.reqSql.Close();
-            }
-
-
-            
+            }         
         }
 
     }

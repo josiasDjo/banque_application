@@ -23,11 +23,11 @@ namespace banque_application.disign
             Form1 frm1 = new Form1();
             frm1.openFen();
 
-            accueil_page pgAcc = new accueil_page();
+            pageAccueilPrinc pgAccPrinc = new pageAccueilPrinc();
 
             this.Controls.Clear();
             BackgroundImage = null;
-            this.Controls.Add(pgAcc);
+            this.Controls.Add(pgAccPrinc);
 
             this.Size = new Size(1000, 570);
             this.MaximumSize = new Size(1000, 570);

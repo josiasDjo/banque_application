@@ -106,6 +106,12 @@
     <Compile Include="disign\guichetAccueil.Designer.cs">
       <DependentUpon>guichetAccueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="disign\pageAccueilPrinc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="disign\pageAccueilPrinc.Designer.cs">
+      <DependentUpon>pageAccueilPrinc.cs</DependentUpon>
+    </Compile>
     <Compile Include="disign\retrait.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="disign\guichetAccueil.resx">
       <DependentUpon>guichetAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="disign\pageAccueilPrinc.resx">
+      <DependentUpon>pageAccueilPrinc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="disign\retrait.resx">
       <DependentUpon>retrait.cs</DependentUpon>
