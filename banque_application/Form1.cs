@@ -19,7 +19,7 @@ namespace banque_application
         {
             InitializeComponent();
             connexionPage connPage = new connexionPage();
-
+            // nouvelle instance
             afficheAccueil();
 
         }
