@@ -55,6 +55,7 @@
             this.txtdateNaissance = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSalaire = new System.Windows.Forms.RichTextBox();
+            this.btnValider = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -144,7 +145,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(451, 609);
+            this.label12.Location = new System.Drawing.Point(469, 609);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(135, 20);
             this.label12.TabIndex = 81;
@@ -264,16 +265,16 @@
             // 
             // txtdateEmbauche
             // 
-            this.txtdateEmbauche.Location = new System.Drawing.Point(455, 637);
+            this.txtdateEmbauche.Location = new System.Drawing.Point(473, 637);
             this.txtdateEmbauche.Name = "txtdateEmbauche";
-            this.txtdateEmbauche.Size = new System.Drawing.Size(340, 26);
+            this.txtdateEmbauche.Size = new System.Drawing.Size(322, 26);
             this.txtdateEmbauche.TabIndex = 95;
             // 
             // txtdateNaissance
             // 
             this.txtdateNaissance.Location = new System.Drawing.Point(21, 638);
             this.txtdateNaissance.Name = "txtdateNaissance";
-            this.txtdateNaissance.Size = new System.Drawing.Size(340, 26);
+            this.txtdateNaissance.Size = new System.Drawing.Size(323, 26);
             this.txtdateNaissance.TabIndex = 96;
             // 
             // label2
@@ -293,10 +294,23 @@
             this.txtSalaire.TabIndex = 84;
             this.txtSalaire.Text = "";
             // 
+            // btnValider
+            // 
+            this.btnValider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnValider.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValider.ForeColor = System.Drawing.Color.White;
+            this.btnValider.Location = new System.Drawing.Point(21, 701);
+            this.btnValider.Name = "btnValider";
+            this.btnValider.Size = new System.Drawing.Size(323, 47);
+            this.btnValider.TabIndex = 147;
+            this.btnValider.Text = "Modifier";
+            this.btnValider.UseVisualStyleBackColor = false;
+            // 
             // service_personnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnValider);
             this.Controls.Add(this.txtdateNaissance);
             this.Controls.Add(this.txtdateEmbauche);
             this.Controls.Add(this.btnValiderCredit);
@@ -362,5 +376,6 @@
         private System.Windows.Forms.DateTimePicker txtdateNaissance;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox txtSalaire;
+        private System.Windows.Forms.Button btnValider;
     }
 }
