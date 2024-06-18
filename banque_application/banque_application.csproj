@@ -65,8 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="class\connexionDb.cs" />
-    <Compile Include="class\inscitpEmploye.cs" />
-    <Compile Include="class\inscriptClient.cs" />
     <Compile Include="COMPTABILITE_BANQUE_EXAMENDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

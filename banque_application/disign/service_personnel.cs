@@ -19,7 +19,7 @@ namespace banque_application.disign
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
         {
-            collectData();
+            //collectData(); 
         }
     }
 }
