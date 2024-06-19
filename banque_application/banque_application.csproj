@@ -64,7 +64,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="class\Agence.cs" />
+    <Compile Include="class\Carte.cs" />
+    <Compile Include="class\Client.cs" />
+    <Compile Include="class\compte.cs" />
+    <Compile Include="class\compteAgence.cs" />
     <Compile Include="class\connexionDb.cs" />
+    <Compile Include="class\contenneur.cs" />
+    <Compile Include="class\Employe.cs" />
+    <Compile Include="class\PayementPret.cs" />
+    <Compile Include="class\Pret.cs" />
+    <Compile Include="class\SoldeBanque.cs" />
+    <Compile Include="class\SoldeClient.cs" />
+    <Compile Include="class\soldeInteret.cs" />
+    <Compile Include="class\transaction.cs" />
+    <Compile Include="class\User.cs" />
     <Compile Include="COMPTABILITE_BANQUE_EXAMENDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
