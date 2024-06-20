@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace banque_application.classes
+namespace banque_application
 {
     class Employe
-{
+    {
         string id_employe;
         string nom;
         string postnom;

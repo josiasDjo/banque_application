@@ -8,13 +8,13 @@ using System.Windows.Forms;
 
 namespace banque_application
 {
-        class connexionDb
+    class connexionDb
     {
         public SqlConnection reqSql;
+        public string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
+
         public void connDb()
         {
-            string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
-
             try
             {
                 reqSql = new SqlConnection(connexion);

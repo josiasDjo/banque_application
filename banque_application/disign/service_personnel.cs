@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using banque_application;
 
 namespace banque_application.disign
 {
@@ -19,7 +20,20 @@ namespace banque_application.disign
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
         {
-            //collectData(); 
+            string prenom = txtPrenomEm.Text;
+            string poste = txtPoste.Text;
+
+            DateTime currentDate = DateTime.Now;
+            String  annee = (currentDate.Year).ToString();
+            Random random = new Random();
+            string num = (random.Next(1000)).ToString();
+
+            Employe empl = new Employe();
+
+            string matricule = prenom + '_' + annee + poste + num;
+
+            MessageBox.Show("Matricule : " + matricule);
+            //empl.Id_employe = 
         }
     }
 }
