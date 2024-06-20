@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace banque_application
             try
             {
                 reqSql = new SqlConnection(connexion);
-                reqSql.Open();
+                //reqSql.Open();
                 MessageBox.Show("Connexion ouverte");
             }
             catch (SqlException exc)
@@ -27,8 +28,11 @@ namespace banque_application
             } 
             finally
             {
-                reqSql.Close();
-                reqSql.Dispose();
+                if (reqSql != null && reqSql.State == ConnectionState.Open)
+                {
+                    reqSql.Close();
+                    reqSql.Dispose();
+                }
             }
         }
     }

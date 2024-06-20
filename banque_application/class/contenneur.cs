@@ -11,11 +11,11 @@ namespace banque_application.classes
 {
     class contenneur
     {
-        contenneur con = null;
-        contenneur cmd = null;
-        contenneur dt = null;
-        contenneur dr = null;
-        DataSet ds = null;
+        //contenneur con = null;
+        //contenneur cmd = null;
+        //contenneur dt = null;
+        //contenneur dr = null;
+        //DataSet ds = null;
 
         public static contenneur _instance = null;
         connexionDb conndb = new connexionDb();
@@ -30,6 +30,14 @@ namespace banque_application.classes
         {
             connexionDb conndb = new connexionDb();
             conndb.connDb();
+            if (conndb.reqSql == null && conndb.reqSql.State == ConnectionState.Open)
+            {
+                conndb.reqSql.Open();
+            } else
+            {
+                conndb.reqSql.Close();
+                conndb.reqSql.Dispose();
+            }
             //con = new SqlConnection(connexion.Accesbd);
         }
 
@@ -511,7 +519,7 @@ namespace banque_application.classes
             try
             {
                 InnitialiseConnection();
-                conndb.reqSql.Open();
+                //conndb.reqSql.Open();
                 using (SqlConnection con = new SqlConnection(conndb.connexion))
                 {
                     string req = "INSERT INTO tEmploye (id_employe,nom,postnom,prenom,grade,date_Embauche,contact,salaire) values (@i,@nom,@postnom,@prenom,@grade,@date,@contact,@salaire)";
@@ -531,9 +539,13 @@ namespace banque_application.classes
                     }
                 }              
             }
-            catch (Exception ex)
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            catch (SqlException exc)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Erreur : " + exc);
             }
             finally
             {
