@@ -237,7 +237,7 @@ namespace banque_application.classes
 
 
 
-   //===============ajout d'une agance==================
+   //===============ajout d'une agence==================
         public void EnregistrerAgence(Agence ag)
         {
             try
@@ -441,7 +441,7 @@ namespace banque_application.classes
             }
         }
 
-        //===============ajout d'un compte d'agance==================
+        //===============ajout d'un compte d'agence==================
 
         public void EnregistrerComptA(compteAgence cA)
         {

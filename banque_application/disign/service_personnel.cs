@@ -33,7 +33,16 @@ namespace banque_application.disign
             string matricule = prenom + '_' + annee + poste + num;
 
             MessageBox.Show("Matricule : " + matricule);
-            //empl.Id_employe = 
+
+            empl.Id_employe = matricule;
+            empl.Nom = txtNomEm.Text;
+            empl.Postnom = txtPostNomEm.Text;
+            empl.Prenom = txtPrenomEm.Text;
+            empl.Grade = txtPoste.Text;
+            empl.Date_embauche = txtdateEmbauche.Value;
+            empl.Contact = txtPhoneEm.Text;
+            empl.Salaire = decimal.Parse(txtSalaire.Text);
+
         }
     }
 }
