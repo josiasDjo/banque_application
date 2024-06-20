@@ -441,7 +441,7 @@ namespace banque_application.classes
             }
         }
 
-        //===============ajout d'un compte d'agence==================
+        //===============ajout d'un compte d'agnce==================
 
         public void EnregistrerComptA(compteAgence cA)
         {
@@ -504,8 +504,10 @@ namespace banque_application.classes
 
 
         //============================ajout d'un employe==============
-        public void EnregistrerEmploye(Employe em)
+        public void EnregistrerEmploye()
         {
+            Employe em = new Employe();
+            MessageBox.Show("Backend activer");
             try
             {
                 InnitialiseConnection();
@@ -535,8 +537,11 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                if (conndb.reqSql != null && conndb.reqSql.State == ConnectionState.Open)
+                {
+                    conndb.reqSql.Close();
+                    conndb.reqSql.Dispose();
+                }
             }
         }
 

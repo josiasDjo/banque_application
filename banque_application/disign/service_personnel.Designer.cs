@@ -35,7 +35,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtPoste = new System.Windows.Forms.RichTextBox();
             this.txtPhoneEm = new System.Windows.Forms.RichTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtAdresse = new System.Windows.Forms.RichTextBox();
@@ -56,6 +55,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtSalaire = new System.Windows.Forms.RichTextBox();
             this.btnValider = new System.Windows.Forms.Button();
+            this.txtPoste = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -125,14 +125,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 93;
             this.pictureBox3.TabStop = false;
-            // 
-            // txtPoste
-            // 
-            this.txtPoste.Location = new System.Drawing.Point(22, 483);
-            this.txtPoste.Name = "txtPoste";
-            this.txtPoste.Size = new System.Drawing.Size(774, 40);
-            this.txtPoste.TabIndex = 84;
-            this.txtPoste.Text = "";
             // 
             // txtPhoneEm
             // 
@@ -306,10 +298,25 @@
             this.btnValider.Text = "Modifier";
             this.btnValider.UseVisualStyleBackColor = false;
             // 
+            // txtPoste
+            // 
+            this.txtPoste.FormattingEnabled = true;
+            this.txtPoste.Items.AddRange(new object[] {
+            "Directeur Général",
+            "Directeur du personnel",
+            "Directeur des ressources humaines",
+            "Guichetier",
+            "Database Manager"});
+            this.txtPoste.Location = new System.Drawing.Point(21, 483);
+            this.txtPoste.Name = "txtPoste";
+            this.txtPoste.Size = new System.Drawing.Size(774, 28);
+            this.txtPoste.TabIndex = 148;
+            // 
             // service_personnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtPoste);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.txtdateNaissance);
             this.Controls.Add(this.txtdateEmbauche);
@@ -320,7 +327,6 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtSalaire);
-            this.Controls.Add(this.txtPoste);
             this.Controls.Add(this.txtPhoneEm);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
@@ -356,7 +362,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.RichTextBox txtPoste;
         private System.Windows.Forms.RichTextBox txtPhoneEm;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RichTextBox txtAdresse;
@@ -377,5 +382,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox txtSalaire;
         private System.Windows.Forms.Button btnValider;
+        private System.Windows.Forms.ComboBox txtPoste;
     }
 }
