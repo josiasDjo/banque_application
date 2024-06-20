@@ -13,7 +13,7 @@ namespace banque_application
         string postnom;
         string prenom;
         string grade;
-        DateTime date_embauche;
+        string date_embauche;
         string contact;
         decimal salaire;
 
@@ -82,7 +82,7 @@ namespace banque_application
             }
         }
 
-        public DateTime Date_embauche
+        public string Date_embauche
         {
             get
             {
