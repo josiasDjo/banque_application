@@ -28,32 +28,7 @@ namespace banque_application.disign
             }
             else
             {
-                string prenom = txtPrenomEm.Text;
-                string poste = txtPoste.Text;
-
-                DateTime currentDate = DateTime.Now;
-                String annee = (currentDate.Year).ToString();
-                Random random = new Random();
-                string num = (random.Next(1000)).ToString();
-
-                Employe empl = new Employe();
-
-                string matricule = prenom + '_' + annee + poste + num;
-
-                MessageBox.Show("Matricule : " + matricule);
-
-                empl.Id_employe = matricule;
-                empl.Nom = txtNomEm.Text;
-                empl.Postnom = txtPostNomEm.Text;
-                empl.Prenom = txtPrenomEm.Text;
-                empl.Grade = txtPoste.Text;
-                empl.Date_embauche = (txtdateEmbauche.Value).ToString();
-                empl.Contact = txtPhoneEm.Text;
-                empl.Salaire = decimal.Parse(txtSalaire.Text);
-
-                contenneur cont = new contenneur();
-                cont.EnregistrerEmploye();
-
+                sendData();
             }          
         }
         private void RemovePlaceholder(object sender, EventArgs e)
@@ -72,6 +47,44 @@ namespace banque_application.disign
                 recherche.ForeColor = Color.Gray;
                 recherche.Text = "Recherher ici...";
             }
+        }
+        public void sendData()
+        {
+            string prenom = txtPrenomEm.Text;
+            string poste = txtPoste.Text;
+
+            DateTime currentDate = DateTime.Now;
+            String annee = (currentDate.Year).ToString();
+            Random random = new Random();
+            string num = (random.Next(1000)).ToString();
+
+            string matricule = prenom + '_' + annee + poste + num;
+
+            MessageBox.Show("Matricule : " + matricule);
+
+            contenneur srv = new contenneur();
+
+            string id_employeB = matricule;
+            string nomB = txtNomEm.Text;
+            string postnomB = txtPostNomEm.Text;
+            string prenomB = txtPrenomEm.Text;
+            string gradeB = txtPoste.Text;
+            string date_embaucheB = (txtdateEmbauche.Value).ToString();
+            string contactB = txtPhoneEm.Text;
+            decimal salaireB = decimal.Parse(txtSalaire.Text);
+
+            Employe em = new Employe(id_employeB, nomB, postnomB, prenomB, gradeB, date_embaucheB, contactB, salaireB);
+
+            em.Id_employe = id_employeB;
+            em.Nom = nomB;
+            em.Postnom = postnomB;
+            em.Prenom = prenomB;
+            em.Grade = gradeB;
+            em.Date_embauche = date_embaucheB;
+            em.Contact = contactB;
+            em.Salaire = salaireB;
+            MessageBox.Show("identité : " + em.Prenom + " " + em.Date_embauche + " " + em.Salaire);
+            srv.EnregistrerEmploye();
         }
     }
 }

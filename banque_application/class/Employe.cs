@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace banque_application
 {
-    class Employe
+    public class Employe
     {
         string id_employe;
         string nom;
@@ -16,6 +17,18 @@ namespace banque_application
         string date_embauche;
         string contact;
         decimal salaire;
+
+        public Employe(string id_employe, string nom, string postnom, string prenom, string grade, string dateEmbauche, string contact, decimal salaire)
+        {
+            this.Id_employe = id_employe;
+            this.Nom = nom;
+            this.Postnom = postnom;
+            this.Prenom = prenom;
+            this.Grade = grade;
+            this.Date_embauche = dateEmbauche;
+            this.Contact = contact;
+            this.Salaire = salaire;
+        }
 
         public string Id_employe
         {
@@ -119,6 +132,15 @@ namespace banque_application
             {
                 salaire = value;
             }
+        }
+    }
+    public partial class service_personnel : UserControl
+    {
+        public void sendData()
+        {
+            service_personnel srv = new service_personnel();
+            //srv.sendData();
+            
         }
     }
 }

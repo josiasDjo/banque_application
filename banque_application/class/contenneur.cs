@@ -6,25 +6,28 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using banque_application.disign;
+using banque_application.classes;
+using banque_application;
 
 namespace banque_application.classes
 {
-    partial class contenneur
+    public partial class contenneur
     {
-        //        //contenneur con = null;
-        //        //contenneur cmd = null;
-        //        //contenneur dt = null;
-        //        //contenneur dr = null;
-        //        //DataSet ds = null;
+        //contenneur con = null;
+        //contenneur cmd = null;
+        //contenneur dt = null;
+        //contenneur dr = null;
+        //DataSet ds = null;
 
-        //        public static contenneur _instance = null;
-        //        //connexionDb conndb = new connexionDb();
-        //        public static contenneur GetInstance()
-        //        {
-        //            if (_instance == null)
-        //                _instance = new contenneur();
-        //            return _instance;
-        //        }
+        public static contenneur _instance = null;
+        //connexionDb conndb = new connexionDb();
+        public static contenneur GetInstance()
+        {
+            if (_instance == null)
+                _instance = new contenneur();
+            return _instance;
+        }
 
         void InnitialiseConnection()
         {
@@ -525,34 +528,48 @@ namespace banque_application.classes
                 //============================ajout d'un employe==============
         public void EnregistrerEmploye()
         {
-            Employe em = new Employe();
-            MessageBox.Show("Backend activer");
-            contenneur cont = new contenneur();
+            service_personnel srv = new service_personnel();
+            //Employe em = new Employe(id_employe, nom, postnom, prenom, grade, dateEmbauche, contact, salaire);
+            service_personnel cont = new service_personnel();
+
+            MessageBox.Show("Backend activer" );
+
             try
             {
                 //InnitialiseConnection();
                 //cont.connDb();
+                service_personnel srvp = new service_personnel();
+                srvp.sendData();
+
                 using (SqlConnection con = new SqlConnection(connexion))
                 {
                     con.Open();
+                    //if (em.Id_employe == "")
+                    //{
+                    //    MessageBox.Show("Ne peut pas contenir des valeur null");
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Id : " + em.Id_employe);
+                    //}
                     string req = "INSERT INTO tEmploye (id_employe,nom,postnom,prenom,grade,date_Embauche,contact,salaire) values (@i,@nom,@postnom,@prenom,@grade,@date,@contact,@salaire)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
                     {
-                        cmd.Parameters.AddWithValue("@i", em.Id_employe);
-                        cmd.Parameters.AddWithValue("@nom", em.Nom);
-                        cmd.Parameters.AddWithValue("@postnom", em.Postnom);
-                        cmd.Parameters.AddWithValue("@prenom", em.Prenom);
-                        cmd.Parameters.AddWithValue("@grade", em.Grade);
-                        cmd.Parameters.AddWithValue("@date", em.Date_embauche);
-                        cmd.Parameters.AddWithValue("@contact", em.Contact);
-                        cmd.Parameters.AddWithValue("@salaire", em.Salaire);
+                        //cmd.Parameters.AddWithValue("@i", em.Id_employe ?? (object)DBNull.Value);
+                        //cmd.Parameters.AddWithValue("@nom", em.Nom ?? (object)DBNull.Value);
+                        //cmd.Parameters.AddWithValue("@postnom", em.Postnom ?? (object)DBNull.Value);
+                        //cmd.Parameters.AddWithValue("@prenom", em.Prenom ?? (object)DBNull.Value);
+                        //cmd.Parameters.AddWithValue("@grade", em.Grade ?? (object)DBNull.Value);
+                        //cmd.Parameters.AddWithValue("@date", em.Date_embauche ?? (object)DBNull.Value);
+                        //cmd.Parameters.AddWithValue("@contact", em.Contact ?? (object)DBNull.Value);
+                        //cmd.Parameters.AddWithValue("@salaire", em.Salaire !=0 ? em.Salaire :  (object)DBNull.Value);
                         cmd.ExecuteNonQuery();
                         con.Close();
                         MessageBox.Show("Enregistrement reussi");
                     }
                 }
             }
-            catch (SqlException exc)
+            catch (Exception exc)
             {
                 MessageBox.Show("Erreur : " + exc.Message);
             }
@@ -889,6 +906,6 @@ namespace banque_application.classes
         //                conndb.reqSql.Close();
         //                conndb.reqSql.Dispose();
         //            }
-        //        }
+        //        }  
     }
 }
