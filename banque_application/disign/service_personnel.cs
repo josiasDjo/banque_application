@@ -21,11 +21,12 @@ namespace banque_application.disign
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
         {
-            if (txtNomEm.Text == null || txtPostNomEm.Text == null || txtPrenomEm.Text == null || txtPhoneEm.Text == null || txtSalaire.Text == null ||
-                txtdateEmbauche.Value == null || txtPoste.Text == null || txtAdresse.Text == null)
+            if (txtNomEm.Text == "" || txtPostNomEm.Text == "" || txtPrenomEm.Text == "" || txtPhoneEm.Text == "" || txtSalaire.Text == "" ||
+                txtdateEmbauche.Value == null || txtPoste.Text == "" || txtAdresse.Text == "")
             {
-                MessageBox.Show("Tout les champs sont réquis ");
-            } else
+                MessageBox.Show("Veillez renseigner tout les champs");
+            }
+            else
             {
                 string prenom = txtPrenomEm.Text;
                 string poste = txtPoste.Text;
@@ -52,7 +53,25 @@ namespace banque_application.disign
 
                 contenneur cont = new contenneur();
                 cont.EnregistrerEmploye();
+
             }          
+        }
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            if (recherche.ForeColor == Color.Gray)
+            {
+                recherche.Text = "";
+                recherche.ForeColor = Color.Black;
+            }
+        }
+
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(recherche.Text))
+            {
+                recherche.ForeColor = Color.Gray;
+                recherche.Text = "Recherher ici...";
+            }
         }
     }
 }
