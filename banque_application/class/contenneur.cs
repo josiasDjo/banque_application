@@ -19,24 +19,54 @@ namespace banque_application.classes
 
         public static contenneur _instance = null;
         connexionDb conndb = new connexionDb();
+        string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
         public static contenneur GetInstance()
         {
             if (_instance == null)
                 _instance = new contenneur();
             return _instance;
         }
+        public SqlConnection reqSql;
 
+        public void connDb()
+        {
+            try
+            {
+                reqSql = new SqlConnection(connexion);
+                reqSql.Open();
+            }
+            catch (SqlException exc)
+            {
+                MessageBox.Show("Une erreur s'est produite lors de la connexion : " + exc);
+            } 
+            finally
+            {
+                if (reqSql != null && reqSql.State == ConnectionState.Open)
+                {
+                    reqSql.Close();
+                    reqSql.Dispose();
+                }
+            }
+        }
         void InnitialiseConnection()
         {
             connexionDb conndb = new connexionDb();
-            conndb.connDb();
-            if (conndb.reqSql == null && conndb.reqSql.State == ConnectionState.Open)
+            connDb();
+            try
             {
-                conndb.reqSql.Open();
-            } else
+                if (reqSql == null && reqSql.State == ConnectionState.Open)
+                {
+                    reqSql.Open();
+                }
+                else
+                {
+                    reqSql.Close();
+                    reqSql.Dispose();
+                }
+            } 
+            catch (SqlException exc)
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                MessageBox.Show("Une erreur s'est produite : " + exc);
             }
             //con = new SqlConnection(connexion.Accesbd);
         }
@@ -50,7 +80,7 @@ namespace banque_application.classes
             try
             {
                 InnitialiseConnection();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string sqlReq = "delete from " + nomTable + " where " + nomChamp + "=@id";
                     using (SqlCommand cmd = new SqlCommand(sqlReq, con))
@@ -67,8 +97,8 @@ namespace banque_application.classes
                 MessageBox.Show(ex.Message);
             } finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
         //=========================chargement des donnees================
@@ -77,13 +107,13 @@ namespace banque_application.classes
         {
             InnitialiseConnection();
 
-            if (conndb.reqSql.State != ConnectionState.Open)
+            if (reqSql.State != ConnectionState.Open)
             {
-                conndb.connDb();
+                connDb();
             }
             try
             {
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     using (SqlCommand cmd = new SqlCommand("SELECT * FROM " + nomTable, con))
                     {
@@ -98,15 +128,14 @@ namespace banque_application.classes
             }
             catch (Exception ex)
             {
-                // Gérer les exceptions, par exemple en les journalisant
                 throw new Exception("Erreur lors du chargement des données", ex);
             }
             finally
             {
-                if (conndb.reqSql.State == ConnectionState.Open)
+                if (reqSql.State == ConnectionState.Open)
                 {
-                    conndb.reqSql.Close();
-                    conndb.reqSql.Dispose();
+                    reqSql.Close();
+                    reqSql.Dispose();
                 }
             }
 
@@ -128,9 +157,9 @@ namespace banque_application.classes
             try
             {
                 InnitialiseConnection();
-                if (!conndb.reqSql.State.ToString().ToLower().Equals("open")) conndb.connDb();
+                if (!reqSql.State.ToString().ToLower().Equals("open")) connDb();
 
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     using (SqlCommand cmd = new SqlCommand("SELECT * FROM " + nomTable + " ", con))
                     {
@@ -155,8 +184,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
             return datst;
         }
@@ -175,7 +204,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tClient (id_client,nom,postnom,prenom,adresse,phone,date_naissance,photo) values (@i,@nom,@postnom,@prenom,@adresse,@phone,@date,@photo)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -200,8 +229,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -213,7 +242,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "UPDATE  tClient set nom=@nom,postnom=@postnom,prenom=@prenom,adresse=@adresse,phone=@phone,date_naissance=@date,photo =@photo  where id_client = @i";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -238,8 +267,8 @@ namespace banque_application.classes
                 MessageBox.Show(ex.Message);
             } finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -252,7 +281,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tAgence (id_agence,nom,adresse,phone) values (@i,@nom,@phone)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -271,8 +300,8 @@ namespace banque_application.classes
                 MessageBox.Show(ex.Message);
             } finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -284,7 +313,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "update tAgence set id_agence=@i, nom=@nom, phone=@phone where id_agence=@id";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -304,8 +333,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -319,7 +348,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tCarte (id_carte,numero_carte,type_carte,date_expiration) values (@i,@num,@type,@date)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -340,8 +369,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -352,7 +381,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "update tCarte set id_carte=@i, numero_carte=@num, type_carte=@type where id_agence=@id";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -373,8 +402,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -385,7 +414,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tCompte (id_compte,num_compte,type_compte,solde_compte,date_ouverture,code_securite) values (@i,@num,@type,@solde,@date,@sec)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -408,8 +437,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -420,7 +449,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "update tCompte set id_compte=@i, numero_compte=@num, type_compte=@type, solde_compte=@solde,date_ouverture=@date,code_securite=@sec where id_compte=@id";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -444,8 +473,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -457,7 +486,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tCompteAgence (id_compte_agance) values (@i)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -475,8 +504,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -487,7 +516,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "update tCompteAgence set id_compte_agance=@i,  where id_compte_agence=@id";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -505,8 +534,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -519,8 +548,9 @@ namespace banque_application.classes
             try
             {
                 InnitialiseConnection();
-                //conndb.reqSql.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                //connexionDb conEmBD = new connexionDb();
+                reqSql.Open();
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tEmploye (id_employe,nom,postnom,prenom,grade,date_Embauche,contact,salaire) values (@i,@nom,@postnom,@prenom,@grade,@date,@contact,@salaire)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -549,10 +579,10 @@ namespace banque_application.classes
             }
             finally
             {
-                if (conndb.reqSql != null && conndb.reqSql.State == ConnectionState.Open)
+                if (reqSql != null && reqSql.State == ConnectionState.Open)
                 {
-                    conndb.reqSql.Close();
-                    conndb.reqSql.Dispose();
+                    reqSql.Close();
+                    reqSql.Dispose();
                 }
             }
         }
@@ -565,7 +595,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "UPDATE  tEmploye set nom=@nom,postnom=@postnom,prenom=@prenom,grade=@grsde,date_Embauche=@date,contact =@contact,salaire=@salaire  where id_Employe = @i";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -590,8 +620,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -605,7 +635,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tPayementPret (id_payement,date_payement,montant_paye) values (@i,@date,@montant)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -625,8 +655,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -638,7 +668,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "update tPayementPret set id_payement=@i,date_payement=@date,montant_paye=@montant where id_Payement=@id";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -658,8 +688,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -672,7 +702,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tPret (id_pret,date_debut,date_fin,taux_interet,montan_total,montant_restant)  values (@i,@debut,@fin,@taux,@tmontant,@reste)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -695,8 +725,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -708,7 +738,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "UPDATE  tPret set id_pret=@i,date_debut=@debut,date_fin=@fin,taux_interet=@taux,montan_total=@tmontant,montant_restant=@reste where id_Pret=@i";
                     using (SqlCommand cmd =  new SqlCommand(req, con))
@@ -731,8 +761,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -746,7 +776,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tTransaction (id_transaction,date_trasanction,montant,type_transaction,compte_source,compte_beneficiaire ) values (@i,@date,@montant,@type,@source,@ben)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -769,8 +799,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -782,7 +812,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "UPDATE  tTransaction set id_transaction=@i,date_trasanction=@date,montant=@montant,type_transaction=@type,compte_source=@source,compte_beneficiaire=ben where id_transaction=@i";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -805,8 +835,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -819,7 +849,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "INSERT INTO tUser (matricule,nom,postnom,prenom,mot_de_pass) values  (@m,@nom,@postnom,@prenom,@code)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -841,8 +871,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
 
@@ -854,7 +884,7 @@ namespace banque_application.classes
             {
                 InnitialiseConnection();
                 //con.Open();
-                using (SqlConnection con = new SqlConnection(conndb.connexion))
+                using (SqlConnection con = new SqlConnection(connexion))
                 {
                     string req = "UPDATE  tUser set matricule=@m,nom=@nom,postnom=@postnom,prenom=@prenom,mot_de_pass=@code  where matricule = @m";
                     using (SqlCommand cmd = new SqlCommand(req, con))
@@ -877,8 +907,8 @@ namespace banque_application.classes
             }
             finally
             {
-                conndb.reqSql.Close();
-                conndb.reqSql.Dispose();
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
     }

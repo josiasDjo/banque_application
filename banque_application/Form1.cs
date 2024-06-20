@@ -54,20 +54,7 @@ namespace banque_application
             connexionPage cnnPage = new connexionPage();
 
             panel1_ConnexionShow.Controls.Clear();
-            panel1_ConnexionShow.Controls.Add(cnnPage);
-
-            connexionDb conndb = new connexionDb();
-
-            try
-            {
-                conndb.connDb();
-            } catch (SqlException exc)
-            {
-                MessageBox.Show("Erreur : " + exc);
-            } finally
-            {
-                conndb.reqSql.Close();
-            }         
+            panel1_ConnexionShow.Controls.Add(cnnPage);   
         }
         public void sendD()
         {
