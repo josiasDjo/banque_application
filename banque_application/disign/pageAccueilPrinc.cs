@@ -60,5 +60,10 @@ namespace banque_application.disign
             this.Controls.Clear();
             this.Controls.Add(accueilP);
         }
+
+        private void pageAccueilContenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

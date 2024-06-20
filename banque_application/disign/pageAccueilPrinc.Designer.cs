@@ -1,4 +1,6 @@
-﻿namespace banque_application.disign
+﻿using System.Drawing;
+
+namespace banque_application.disign
 {
     partial class pageAccueilPrinc
     {
@@ -29,6 +31,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pageAccueilContenu = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -39,7 +42,6 @@
             this.btnDepot = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.pageAccueilContenu = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -63,13 +65,21 @@
             this.panel2.Controls.Add(this.btnAccueil);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(392, 838);
+            this.panel2.Size = new System.Drawing.Size(1501, 87);
             this.panel2.TabIndex = 30;
+            // 
+            // pageAccueilContenu
+            // 
+            this.pageAccueilContenu.Location = new System.Drawing.Point(160, 93);
+            this.pageAccueilContenu.Name = "pageAccueilContenu";
+            this.pageAccueilContenu.Size = new System.Drawing.Size(1147, 718);
+            this.pageAccueilContenu.TabIndex = 0;
+            this.pageAccueilContenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pageAccueilContenu_Paint);
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = global::banque_application.Properties.Resources.Icon_Clipart_Transparent_Background__Vector_Logout_Icon__Logout_Icons__Exit__Interface_PNG_Image_For_Free_Download;
-            this.pictureBox12.Location = new System.Drawing.Point(57, 433);
+            this.pictureBox12.Location = new System.Drawing.Point(1249, 22);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(49, 49);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -79,7 +89,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::banque_application.Properties.Resources.Download_Withdraw_Money_Icon_for_free;
-            this.pictureBox13.Location = new System.Drawing.Point(57, 339);
+            this.pictureBox13.Location = new System.Drawing.Point(887, 22);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(49, 49);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,7 +99,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::banque_application.Properties.Resources.Dollar_Signs_Money_Clipart_PNG_Images__Money_Icon_Isolated_Dollar_Cash_Illustration__Money_Icons__Dollar_Icons__Cash_Icons_PNG_Image_For_Free_Download;
-            this.pictureBox9.Location = new System.Drawing.Point(57, 254);
+            this.pictureBox9.Location = new System.Drawing.Point(570, 22);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(49, 49);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -99,7 +109,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::banque_application.Properties.Resources.Sales_free_vector_icons_designed_by_Freepik;
-            this.pictureBox1.Location = new System.Drawing.Point(57, 160);
+            this.pictureBox1.Location = new System.Drawing.Point(286, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +119,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::banque_application.Properties.Resources.Red_house_icon1;
-            this.pictureBox14.Location = new System.Drawing.Point(57, 77);
+            this.pictureBox14.Location = new System.Drawing.Point(59, 22);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(49, 49);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -123,9 +133,9 @@
             this.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeconnexion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeconnexion.ForeColor = System.Drawing.Color.White;
-            this.btnDeconnexion.Location = new System.Drawing.Point(57, 424);
+            this.btnDeconnexion.Location = new System.Drawing.Point(1249, 22);
             this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(278, 67);
+            this.btnDeconnexion.Size = new System.Drawing.Size(190, 49);
             this.btnDeconnexion.TabIndex = 54;
             this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -139,9 +149,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(57, 333);
+            this.button2.Location = new System.Drawing.Point(887, 22);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 67);
+            this.button2.Size = new System.Drawing.Size(261, 49);
             this.button2.TabIndex = 54;
             this.button2.Text = "Service du personnel";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -155,9 +165,9 @@
             this.btnDepot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDepot.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDepot.ForeColor = System.Drawing.Color.White;
-            this.btnDepot.Location = new System.Drawing.Point(57, 246);
+            this.btnDepot.Location = new System.Drawing.Point(570, 22);
             this.btnDepot.Name = "btnDepot";
-            this.btnDepot.Size = new System.Drawing.Size(278, 67);
+            this.btnDepot.Size = new System.Drawing.Size(233, 49);
             this.btnDepot.TabIndex = 54;
             this.btnDepot.Text = "Guichet d\'accueil";
             this.btnDepot.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -171,9 +181,9 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(57, 154);
+            this.btnDashboard.Location = new System.Drawing.Point(286, 22);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(278, 67);
+            this.btnDashboard.Size = new System.Drawing.Size(182, 49);
             this.btnDashboard.TabIndex = 54;
             this.btnDashboard.Text = "Comptabilité";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -187,24 +197,14 @@
             this.btnAccueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccueil.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccueil.ForeColor = System.Drawing.Color.White;
-            this.btnAccueil.Location = new System.Drawing.Point(57, 72);
+            this.btnAccueil.Location = new System.Drawing.Point(57, 22);
             this.btnAccueil.Name = "btnAccueil";
-            this.btnAccueil.Size = new System.Drawing.Size(278, 67);
+            this.btnAccueil.Size = new System.Drawing.Size(162, 49);
             this.btnAccueil.TabIndex = 54;
             this.btnAccueil.Text = "Accueil";
             this.btnAccueil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccueil.UseVisualStyleBackColor = false;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
-            // 
-            // pageAccueilContenu
-            // 
-            this.pageAccueilContenu.AllowDrop = true;
-            this.pageAccueilContenu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pageAccueilContenu.BackColor = System.Drawing.Color.Transparent;
-            this.pageAccueilContenu.Location = new System.Drawing.Point(389, 0);
-            this.pageAccueilContenu.Name = "pageAccueilContenu";
-            this.pageAccueilContenu.Size = new System.Drawing.Size(1109, 838);
-            this.pageAccueilContenu.TabIndex = 30;
             // 
             // pageAccueilPrinc
             // 
