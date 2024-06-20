@@ -7,33 +7,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace banque_application
+namespace banque_application.classes
 {
-    class connexionDb
+    partial class contenneur
     {
-        //public SqlConnection reqSql;
-        //public string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
+        public SqlConnection reqSql;
+        public string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
 
-        //public void connDb()
-        //{
-        //    try
-        //    {
-        //        reqSql = new SqlConnection(connexion);
-        //        reqSql.Open();
-        //        //MessageBox.Show("Connexion ouverte");
-        //    }
-        //    catch (SqlException exc)
-        //    {
-        //        MessageBox.Show("Une erreur s'est produite lors de la connexion : " + exc);
-        //    } 
-        //    finally
-        //    {
-        //        if (reqSql != null && reqSql.State == ConnectionState.Open)
-        //        {
-        //            reqSql.Close();
-        //            reqSql.Dispose();
-        //        }
-        //    }
-        //}
+        public void connDb()
+        {
+            try
+            {
+                reqSql = new SqlConnection(connexion);
+                reqSql.Open();
+                //MessageBox.Show("Connexion ouverte");
+            }
+            catch (SqlException exc)
+            {
+                MessageBox.Show("Une erreur s'est produite lors de la connexion : " + exc.Message);
+            } 
+            finally
+            {
+                if (reqSql != null && reqSql.State == ConnectionState.Open)
+                {
+                    reqSql.Close();
+                    reqSql.Dispose();
+                }
+            }
+        }
     }
 }
