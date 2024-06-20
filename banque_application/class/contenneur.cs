@@ -527,12 +527,14 @@ namespace banque_application.classes
         {
             Employe em = new Employe();
             MessageBox.Show("Backend activer");
+            contenneur cont = new contenneur();
             try
             {
-                InnitialiseConnection();
-                reqSql.Open();
+                //InnitialiseConnection();
+                //cont.connDb();
                 using (SqlConnection con = new SqlConnection(connexion))
                 {
+                    con.Open();
                     string req = "INSERT INTO tEmploye (id_employe,nom,postnom,prenom,grade,date_Embauche,contact,salaire) values (@i,@nom,@postnom,@prenom,@grade,@date,@contact,@salaire)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
                     {
