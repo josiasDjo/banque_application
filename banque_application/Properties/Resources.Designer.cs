@@ -207,6 +207,16 @@ namespace banque_application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_bank_no_bg {
+            get {
+                object obj = ResourceManager.GetObject("logo_bank_no_bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_Du_Comptable_PNG___Compte__Comptable__La_Comptabilité_PNG_et_vecteur_pour_téléchargement_gratuit {
             get {
                 object obj = ResourceManager.GetObject("Logo Du Comptable PNG , Compte, Comptable, La Comptabilité PNG et vecteur pour té" +

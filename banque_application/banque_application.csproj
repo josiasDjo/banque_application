@@ -144,10 +144,10 @@
     <Compile Include="disign\transferer.Designer.cs">
       <DependentUpon>transferer.cs</DependentUpon>
     </Compile>
-    <Compile Include="disign\tsAccu.cs">
+    <Compile Include="Resources\tsAccu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="disign\tsAccu.Designer.cs">
+    <Compile Include="Resources\tsAccu.Designer.cs">
       <DependentUpon>tsAccu.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -188,7 +188,7 @@
     <EmbeddedResource Include="disign\transferer.resx">
       <DependentUpon>transferer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="disign\tsAccu.resx">
+    <EmbeddedResource Include="Resources\tsAccu.resx">
       <DependentUpon>tsAccu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
@@ -301,6 +301,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Growth Logo Template1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_bank_no_bg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

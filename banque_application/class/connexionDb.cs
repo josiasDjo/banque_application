@@ -19,6 +19,7 @@ namespace banque_application
             {
                 reqSql = new SqlConnection(connexion);
                 reqSql.Open();
+                MessageBox.Show("Connexion ouverte");
             }
             catch (SqlException exc)
             {

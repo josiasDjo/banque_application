@@ -121,11 +121,11 @@
   <data name="Growth Logo Template" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Growth Logo Template.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imageBanque" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imageBanque.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="4bed41e3-2ed9-4553-b5e1-a18d324e8fe3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4bed41e3-2ed9-4553-b5e1-a18d324e8fe3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo Du Comptable PNG , Compte, Comptable, La Comptabilité PNG et vecteur pour téléchargement gratuit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Du Comptable PNG , Compte, Comptable, La Comptabilité PNG et vecteur pour téléchargement gratuit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="téléchargement (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\téléchargement (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -135,6 +135,9 @@
   </data>
   <data name="Download premium psd _ image of Investment finance line icon psd by Aew about dollar sign money, home, receitas finance, finance, and coin 2891000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Download premium psd _ image of Investment finance line icon psd by Aew about dollar sign money, home, receitas finance, finance, and coin 2891000.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red house icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red house icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sales free vector icons designed by Freepik" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sales free vector icons designed by Freepik.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,11 +154,11 @@
   <data name="Dollar Signs Money Clipart PNG Images, Money Icon Isolated Dollar Cash Illustration, Money Icons, Dollar Icons, Cash Icons PNG Image For Free Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dollar Signs Money Clipart PNG Images, Money Icon Isolated Dollar Cash Illustration, Money Icons, Dollar Icons, Cash Icons PNG Image For Free Download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon Clipart Transparent Background, Vector Logout Icon, Logout Icons, Exit, Interface PNG Image For Free Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon Clipart Transparent Background, Vector Logout Icon, Logout Icons, Exit, Interface PNG Image For Free Download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Performance Enablement and Empowerment - TalentCulture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Performance Enablement and Empowerment - TalentCulture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Financial Profit free icons designed by Smashicons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Financial Profit free icons designed by Smashicons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buy real instagram followers_https___buyrealsocialmarketing_com_instagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buy real instagram followers_https___buyrealsocialmarketing_com_instagram.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,8 +178,8 @@
   <data name="Fichier 3@4xbank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fichier 3@4xbank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo Du Comptable PNG , Compte, Comptable, La Comptabilité PNG et vecteur pour téléchargement gratuit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo Du Comptable PNG , Compte, Comptable, La Comptabilité PNG et vecteur pour téléchargement gratuit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imageBanque" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imageBanque.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cost Reduction- Decrease Dollar Icon_ Vector Symbol Image Isolated on Background Stock Vector - Illustration of deduction, instagram_ 136052881" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cost Reduction- Decrease Dollar Icon_ Vector Symbol Image Isolated on Background Stock Vector - Illustration of deduction, instagram_ 136052881.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,10 +187,10 @@
   <data name="Withdraw money from ATM slot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Withdraw money from ATM slot.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Financial Profit free icons designed by Smashicons" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Financial Profit free icons designed by Smashicons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon Clipart Transparent Background, Vector Logout Icon, Logout Icons, Exit, Interface PNG Image For Free Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon Clipart Transparent Background, Vector Logout Icon, Logout Icons, Exit, Interface PNG Image For Free Download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red house icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Red house icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo_bank_no_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_bank_no_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

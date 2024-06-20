@@ -63,9 +63,9 @@ namespace banque_application.disign
             this.btnValiderCredit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnValiderCredit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValiderCredit.ForeColor = System.Drawing.Color.White;
-            this.btnValiderCredit.Location = new System.Drawing.Point(658, 678);
+            this.btnValiderCredit.Location = new System.Drawing.Point(1032, 160);
             this.btnValiderCredit.Name = "btnValiderCredit";
-            this.btnValiderCredit.Size = new System.Drawing.Size(323, 47);
+            this.btnValiderCredit.Size = new System.Drawing.Size(263, 47);
             this.btnValiderCredit.TabIndex = 94;
             this.btnValiderCredit.Text = "Valider";
             this.btnValiderCredit.UseVisualStyleBackColor = false;
@@ -245,9 +245,9 @@ namespace banque_application.disign
             this.btnValider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnValider.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValider.ForeColor = System.Drawing.Color.White;
-            this.btnValider.Location = new System.Drawing.Point(206, 678);
+            this.btnValider.Location = new System.Drawing.Point(1032, 303);
             this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(323, 47);
+            this.btnValider.Size = new System.Drawing.Size(263, 47);
             this.btnValider.TabIndex = 147;
             this.btnValider.Text = "Modifier";
             this.btnValider.UseVisualStyleBackColor = false;
@@ -269,9 +269,9 @@ namespace banque_application.disign
             // recherche
             // 
             this.recherche.ForeColor = System.Drawing.Color.Gray;
-            this.recherche.Location = new System.Drawing.Point(681, 17);
+            this.recherche.Location = new System.Drawing.Point(1042, 99);
             this.recherche.Name = "recherche";
-            this.recherche.Size = new System.Drawing.Size(299, 26);
+            this.recherche.Size = new System.Drawing.Size(253, 26);
             this.recherche.TabIndex = 149;
             this.recherche.Text = "Recherher ici ...";
             this.recherche.GotFocus += new System.EventHandler(this.RemovePlaceholder);
@@ -310,7 +310,7 @@ namespace banque_application.disign
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "service_personnel";
-            this.Size = new System.Drawing.Size(1040, 784);
+            this.Size = new System.Drawing.Size(1322, 784);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,7 +31,6 @@ namespace banque_application.disign
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pageAccueilContenu = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -42,6 +41,7 @@ namespace banque_application.disign
             this.btnDepot = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnAccueil = new System.Windows.Forms.Button();
+            this.pageAccueilContenu = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -67,14 +67,6 @@ namespace banque_application.disign
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1501, 87);
             this.panel2.TabIndex = 30;
-            // 
-            // pageAccueilContenu
-            // 
-            this.pageAccueilContenu.Location = new System.Drawing.Point(160, 93);
-            this.pageAccueilContenu.Name = "pageAccueilContenu";
-            this.pageAccueilContenu.Size = new System.Drawing.Size(1147, 718);
-            this.pageAccueilContenu.TabIndex = 0;
-            this.pageAccueilContenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pageAccueilContenu_Paint);
             // 
             // pictureBox12
             // 
@@ -205,6 +197,14 @@ namespace banque_application.disign
             this.btnAccueil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccueil.UseVisualStyleBackColor = false;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
+            // 
+            // pageAccueilContenu
+            // 
+            this.pageAccueilContenu.Location = new System.Drawing.Point(27, 93);
+            this.pageAccueilContenu.Name = "pageAccueilContenu";
+            this.pageAccueilContenu.Size = new System.Drawing.Size(1436, 718);
+            this.pageAccueilContenu.TabIndex = 0;
+            this.pageAccueilContenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pageAccueilContenu_Paint);
             // 
             // pageAccueilPrinc
             // 

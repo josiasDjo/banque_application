@@ -16,5 +16,10 @@ namespace banque_application.disign
         {
             InitializeComponent();
         }
+
+        private void guichetAccueil_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
