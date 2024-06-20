@@ -554,7 +554,7 @@ namespace banque_application.classes
             }
             catch (SqlException exc)
             {
-                MessageBox.Show("Erreur : " + exc);
+                MessageBox.Show("Erreur : " + exc.Message);
             }
             finally
             {
