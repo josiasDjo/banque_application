@@ -24,6 +24,11 @@ namespace banque_application
             catch (SqlException exc)
             {
                 MessageBox.Show("Une erreur s'est produite lors de la connexion : " + exc);
+            } 
+            finally
+            {
+                reqSql.Close();
+                reqSql.Dispose();
             }
         }
     }

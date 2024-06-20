@@ -511,7 +511,7 @@ namespace banque_application.classes
             try
             {
                 InnitialiseConnection();
-                //con.Open();
+                conndb.reqSql.Open();
                 using (SqlConnection con = new SqlConnection(conndb.connexion))
                 {
                     string req = "INSERT INTO tEmploye (id_employe,nom,postnom,prenom,grade,date_Embauche,contact,salaire) values (@i,@nom,@postnom,@prenom,@grade,@date,@contact,@salaire)";
