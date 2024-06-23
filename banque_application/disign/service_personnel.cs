@@ -136,5 +136,10 @@ namespace banque_application.disign
 
             EnregistrerEmploye();
         }
+
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

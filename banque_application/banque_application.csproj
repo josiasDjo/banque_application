@@ -169,6 +169,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="class\connexionDb.resx">
+      <DependentUpon>connexionDb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="disign\accueil_page.resx">
       <DependentUpon>accueil_page.cs</DependentUpon>
     </EmbeddedResource>

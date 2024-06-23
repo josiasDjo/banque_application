@@ -582,43 +582,42 @@ namespace banque_application.disign
             }
         }
 
-        //        // =========Modification de l'employe ====================
+        // =========Modification de l'employe ====================
 
-        //        public void ModifierEmploye(Employe em)
-        //        {
-        //            try
-        //            {
-        //                InnitialiseConnection();
-        //                //con.Open();
-        //                using (SqlConnection con = new SqlConnection(conndb.connexion))
-        //                {
-        //                    string req = "UPDATE  tEmploye set nom=@nom,postnom=@postnom,prenom=@prenom,grade=@grsde,date_Embauche=@date,contact =@contact,salaire=@salaire  where id_Employe = @i";
-        //                    using (SqlCommand cmd = new SqlCommand(req, con))
-        //                    {
-        //                        cmd.Parameters.AddWithValue("@i", em.Id_employe);
-        //                        cmd.Parameters.AddWithValue("@nom", em.Nom);
-        //                        cmd.Parameters.AddWithValue("@postnom", em.Postnom);
-        //                        cmd.Parameters.AddWithValue("@prenom", em.Prenom);
-        //                        cmd.Parameters.AddWithValue("@grade", em.Grade);
-        //                        cmd.Parameters.AddWithValue("@date", em.Date_embauche);
-        //                        cmd.Parameters.AddWithValue("@contact", em.Contact);
-        //                        cmd.Parameters.AddWithValue("@salaire", em.Salaire);
-        //                        cmd.ExecuteNonQuery();
-        //                        con.Close();
-        //                        MessageBox.Show("Enregistrement reussi");
-        //                    }
-        //                }
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                MessageBox.Show(ex.Message);
-        //            }
-        //            finally
-        //            {
-        //                conndb.reqSql.Close();
-        //                conndb.reqSql.Dispose();
-        //            }
-        //        }
+        public void ModifierEmploye(Employe em)
+        {
+            try
+            {
+                InnitialiseConnection();
+                using (SqlConnection con = new SqlConnection(connexion))
+                {
+                    string req = "UPDATE  tEmploye set nom=@nom,postnom=@postnom,prenom=@prenom,grade=@grsde,date_Embauche=@date,contact =@contact,salaire=@salaire  where id_Employe = @i";
+                    using (SqlCommand cmd = new SqlCommand(req, con))
+                    {
+                        cmd.Parameters.AddWithValue("@i", id_employeB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@nom", nomB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@postnom", postnomB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@prenom", prenomB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@grade", gradeB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@date", date_embaucheB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@contact", contactB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@salaire", salaireB);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        MessageBox.Show("Modification reussie");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                reqSql.Close();
+                reqSql.Dispose();
+            }
+        }
 
 
 

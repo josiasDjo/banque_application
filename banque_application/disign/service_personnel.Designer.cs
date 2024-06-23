@@ -251,6 +251,7 @@ namespace banque_application.disign
             this.btnValider.TabIndex = 147;
             this.btnValider.Text = "Modifier";
             this.btnValider.UseVisualStyleBackColor = false;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // txtPoste
             // 
