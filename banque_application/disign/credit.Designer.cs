@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.btnValiderCredit = new System.Windows.Forms.Button();
             this.txtDevise = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1_payement = new System.Windows.Forms.DateTimePicker();
@@ -39,7 +38,6 @@
             this.txtMontantCredit = new System.Windows.Forms.RichTextBox();
             this.txtPosteOccupe = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtEmployeur = new System.Windows.Forms.RichTextBox();
@@ -153,33 +151,30 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(591, 349);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(214, 20);
+            this.label10.Size = new System.Drawing.Size(236, 22);
             this.label10.TabIndex = 33;
             this.label10.Text = "Revenus mensuels / Annuels";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(591, 546);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 20);
+            this.label12.Size = new System.Drawing.Size(61, 22);
             this.label12.TabIndex = 31;
             this.label12.Text = "Devise";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(591, 468);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 20);
+            this.label11.Size = new System.Drawing.Size(128, 22);
             this.label11.TabIndex = 32;
             this.label11.Text = "Objet du crédit";
             // 
@@ -202,54 +197,60 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(72, 638);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(144, 20);
+            this.label18.Size = new System.Drawing.Size(161, 22);
             this.label18.TabIndex = 30;
             this.label18.Text = "Numéro de compte";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(72, 553);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(140, 20);
+            this.label17.Size = new System.Drawing.Size(154, 22);
             this.label17.TabIndex = 29;
             this.label17.Text = "Date de payement";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(72, 468);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(133, 20);
+            this.label16.Size = new System.Drawing.Size(150, 22);
             this.label16.TabIndex = 28;
             this.label16.Text = "Montant du crédit";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(72, 349);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(106, 20);
+            this.label15.Size = new System.Drawing.Size(114, 22);
             this.label15.TabIndex = 27;
             this.label15.Text = "Poste occupé";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(72, 270);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(131, 20);
+            this.label14.Size = new System.Drawing.Size(145, 22);
             this.label14.TabIndex = 26;
             this.label14.Text = "Employeur actuel";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(591, 270);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(173, 20);
+            this.label9.Size = new System.Drawing.Size(192, 22);
             this.label9.TabIndex = 25;
             this.label9.Text = "Adresse de l\'employeur";
             // 
@@ -264,9 +265,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(591, 152);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 20);
+            this.label8.Size = new System.Drawing.Size(71, 22);
             this.label8.TabIndex = 24;
             this.label8.Text = "Adresse";
             // 
@@ -281,9 +283,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(72, 152);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 20);
+            this.label7.Size = new System.Drawing.Size(92, 22);
             this.label7.TabIndex = 23;
             this.label7.Text = "Téléphone";
             // 
@@ -298,18 +301,20 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(591, 73);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 20);
+            this.label6.Size = new System.Drawing.Size(70, 22);
             this.label6.TabIndex = 22;
             this.label6.Text = "Prenom";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(72, 73);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 20);
+            this.label4.Size = new System.Drawing.Size(47, 22);
             this.label4.TabIndex = 21;
             this.label4.Text = "Nom";
             // 
@@ -464,7 +469,6 @@
         private System.Windows.Forms.RichTextBox txtMontantCredit;
         private System.Windows.Forms.RichTextBox txtPosteOccupe;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RichTextBox txtEmployeur;

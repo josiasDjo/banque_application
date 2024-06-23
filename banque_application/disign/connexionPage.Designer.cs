@@ -78,11 +78,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::banque_application.Properties.Resources.Growth_Logo_Template1;
-            this.pictureBox1.Location = new System.Drawing.Point(178, 18);
+            this.pictureBox1.Image = global::banque_application.Properties.Resources.logo_bank_no_bg;
+            this.pictureBox1.Location = new System.Drawing.Point(162, 19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 114);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(147, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
             // 

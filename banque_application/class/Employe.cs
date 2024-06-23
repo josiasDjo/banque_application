@@ -18,6 +18,10 @@ namespace banque_application
         string contact;
         decimal salaire;
 
+        public Employe()
+        {
+        }
+
         public Employe(string id_employe, string nom, string postnom, string prenom, string grade, string dateEmbauche, string contact, decimal salaire)
         {
             this.Id_employe = id_employe;
