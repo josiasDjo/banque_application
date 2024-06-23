@@ -256,11 +256,13 @@ namespace banque_application.disign
             // 
             this.txtPoste.FormattingEnabled = true;
             this.txtPoste.Items.AddRange(new object[] {
-            "Directeur Général",
-            "Directeur du personnel",
-            "Directeur des ressources humaines",
+            "Directeur de Banque",
+            "Directeur Adjoint",
+            "Conseiller Financier",
+            "Responsable des Ressources Humaines",
             "Guichetier",
-            "Database Manager"});
+            "Caissier",
+            "Technicien Informatique"});
             this.txtPoste.Location = new System.Drawing.Point(206, 460);
             this.txtPoste.Name = "txtPoste";
             this.txtPoste.Size = new System.Drawing.Size(774, 28);
