@@ -33,7 +33,7 @@ namespace banque_application.disign
 
         private void button2_Click(object sender, EventArgs e)
         {
-            service_personnel servicePerso = new service_personnel();
+            service_personnel_ servicePerso = new service_personnel_();
 
             pageAccueilContenu.Controls.Clear();
             pageAccueilContenu.Controls.Add(servicePerso);

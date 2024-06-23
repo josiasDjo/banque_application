@@ -530,9 +530,9 @@ namespace banque_application.disign
                 //============================ajout d'un employe==============
         public void EnregistrerEmploye()
         {
-            service_personnel srv = new service_personnel();
+            service_personnel_ srv = new service_personnel_();
             //Employe em = new Employe(id_employe, nom, postnom, prenom, grade, dateEmbauche, contact, salaire);
-            service_personnel cont = new service_personnel();
+            service_personnel_ cont = new service_personnel_();
 
             MessageBox.Show("Backend activer" );
 
@@ -584,7 +584,7 @@ namespace banque_application.disign
 
         // =========Modification de l'employe ====================
 
-        public void ModifierEmploye(Employe em)
+        public void ModifierEmploye()
         {
             try
             {

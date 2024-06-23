@@ -1,0 +1,1 @@
+D:\vs 2015 project\banque_application\banque_application\obj\Release\banque_application.csproj.AssemblyReference.cache

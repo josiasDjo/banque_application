@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace banque_application.disign
 {
-    public partial class service_personnel
+    public partial class service_personnel_
     {
        public void check()
        {

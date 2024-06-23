@@ -52,10 +52,10 @@ namespace banque_application.disign
             this.txtdateNaissance = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSalaire = new System.Windows.Forms.RichTextBox();
-            this.btnValider = new System.Windows.Forms.Button();
             this.txtPoste = new System.Windows.Forms.ComboBox();
             this.recherche = new System.Windows.Forms.TextBox();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnModifier = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnValiderCredit
@@ -240,19 +240,6 @@ namespace banque_application.disign
             this.txtSalaire.TabIndex = 84;
             this.txtSalaire.Text = "";
             // 
-            // btnValider
-            // 
-            this.btnValider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnValider.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValider.ForeColor = System.Drawing.Color.White;
-            this.btnValider.Location = new System.Drawing.Point(1032, 303);
-            this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(263, 47);
-            this.btnValider.TabIndex = 147;
-            this.btnValider.Text = "Modifier";
-            this.btnValider.UseVisualStyleBackColor = false;
-            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
-            // 
             // txtPoste
             // 
             this.txtPoste.FormattingEnabled = true;
@@ -286,13 +273,26 @@ namespace banque_application.disign
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
+            // btnModifier
+            // 
+            this.btnModifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnModifier.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifier.ForeColor = System.Drawing.Color.White;
+            this.btnModifier.Location = new System.Drawing.Point(1032, 275);
+            this.btnModifier.Name = "btnModifier";
+            this.btnModifier.Size = new System.Drawing.Size(263, 47);
+            this.btnModifier.TabIndex = 150;
+            this.btnModifier.Text = "Modifier";
+            this.btnModifier.UseVisualStyleBackColor = false;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
+            // 
             // service_personnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.recherche);
             this.Controls.Add(this.txtPoste);
-            this.Controls.Add(this.btnValider);
             this.Controls.Add(this.txtdateNaissance);
             this.Controls.Add(this.txtdateEmbauche);
             this.Controls.Add(this.btnValiderCredit);
@@ -341,9 +341,9 @@ namespace banque_application.disign
         private System.Windows.Forms.DateTimePicker txtdateNaissance;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox txtSalaire;
-        private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.ComboBox txtPoste;
         private System.Windows.Forms.TextBox recherche;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.Button btnModifier;
     }
 }

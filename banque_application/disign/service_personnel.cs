@@ -25,26 +25,31 @@ namespace banque_application.disign
         private string date_embaucheB;
         private string contactB;
         private decimal salaireB;
-        public service_personnel()
-        {
-            InitializeComponent();           
-        }
+        //public service_personnel() { 
+        //    InitializeComponent(); 
+        //}
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
         {
-            if (txtNomEm.Text == "" || txtPostNomEm.Text == "" || txtPrenomEm.Text == "" || txtPhoneEm.Text == "" || txtSalaire.Text == "" ||
-                txtdateEmbauche.Value == null || txtPoste.Text == "" || txtAdresse.Text == "")
+            if(txtNomEm.Text == "" ||
+                txtPostNomEm.Text == "" ||
+                txtPrenomEm.Text == "" ||
+                txtPhoneEm.Text == "" ||
+                txtSalaire.Text == "" ||
+                txtdateEmbauche.Value == null ||
+                txtPoste.Text == "" ||
+                txtAdresse.Text == "")
             {
                 MessageBox.Show("Veillez renseigner tout les champs");
-            }
-            else
+            } else
             {
                 sendData();
-            }          
+            }
         }
+
         private void RemovePlaceholder(object sender, EventArgs e)
         {
-            if (recherche.ForeColor == Color.Gray)
+            if(recherche.ForeColor == Color.Gray)
             {
                 recherche.Text = "";
                 recherche.ForeColor = Color.Black;
@@ -53,12 +58,13 @@ namespace banque_application.disign
 
         private void SetPlaceholder(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(recherche.Text))
+            if(string.IsNullOrWhiteSpace(recherche.Text))
             {
                 recherche.ForeColor = Color.Gray;
                 recherche.Text = "Recherher ici...";
             }
         }
+
         public void sendData()
         {
             string prenom = txtPrenomEm.Text;
@@ -72,35 +78,28 @@ namespace banque_application.disign
             //contenneur srv = new contenneur();
             string posteID = "";
 
-            if (poste == "Directeur de Banque")
+            if(poste == "Directeur de Banque")
             {
                 posteID = "DB";
-            }
-            else if (poste == "Directeur Adjoint")
+            } else if(poste == "Directeur Adjoint")
             {
                 posteID = "DA";
-            }
-            else if (poste == "Caissier")
+            } else if(poste == "Caissier")
             {
                 posteID = "CA";
-            }
-            else if (poste == "Conseiller Financier")
+            } else if(poste == "Conseiller Financier")
             {
                 posteID = "CF";
-            }
-            else if (poste == "Responsable des Ressources Humaines")
+            } else if(poste == "Responsable des Ressources Humaines")
             {
                 posteID = "RRH";
-            }
-            else if (poste == "Guichetier")
+            } else if(poste == "Guichetier")
             {
                 posteID = "DG";
-            }
-            else if (poste == "Technicien Informatique")
+            } else if(poste == "Technicien Informatique")
             {
                 posteID = "IT";
-            }
-            else
+            } else
             {
                 MessageBox.Show("Entrez un poste correct !");
             }
@@ -115,17 +114,7 @@ namespace banque_application.disign
             contactB = txtPhoneEm.Text;
             salaireB = decimal.Parse(txtSalaire.Text);
 
-            //Employe em = new Employe(id_employeB, nomB, postnomB, prenomB, gradeB, date_embaucheB, contactB, salaireB);
-
-            //em.Id_employe = id_employeB;
-            //em.Nom = nomB;
-            //em.Postnom = postnomB;
-            //em.Prenom = prenomB;
-            //em.Grade = gradeB;
-            //em.Date_embauche = date_embaucheB;
-            //em.Contact = contactB;
-            //em.Salaire = salaireB;
-
+            //effacer les tout input
             txtNomEm.Text = "";
             txtPostNomEm.Text = "";
             txtPrenomEm.Text = "";
@@ -137,9 +126,22 @@ namespace banque_application.disign
             EnregistrerEmploye();
         }
 
-        private void btnValider_Click(object sender, EventArgs e)
+        private void btnModifier_Click(object sender, EventArgs e)
         {
+            nomB = txtNomEm.Text;
+            postnomB = txtPostNomEm.Text;
+            prenomB = txtPrenomEm.Text;
+            contactB = txtPhoneEm.Text;
+            salaireB = decimal.Parse(txtSalaire.Text);
 
+            txtNomEm.Text = "";
+            txtPostNomEm.Text = "";
+            txtPrenomEm.Text = "";
+            txtPoste.Text = "";
+            txtPhoneEm.Text = "";
+            txtSalaire.Text = "";
+            txtAdresse.Text = "";
+            ModifierEmploye();
         }
     }
 }
