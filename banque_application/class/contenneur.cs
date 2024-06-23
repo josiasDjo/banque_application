@@ -12,9 +12,9 @@ using banque_application;
 using System.Windows;
 using MessageBox = System.Windows.Forms.MessageBox;
 
-namespace banque_application.classes
+namespace banque_application.disign
 {
-    public partial class contenneur
+    partial class service_personnel
     {
         //contenneur con = null;
         //contenneur cmd = null;
@@ -22,12 +22,12 @@ namespace banque_application.classes
         //contenneur dr = null;
         //DataSet ds = null;
 
-        public static contenneur _instance = null;
+        public static service_personnel _instance = null;
         //connexionDb conndb = new connexionDb();
-        public static contenneur GetInstance()
+        public static service_personnel GetInstance()
         {
             if (_instance == null)
-                _instance = new contenneur();
+                _instance = new service_personnel();
             return _instance;
         }
 
@@ -538,10 +538,7 @@ namespace banque_application.classes
 
             try
             {
-                //InnitialiseConnection();
-                //cont.connDb();
-                service_personnel srvp = new service_personnel();
-                srvp.sendData();
+                InnitialiseConnection();
                 Employe em = new Employe();
                 using (SqlConnection con = new SqlConnection(connexion))
                 {
@@ -557,14 +554,14 @@ namespace banque_application.classes
                     string req = "INSERT INTO tEmploye (id_employe,nom,postnom,prenom,grade,date_Embauche,contact,salaire) values (@i,@nom,@postnom,@prenom,@grade,@date,@contact,@salaire)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
                     {
-                        cmd.Parameters.AddWithValue("@i", em.Id_employe ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@nom", em.Nom ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@postnom", em.Postnom ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@prenom", em.Prenom ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@grade", em.Grade ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@date", em.Date_embauche ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@contact", em.Contact ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@salaire", em.Salaire != 0 ? em.Salaire : (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@i", id_employeB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@nom", nomB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@postnom", postnomB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@prenom", prenomB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@grade", gradeB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@date", date_embaucheB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@contact", contactB ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@salaire", salaireB);
                         cmd.ExecuteNonQuery();
                         con.Close();
                         MessageBox.Show("Enregistrement reussi");

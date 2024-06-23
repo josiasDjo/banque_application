@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace banque_application.classes
+namespace banque_application.disign
 {
-    partial class contenneur
+    partial class service_personnel
     {
         public SqlConnection reqSql;
         public string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";

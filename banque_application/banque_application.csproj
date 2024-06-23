@@ -70,11 +70,18 @@
   <ItemGroup>
     <Compile Include="class\Agence.cs" />
     <Compile Include="class\Carte.cs" />
+    <Compile Include="class\Cback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="class\Client.cs" />
     <Compile Include="class\compte.cs" />
     <Compile Include="class\compteAgence.cs" />
-    <Compile Include="class\connexionDb.cs" />
-    <Compile Include="class\contenneur.cs" />
+    <Compile Include="class\connexionDb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="class\contenneur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="class\Employe.cs" />
     <Compile Include="class\PayementPret.cs" />
     <Compile Include="class\Pret.cs" />
@@ -136,11 +143,11 @@
     <Compile Include="disign\retrait.Designer.cs">
       <DependentUpon>retrait.cs</DependentUpon>
     </Compile>
-    <Compile Include="disign\service_personnel.cs">
+    <Compile Include="disign\Service_personnel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="disign\service_personnel.Designer.cs">
-      <DependentUpon>service_personnel.cs</DependentUpon>
+    <Compile Include="disign\Service_personnel.Designer.cs">
+      <DependentUpon>Service_personnel.cs</DependentUpon>
     </Compile>
     <Compile Include="disign\transferer.cs">
       <SubType>UserControl</SubType>
@@ -186,8 +193,8 @@
     <EmbeddedResource Include="disign\retrait.resx">
       <DependentUpon>retrait.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="disign\service_personnel.resx">
-      <DependentUpon>service_personnel.cs</DependentUpon>
+    <EmbeddedResource Include="disign\Service_personnel.resx">
+      <DependentUpon>Service_personnel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="disign\transferer.resx">
       <DependentUpon>transferer.cs</DependentUpon>
