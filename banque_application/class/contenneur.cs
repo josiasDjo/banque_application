@@ -684,40 +684,39 @@ namespace banque_application.disign
 
 
 
-        //        //============================ajout d'un pret=====================
-        //        public void EnregistrerPret(Pret p)
-        //        {
-        //            try
-        //            {
-        //                InnitialiseConnection();
-        //                //con.Open();
-        //                using (SqlConnection con = new SqlConnection(conndb.connexion))
-        //                {
-        //                    string req = "INSERT INTO tPret (id_pret,date_debut,date_fin,taux_interet,montan_total,montant_restant)  values (@i,@debut,@fin,@taux,@tmontant,@reste)";
-        //                    using (SqlCommand cmd = new SqlCommand(req, con))
-        //                    {
-        //                        cmd.Parameters.AddWithValue("@i", p.Id_pret);
-        //                        cmd.Parameters.AddWithValue("@debut", p.Date_debut);
-        //                        cmd.Parameters.AddWithValue("@fin", p.Date_fin);
-        //                        cmd.Parameters.AddWithValue("@taux", p.Taux_interet);
-        //                        cmd.Parameters.AddWithValue("@tmontant", p.Montant_total);
-        //                        cmd.Parameters.AddWithValue("@reste", p.Montant_restant);
-        //                        cmd.ExecuteNonQuery();
-        //                        con.Close();
-        //                        MessageBox.Show("Enregistrement reussi");
-        //                    }
-        //                }
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                MessageBox.Show(ex.Message);
-        //            }
-        //            finally
-        //            {
-        //                conndb.reqSql.Close();
-        //                conndb.reqSql.Dispose();
-        //            }
-        //        }
+        //============================ajout d'un pret=====================
+        public void EnregistrerPret()
+        {
+            try
+            {
+                InnitialiseConnection();
+                Pret p = new Pret();
+                using (SqlConnection con = new SqlConnection(connexion))
+                {
+                    string req = "INSERT INTO tPret (id_pret,date_debut,date_fin,taux_interet,montan_total,montant_restat)  values (@i,@debut,@fin,@taux,@tmontant,@reste)";
+                    using (SqlCommand cmd = new SqlCommand(req, con))
+                    {
+                        cmd.Parameters.AddWithValue("@i", p.Id_pret);
+                        cmd.Parameters.AddWithValue("@debut", p.Date_debut);
+                        cmd.Parameters.AddWithValue("@fin", p.Date_fin);
+                        cmd.Parameters.AddWithValue("@taux", p.Taux_interet);
+                        cmd.Parameters.AddWithValue("@tmontant", p.Montant_total);
+                        cmd.Parameters.AddWithValue("@reste", p.Montant_restant);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        MessageBox.Show("Enregistrement reussi");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                
+            }
+        }
 
         //        // =========Modification du Pret ====================
 

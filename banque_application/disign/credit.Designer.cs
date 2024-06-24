@@ -30,7 +30,6 @@
         {
             this.btnValiderCredit = new System.Windows.Forms.Button();
             this.txtDevise = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1_payement = new System.Windows.Forms.DateTimePicker();
             this.txtObjetCredit = new System.Windows.Forms.RichTextBox();
             this.txtRevenuMe = new System.Windows.Forms.RichTextBox();
             this.txtAdresseEmployeur = new System.Windows.Forms.RichTextBox();
@@ -63,6 +62,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.txtDuree = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -93,13 +93,6 @@
             this.txtDevise.Name = "txtDevise";
             this.txtDevise.Size = new System.Drawing.Size(397, 28);
             this.txtDevise.TabIndex = 46;
-            // 
-            // dateTimePicker1_payement
-            // 
-            this.dateTimePicker1_payement.Location = new System.Drawing.Point(76, 576);
-            this.dateTimePicker1_payement.Name = "dateTimePicker1_payement";
-            this.dateTimePicker1_payement.Size = new System.Drawing.Size(388, 26);
-            this.dateTimePicker1_payement.TabIndex = 45;
             // 
             // txtObjetCredit
             // 
@@ -189,11 +182,12 @@
             // 
             // txtAdresse
             // 
-            this.txtAdresse.Location = new System.Drawing.Point(595, 175);
+            this.txtAdresse.Location = new System.Drawing.Point(76, 179);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(396, 40);
             this.txtAdresse.TabIndex = 37;
             this.txtAdresse.Text = "";
+            this.txtAdresse.TextChanged += new System.EventHandler(this.txtAdresse_TextChanged);
             // 
             // label18
             // 
@@ -211,9 +205,9 @@
             this.label17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(72, 553);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(154, 22);
+            this.label17.Size = new System.Drawing.Size(56, 22);
             this.label17.TabIndex = 29;
-            this.label17.Text = "Date de payement";
+            this.label17.Text = "Durée";
             // 
             // label16
             // 
@@ -257,7 +251,7 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(76, 175);
+            this.txtPhone.Location = new System.Drawing.Point(595, 179);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(396, 40);
             this.txtPhone.TabIndex = 42;
@@ -267,7 +261,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(591, 152);
+            this.label8.Location = new System.Drawing.Point(72, 156);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 22);
             this.label8.TabIndex = 24;
@@ -285,7 +279,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(72, 152);
+            this.label7.Location = new System.Drawing.Point(591, 156);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 22);
             this.label7.TabIndex = 23;
@@ -401,6 +395,14 @@
             this.pictureBox3.TabIndex = 51;
             this.pictureBox3.TabStop = false;
             // 
+            // txtDuree
+            // 
+            this.txtDuree.Location = new System.Drawing.Point(76, 578);
+            this.txtDuree.Name = "txtDuree";
+            this.txtDuree.Size = new System.Drawing.Size(396, 40);
+            this.txtDuree.TabIndex = 35;
+            this.txtDuree.Text = "";
+            // 
             // credit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -412,11 +414,11 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtDevise);
-            this.Controls.Add(this.dateTimePicker1_payement);
             this.Controls.Add(this.txtObjetCredit);
             this.Controls.Add(this.txtRevenuMe);
             this.Controls.Add(this.txtAdresseEmployeur);
             this.Controls.Add(this.txtNumCompte);
+            this.Controls.Add(this.txtDuree);
             this.Controls.Add(this.txtMontantCredit);
             this.Controls.Add(this.txtPosteOccupe);
             this.Controls.Add(this.label10);
@@ -461,7 +463,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ComboBox txtDevise;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1_payement;
         private System.Windows.Forms.RichTextBox txtObjetCredit;
         private System.Windows.Forms.RichTextBox txtRevenuMe;
         private System.Windows.Forms.RichTextBox txtAdresseEmployeur;
@@ -489,5 +490,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RichTextBox txtDuree;
     }
 }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\vs 2015 project\\banque_application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\transferer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\transferer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\comptabilit\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\transferer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\transferer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\comptabilit\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\class\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\class\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\retrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\retrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\retrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,26 +39,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "transferer.cs",
-              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\transferer.cs",
-              "RelativeDocumentMoniker": "banque_application\\disign\\transferer.cs",
-              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\transferer.cs",
-              "RelativeToolTip": "banque_application\\disign\\transferer.cs",
-              "ViewState": "AQIAAFgAAAAAxMzMzMwkwGQAAAAfAAAA",
+              "Title": "comptabilit\u00E9.cs",
+              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs",
+              "RelativeDocumentMoniker": "banque_application\\disign\\comptabilit\u00E9.cs",
+              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs",
+              "RelativeToolTip": "banque_application\\disign\\comptabilit\u00E9.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T20:36:17.168Z",
+              "WhenOpened": "2024-06-24T22:44:36.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "transferer.cs [Design]",
-              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\transferer.cs",
-              "RelativeDocumentMoniker": "banque_application\\disign\\transferer.cs",
-              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\transferer.cs [Design]",
-              "RelativeToolTip": "banque_application\\disign\\transferer.cs [Design]",
+              "Title": "comptabilit\u00E9.cs [Design]",
+              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs",
+              "RelativeDocumentMoniker": "banque_application\\disign\\comptabilit\u00E9.cs",
+              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs [Design]",
+              "RelativeToolTip": "banque_application\\disign\\comptabilit\u00E9.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T20:36:11.709Z",
+              "WhenOpened": "2024-06-24T22:41:40.233Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -73,7 +69,7 @@
               "RelativeDocumentMoniker": "banque_application\\disign\\retrait.cs",
               "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\retrait.cs",
               "RelativeToolTip": "banque_application\\disign\\retrait.cs",
-              "ViewState": "AQIAAIYAAAAAAAAAAAAAAI0AAAAAAAAA",
+              "ViewState": "AQIAAK4AAAAgMzMzMzMjwLoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T20:11:17.898Z",
               "EditorCaption": ""
@@ -93,25 +89,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "transaction.cs",
-              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\transaction.cs",
-              "RelativeDocumentMoniker": "banque_application\\class\\transaction.cs",
-              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\transaction.cs",
-              "RelativeToolTip": "banque_application\\class\\transaction.cs",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAAAKQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T18:26:22.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "contenneur.cs",
               "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs",
               "RelativeDocumentMoniker": "banque_application\\class\\contenneur.cs",
               "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs",
               "RelativeToolTip": "banque_application\\class\\contenneur.cs",
-              "ViewState": "AQIAAAYDAAAAjJmZmZklwBcDAAAoAAAA",
+              "ViewState": "AQIAALICAAAAaGZmZmYuwLgCAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T08:49:25.068Z",
               "EditorCaption": ""

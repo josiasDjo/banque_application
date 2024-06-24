@@ -35,20 +35,20 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txtRevenuTotal = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtSoldeTotal = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dateToDay = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,10 +56,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransaction)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,18 +71,19 @@
             this.dataGridViewTransaction.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewTransaction.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewTransaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTransaction.Location = new System.Drawing.Point(49, 510);
+            this.dataGridViewTransaction.Location = new System.Drawing.Point(49, 526);
             this.dataGridViewTransaction.Name = "dataGridViewTransaction";
+            this.dataGridViewTransaction.RowHeadersWidth = 62;
             this.dataGridViewTransaction.RowTemplate.Height = 28;
-            this.dataGridViewTransaction.Size = new System.Drawing.Size(933, 242);
+            this.dataGridViewTransaction.Size = new System.Drawing.Size(933, 254);
             this.dataGridViewTransaction.TabIndex = 15;
             // 
             // statistiquePanel
             // 
             this.statistiquePanel.BackColor = System.Drawing.Color.White;
-            this.statistiquePanel.Location = new System.Drawing.Point(49, 293);
+            this.statistiquePanel.Location = new System.Drawing.Point(49, 287);
             this.statistiquePanel.Name = "statistiquePanel";
-            this.statistiquePanel.Size = new System.Drawing.Size(453, 163);
+            this.statistiquePanel.Size = new System.Drawing.Size(453, 184);
             this.statistiquePanel.TabIndex = 14;
             // 
             // txtDepenseTotal
@@ -145,6 +146,17 @@
             this.panel4.Size = new System.Drawing.Size(192, 98);
             this.panel4.TabIndex = 11;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Image = global::banque_application.Properties.Resources.Cost_Reduction__Decrease_Dollar_Icon__Vector_Symbol_Image_Isolated_on_Background_Stock_Vector___Illustration_of_deduction__instagram__136052881;
+            this.pictureBox4.Location = new System.Drawing.Point(7, 7);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(40, 34);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            // 
             // txtRevenuTotal
             // 
             this.txtRevenuTotal.AutoSize = true;
@@ -181,6 +193,17 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "$";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = global::banque_application.Properties.Resources.Financial_Profit_free_icons_designed_by_Smashicons;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 7);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 34);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -207,7 +230,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(44, 256);
+            this.label14.Location = new System.Drawing.Point(44, 260);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(132, 24);
             this.label14.TabIndex = 7;
@@ -239,21 +262,31 @@
             this.panel2.Size = new System.Drawing.Size(192, 98);
             this.panel2.TabIndex = 13;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::banque_application.Properties.Resources.Sales_free_vector_icons_designed_by_Freepik;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // dateToDay
             // 
             this.dateToDay.AutoSize = true;
             this.dateToDay.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateToDay.Location = new System.Drawing.Point(45, 87);
             this.dateToDay.Name = "dateToDay";
-            this.dateToDay.Size = new System.Drawing.Size(51, 19);
+            this.dateToDay.Size = new System.Drawing.Size(0, 19);
             this.dateToDay.TabIndex = 10;
-            this.dateToDay.Text = "label6";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(45, 472);
+            this.label15.Location = new System.Drawing.Point(45, 487);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(259, 24);
             this.label15.TabIndex = 8;
@@ -268,39 +301,6 @@
             this.label5.Size = new System.Drawing.Size(224, 29);
             this.label5.TabIndex = 9;
             this.label5.Text = "RAPPORT MENSUEL";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Image = global::banque_application.Properties.Resources.Cost_Reduction__Decrease_Dollar_Icon__Vector_Symbol_Image_Isolated_on_Background_Stock_Vector___Illustration_of_deduction__instagram__136052881;
-            this.pictureBox4.Location = new System.Drawing.Point(7, 7);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 34);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::banque_application.Properties.Resources.Financial_Profit_free_icons_designed_by_Smashicons;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 7);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 34);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::banque_application.Properties.Resources.Sales_free_vector_icons_designed_by_Freepik;
-            this.pictureBox2.Location = new System.Drawing.Point(7, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 34);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
             // 
             // panel1
             // 
@@ -381,12 +381,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransaction)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -12,9 +12,19 @@ namespace banque_application.disign
 {
     public partial class comptabilte : UserControl
     {
+        private string soldeTotal;
+        private string revenuTotal;
+        private string detteTotal;
+        private string clientTotal;
         public comptabilte()
         {
             InitializeComponent();
+            show();
+        }
+        private void show()
+        {
+            DateTime currentDate = DateTime.Now;
+            dateToDay.Text = currentDate.ToString("dd/MM/yyyy");
         }
     }
 }
