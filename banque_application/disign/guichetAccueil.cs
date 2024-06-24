@@ -18,20 +18,24 @@ namespace banque_application.disign
 
         int numeroBanque = 1560;
         int numIDcarte = 4000;
-        public string numCompte;
-        public string nom;
-        public string postnom;
-        public string prenom;
-        public string adresse;
-        public string contact;
-        public string email;
-        public string dateNaissance;
-        public string typeCompte;
-        public decimal solde;
-        public string numeroCarte;
-        public string devise;
-        public string typeCarte;
-        public string codeSecurite;
+        public string Id_client;
+        public string NumCompte;
+        public string Nom;
+        public string Postnom;
+        public string Prenom;
+        public string Adresse;
+        public string Contact;
+        public string Email;
+        public string DateNaissance;
+        public string TypeCompte;
+        public decimal Solde;
+        public string NumeroCarte;
+        public string Devise;
+        public string TypeCarte;
+        public string CodeSecurite;
+        public string Photo;
+        public string Id_carte;
+        public string Date_expiration;
         public guichetAccueil()
         {
             InitializeComponent();
@@ -58,31 +62,27 @@ namespace banque_application.disign
 
             Client cls = new Client();
 
-            nom = txtNom.Text;
-            postnom = txtPostNom.Text;
-            prenom = txtPrenom.Text;
-            adresse = txtAdresse.Text;
-            contact = txtPhone.Text;
-            email = txtEmail.Text;
-            dateNaissance = (dateNaissanceCli.Value).ToString("ddMMyyyy");
-            typeCompte = txtTypeCompte.Text;
-            //solde = decimal.Parse(txtSolde.Text);
-            //numeroCarte = int.Parse(txtNumCarte.Text);
-            devise = txtDevise.Text;
-            typeCarte = txtTypeCarte.Text;
-            codeSecurite = txtPassword.Text;
+            Nom = txtNom.Text;
+            Postnom = txtPostNom.Text;
+            Prenom = txtPrenom.Text;
+            Adresse = txtAdresse.Text;
+            Contact = txtPhone.Text;
+            Email = txtEmail.Text;
+            DateNaissance = (dateNaissanceCli.Value).ToString("ddMMyyyy");
+            TypeCompte = txtTypeCompte.Text;
+            Solde = decimal.Parse(txtSolde.Text);
+            NumeroCarte = txtNumCarte.Text;
+            Devise = txtDevise.Text;
+            TypeCarte = txtTypeCarte.Text;
+            CodeSecurite = txtPassword.Text;
+            Photo = "";
 
-            cls.Id_client = prenomTestId + "_" + annee + num;
-            cls.Nom = nom;
-            cls.Postnom = postnom;
-            cls.Prenom = prenom;
-            cls.Adresse = adresse;
-            cls.Phone = contact;
-            cls.Datenaissance = dateNaissance;
+            Id_client = prenomTestId + "_" + annee + num;
 
             MessageBox.Show("Classe : " + cls.Id_client + cls.Nom + cls.Postnom);
 
-            srv.EnregistrerClient();
+            EnregistrerClient();
+            EnregistrerCarte();
         }
 
         private void numCarteProduct()
@@ -92,21 +92,29 @@ namespace banque_application.disign
             int minValue = (int)Math.Pow(10, length - 1);
             int maxValue = (int)Math.Pow(10, length) - 1;
 
+            DateTime currentD = DateTime.Now;
+            int currentDate = currentD.Year;
+            int currentMonth = currentD.Month;
+
             string num1 = (numIDcarte).ToString();
             string num2 = (random.Next(minValue, maxValue + 1)).ToString();
             string num3 = (random.Next(minValue, maxValue + 1)).ToString();
             string num4 = (random.Next(minValue, maxValue + 1)).ToString();
 
 
-            numeroCarte = num1 + "  " + num2 + "  " + num3 + "  " + num4;
+            NumeroCarte = num1 + "  " + num2 + "  " + num3 + "  " + num4;
 
             string numCompteDB1 = (numeroBanque).ToString();
             string numCompteDB2 = (random.Next(minValue, maxValue + 1)).ToString();
             string numCompteDB3 = (random.Next(minValue, maxValue + 1)).ToString();
             string numCompteDB4 = (random.Next(minValue, maxValue + 1)).ToString();
 
-            numCompte = numCompteDB1 + numCompteDB2  + numCompteDB3  + numCompteDB4;
+            NumCompte = numCompteDB1 + numCompteDB2  + numCompteDB3  + numCompteDB4;
 
+            Id_carte = Prenom + "_" + numCompteDB2 + numCompteDB1;
+            string anneeExpi = (currentDate + 5).ToString();
+            string moisExpi = (currentMonth).ToString();
+            Date_expiration = moisExpi + "/" +  anneeExpi;
             checkCompteInfo();
         }
 
@@ -124,7 +132,7 @@ namespace banque_application.disign
 
                 using (SqlCommand cmd1 = new SqlCommand(req1, connection))
                 {
-                    cmd1.Parameters.AddWithValue("@num_compte", numCompte);
+                    cmd1.Parameters.AddWithValue("@num_compte", NumCompte);
 
                     using (SqlDataReader rd = cmd1.ExecuteReader())
                     {
@@ -136,14 +144,14 @@ namespace banque_application.disign
                             }
                         } else
                         {
-                            txtNumeroCompte.Text = numCompte;
+                            txtNumeroCompte.Text = NumCompte;
                         }
                     }
                 }
 
                 using (SqlCommand cmd2 = new SqlCommand(req2, connection))
                 {
-                    cmd2.Parameters.AddWithValue("@num_carte", numCompte);
+                    cmd2.Parameters.AddWithValue("@num_carte", NumCompte);
 
                     using (SqlDataReader rd = cmd2.ExecuteReader())
                     {
@@ -157,7 +165,7 @@ namespace banque_application.disign
                         }
                         else
                         {
-                            txtNumCarte.Text = numeroCarte;
+                            txtNumCarte.Text = NumeroCarte;
                         }
                     }
                 }
