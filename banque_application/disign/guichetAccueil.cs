@@ -36,6 +36,7 @@ namespace banque_application.disign
         public string Photo;
         public string Id_carte;
         public string Date_expiration;
+        public string dateToDay;
         public guichetAccueil()
         {
             InitializeComponent();
@@ -68,7 +69,7 @@ namespace banque_application.disign
             Adresse = txtAdresse.Text;
             Contact = txtPhone.Text;
             Email = txtEmail.Text;
-            DateNaissance = (dateNaissanceCli.Value).ToString("ddMMyyyy");
+            DateNaissance = (dateNaissanceCli.Value).ToString("dd-MM-yyyy");
             TypeCompte = txtTypeCompte.Text;
             Solde = decimal.Parse(txtSolde.Text);
             NumeroCarte = txtNumCarte.Text;
@@ -82,7 +83,6 @@ namespace banque_application.disign
             MessageBox.Show("Classe : " + cls.Id_client + cls.Nom + cls.Postnom);
 
             EnregistrerClient();
-            EnregistrerCarte();
         }
 
         private void numCarteProduct()
@@ -111,10 +111,11 @@ namespace banque_application.disign
 
             NumCompte = numCompteDB1 + numCompteDB2  + numCompteDB3  + numCompteDB4;
 
-            Id_carte = Prenom + "_" + numCompteDB2 + numCompteDB1;
+            Id_carte = txtPrenom.Text + "_" + numCompteDB2 + numCompteDB1;
             string anneeExpi = (currentDate + 5).ToString();
             string moisExpi = (currentMonth).ToString();
             Date_expiration = moisExpi + "/" +  anneeExpi;
+            dateToDay = (currentD).ToString("dd-MM-yyyy");
             checkCompteInfo();
         }
 

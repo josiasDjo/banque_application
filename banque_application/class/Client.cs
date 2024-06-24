@@ -169,6 +169,7 @@ namespace banque_application.disign
             {
                 sp.CloseConnection();
             }
+            EnregistrerCarte();
         }
 
         //===============ajout d'une carte==================
@@ -200,6 +201,42 @@ namespace banque_application.disign
             {
                 sp.CloseConnection();
             }
+            EnregistrerCompte();
         }
+
+        //===============ajout d'un compte==================
+        public void EnregistrerCompte()
+        {
+            try
+            {
+                sp.OpenConnection();
+                SqlConnection connection = sp.GetConnection();
+
+                    string req = "INSERT INTO tCompte (id_compte,num_compte,type_compte,solde_compte,date_ouverture,code_securite,id_Client,id_Carte) values (@i,@num,@type,@solde,@date,@sec,@idCli,@idCarte)";
+                    using (SqlCommand cmd = new SqlCommand(req, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@i", Id_carte);
+                        cmd.Parameters.AddWithValue("@num", NumCompte);
+                        cmd.Parameters.AddWithValue("@type", TypeCompte);
+                        cmd.Parameters.AddWithValue("@solde", Solde);
+                        cmd.Parameters.AddWithValue("@date", dateToDay);
+                        cmd.Parameters.AddWithValue("@sec", CodeSecurite);
+                        cmd.Parameters.AddWithValue("@idCli", Id_client);
+                        cmd.Parameters.AddWithValue("@idCarte", Id_carte);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Enregistrement reussi");
+                    }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sp.CloseConnection();
+            }
+        }
+
+
     }
 }
