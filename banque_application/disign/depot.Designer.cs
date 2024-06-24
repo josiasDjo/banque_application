@@ -169,6 +169,7 @@
             this.txtAdresse.Size = new System.Drawing.Size(847, 40);
             this.txtAdresse.TabIndex = 37;
             this.txtAdresse.Text = "";
+            this.txtAdresse.TextChanged += new System.EventHandler(this.txtAdresse_TextChanged);
             // 
             // label18
             // 

@@ -758,40 +758,41 @@ namespace banque_application.disign
 
 
 
-        //        //============================ajout Transection==============
-        //        public void EnregistrerTrans(transaction tr)
-        //        {
-        //            try
-        //            {
-        //                InnitialiseConnection();
-        //                //con.Open();
-        //                using (SqlConnection con = new SqlConnection(conndb.connexion))
-        //                {
-        //                    string req = "INSERT INTO tTransaction (id_transaction,date_trasanction,montant,type_transaction,compte_source,compte_beneficiaire ) values (@i,@date,@montant,@type,@source,@ben)";
-        //                    using (SqlCommand cmd = new SqlCommand(req, con))
-        //                    {
-        //                        cmd.Parameters.AddWithValue("@i", tr.Id_trasenction);
-        //                        cmd.Parameters.AddWithValue("@date", tr.Date_transaction);
-        //                        cmd.Parameters.AddWithValue("@montant", tr.Montant);
-        //                        cmd.Parameters.AddWithValue("@type", tr.Type_trasenction);
-        //                        cmd.Parameters.AddWithValue("@source", tr.Compte_source);
-        //                        cmd.Parameters.AddWithValue("@ben", tr.Compte_beneficiaire);
-        //                        cmd.ExecuteNonQuery();
-        //                        con.Close();
-        //                        MessageBox.Show("Transaction  effectué avec succes");
-        //                    }
-        //                }
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                MessageBox.Show(ex.Message);
-        //            }
-        //            finally
-        //            {
-        //                conndb.reqSql.Close();
-        //                conndb.reqSql.Dispose();
-        //            }
-        //        }
+        //============================ajout Transection==============
+        public void EnregistrerTrans()
+        {
+            try
+            {
+                InnitialiseConnection();
+                //con.Open();
+                transaction tr = new transaction();
+                using (SqlConnection con = new SqlConnection(connexion))
+                {
+                    string req = "INSERT INTO tTransaction (id_transaction,date_trasanction,montant,type_transaction,compte_source,compte_beneficiaire ) values (@i,@date,@montant,@type,@source,@ben)";
+                    using (SqlCommand cmd = new SqlCommand(req, con))
+                    {
+                        cmd.Parameters.AddWithValue("@i", tr.Id_trasenction);
+                        cmd.Parameters.AddWithValue("@date", tr.Date_transaction);
+                        cmd.Parameters.AddWithValue("@montant", tr.Montant);
+                        cmd.Parameters.AddWithValue("@type", tr.Type_trasenction);
+                        cmd.Parameters.AddWithValue("@source", tr.Compte_source);
+                        cmd.Parameters.AddWithValue("@ben", tr.Compte_beneficiaire);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        MessageBox.Show("Transaction  effectué avec succes");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                //conndb.reqSql.Close();
+                //conndb.reqSql.Dispose();
+            }
+        }
 
         //        // =========Modification Transaction ====================
 

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace banque_application.classes
 {
@@ -118,6 +120,47 @@ namespace banque_application.classes
             set
             {
                 compte_source = value;
+            }
+        }
+    }
+}
+
+namespace banque_application.disign
+{
+    public partial class depot
+    {
+        //============================ajout Transection==============
+        public void EnregistrerTrans()
+        {
+            service_personnel sp = new service_personnel();
+            try
+            {
+                sp.OpenConnection();
+                using (SqlConnection con = sp.GetConnection())
+                {
+                    string req = "INSERT INTO tTransaction (id_transaction,date_transaction,montant,type_transanction,compte_source,compte_beneficiaire,id_compte) values (@i,@date,@montant,@type,@source,@ben,@id_compte)";
+                    using (SqlCommand cmd = new SqlCommand(req, con))
+                    {
+                        cmd.Parameters.AddWithValue("@i", Id_trasenction);
+                        cmd.Parameters.AddWithValue("@date", dateTransaction);
+                        cmd.Parameters.AddWithValue("@montant", solde);
+                        cmd.Parameters.AddWithValue("@type", typeTransaction);
+                        cmd.Parameters.AddWithValue("@source", Compte_source);
+                        cmd.Parameters.AddWithValue("@ben", Compte_beneficiaire);
+                        cmd.Parameters.AddWithValue("@id_compte", id_compte);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        MessageBox.Show("Transaction  effectué avec succes");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("La transaction a échouée " + ex.Message);
+            }
+            finally
+            {
+                sp.CloseConnection();
             }
         }
     }
