@@ -249,7 +249,6 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::banque_application.Properties.Resources.Download_premium_psd___image_of_Investment_finance_line_icon_psd_by_Aew_about_dollar_sign_money__home__receitas_finance__finance__and_coin_2891000;
             this.pictureBox10.Location = new System.Drawing.Point(32, 497);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(49, 49);
@@ -269,7 +268,6 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::banque_application.Properties.Resources.Dollar_Signs_Money_Clipart_PNG_Images__Money_Icon_Isolated_Dollar_Cash_Illustration__Money_Icons__Dollar_Icons__Cash_Icons_PNG_Image_For_Free_Download;
             this.pictureBox9.Location = new System.Drawing.Point(32, 328);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(49, 49);

@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\vs 2015 project\\banque_application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\guichetaccueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\guichetaccueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|D:\\vs 2015 project\\banque_application\\banque_application\\disign\\depot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\depot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\class\\connexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\class\\connexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\guichetaccueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\guichetaccueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "guichetAccueil.cs",
+              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\guichetAccueil.cs",
+              "RelativeDocumentMoniker": "banque_application\\disign\\guichetAccueil.cs",
+              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\guichetAccueil.cs",
+              "RelativeToolTip": "banque_application\\disign\\guichetAccueil.cs",
+              "ViewState": "AQIAAJ0AAADgAAAAAAAiwHwAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T12:27:18.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "depot.cs",
+              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\depot.cs",
+              "RelativeDocumentMoniker": "banque_application\\disign\\depot.cs",
+              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\depot.cs",
+              "RelativeToolTip": "banque_application\\disign\\depot.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAiwFIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:56:39.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "contenneur.cs",
+              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs",
+              "RelativeDocumentMoniker": "banque_application\\class\\contenneur.cs",
+              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs",
+              "RelativeToolTip": "banque_application\\class\\contenneur.cs",
+              "ViewState": "AQIAALYAAAAAzszMzMwswMMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T08:49:25.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "connexionDb.cs",
+              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\connexionDb.cs",
+              "RelativeDocumentMoniker": "banque_application\\class\\connexionDb.cs",
+              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\connexionDb.cs",
+              "RelativeToolTip": "banque_application\\class\\connexionDb.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAiwCgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:35:17.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "guichetAccueil.cs [Design]",
+              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\guichetAccueil.cs",
+              "RelativeDocumentMoniker": "banque_application\\disign\\guichetAccueil.cs",
+              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\guichetAccueil.cs [Design]",
+              "RelativeToolTip": "banque_application\\disign\\guichetAccueil.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T11:50:40.57Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

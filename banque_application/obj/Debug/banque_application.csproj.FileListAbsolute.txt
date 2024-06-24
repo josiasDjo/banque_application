@@ -1,1 +1,84 @@
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.csproj.AssemblyReference.cache
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.accueil_page.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.comptabilte.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.connexionPage.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.credit.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.depot.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.guichetAccueil.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.pageAccueilPrinc.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.retrait.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.service_personnel.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.transferer.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.disign.tsAccu.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.Form1.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.Properties.Resources.resources
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.csproj.GenerateResource.cache
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.csproj.CoreCompileInputs.cache
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\banque_application.exe.config
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\banque_application.exe
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\banque_application.pdb
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Data.Desktop.v23.2.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Data.v23.2.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Drawing.v23.2.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Printing.v23.2.Core.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Sparkline.v23.2.Core.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Utils.v23.2.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.WinterJoySkin.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.XtraEditors.v23.2.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\System.Data.Common.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Core.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Drawing.dll
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Data.Desktop.v23.2.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Data.v23.2.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Drawing.v23.2.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Printing.v23.2.Core.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Sparkline.v23.2.Core.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Utils.v23.2.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.XtraEditors.v23.2.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Core.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Drawing.xml
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_a.DB5D458C.Up2Date
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.exe
+C:\Users\Djo Dev\OneDrive\Bureau\banque_application-main\banque_application-main\banque_application\obj\Debug\banque_application.pdb
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\banque_application.exe.config
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\banque_application.exe
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\banque_application.pdb
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Data.Desktop.v23.2.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Data.v23.2.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Drawing.v23.2.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Printing.v23.2.Core.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Sparkline.v23.2.Core.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Utils.v23.2.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.WinterJoySkin.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.XtraEditors.v23.2.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\System.Data.Common.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Core.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Drawing.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Data.Desktop.v23.2.xml
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Data.v23.2.xml
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Drawing.v23.2.xml
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Printing.v23.2.Core.xml
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Sparkline.v23.2.Core.xml
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Utils.v23.2.xml
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.XtraEditors.v23.2.xml
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Core.xml
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Drawing.xml
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.csproj.AssemblyReference.cache
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.accueil_page.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.comptabilte.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.connexionPage.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.credit.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.depot.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.guichetAccueil.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.pageAccueilPrinc.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.retrait.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.service_personnel.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.transferer.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.tsAccu.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.Form1.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.Properties.Resources.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.csproj.GenerateResource.cache
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.csproj.CoreCompileInputs.cache
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_a.DB5D458C.Up2Date
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.exe
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.pdb

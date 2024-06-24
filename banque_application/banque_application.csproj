@@ -167,12 +167,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="class\connexionDb.resx">
-      <DependentUpon>connexionDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="class\contenneur.resx">
-      <DependentUpon>contenneur.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="disign\accueil_page.resx">
       <DependentUpon>accueil_page.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,7 +203,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -265,9 +258,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\4bed41e3-2ed9-4553-b5e1-a18d324e8fe3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Download premium psd _ image of Investment finance line icon psd by Aew about dollar sign money, home, receitas finance, finance, and coin 2891000.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\0fb444f0-d206-497a-96cc-b7467f7b563b.jpg" />

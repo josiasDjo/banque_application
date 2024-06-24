@@ -90,7 +90,6 @@ namespace banque_application.disign
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::banque_application.Properties.Resources.Dollar_Signs_Money_Clipart_PNG_Images__Money_Icon_Isolated_Dollar_Cash_Illustration__Money_Icons__Dollar_Icons__Cash_Icons_PNG_Image_For_Free_Download;
             this.pictureBox9.Location = new System.Drawing.Point(570, 22);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(49, 49);
@@ -200,9 +199,9 @@ namespace banque_application.disign
             // 
             // pageAccueilContenu
             // 
-            this.pageAccueilContenu.Location = new System.Drawing.Point(27, 93);
+            this.pageAccueilContenu.Location = new System.Drawing.Point(0, 87);
             this.pageAccueilContenu.Name = "pageAccueilContenu";
-            this.pageAccueilContenu.Size = new System.Drawing.Size(1436, 718);
+            this.pageAccueilContenu.Size = new System.Drawing.Size(1501, 749);
             this.pageAccueilContenu.TabIndex = 0;
             this.pageAccueilContenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pageAccueilContenu_Paint);
             // 

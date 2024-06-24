@@ -12,7 +12,7 @@ namespace banque_application.disign
     {
        public void check()
        {
-            string checkNom = nomB;
+            //string checkNom = nomB;
        }
     }
 }

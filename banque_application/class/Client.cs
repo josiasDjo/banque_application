@@ -14,7 +14,7 @@ namespace banque_application.classes
         string prenom;
         string adresse;
         string phone;
-        DateTime datenaissance;
+        string datenaissance;
         string photo;
 
         public string Id_client
@@ -95,7 +95,7 @@ namespace banque_application.classes
             }
         }
 
-        public DateTime Datenaissance
+        public string Datenaissance
         {
             get
             {

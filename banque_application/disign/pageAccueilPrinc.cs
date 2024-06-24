@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using banque_application.disign;
 
 namespace banque_application.disign
 {
@@ -33,7 +34,7 @@ namespace banque_application.disign
 
         private void button2_Click(object sender, EventArgs e)
         {
-            service_personnel_ servicePerso = new service_personnel_();
+            service_personnel servicePerso = new service_personnel();
 
             pageAccueilContenu.Controls.Clear();
             pageAccueilContenu.Controls.Add(servicePerso);

@@ -12,28 +12,44 @@ namespace banque_application.disign
 {
     partial class service_personnel
     {
-        public SqlConnection reqSql;
-        public string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
 
-        public void connDb()
+        public string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
+        public SqlConnection connection;
+
+        //public service_personnel()
+        //{
+        //}
+
+        public SqlConnection GetConnection()
+        {          
+            return connection;
+        }
+
+        public void OpenConnection()
         {
             try
             {
-                reqSql = new SqlConnection(connexion);
-                reqSql.Open();
-                //MessageBox.Show("Connexion ouverte");
-            }
-            catch (SqlException exc)
-            {
-                MessageBox.Show("Une erreur s'est produite lors de la connexion : " + exc.Message);
-            } 
-            finally
-            {
-                if (reqSql != null && reqSql.State == ConnectionState.Open)
+                if (connection.State == System.Data.ConnectionState.Closed)
                 {
-                    reqSql.Close();
-                    reqSql.Dispose();
+                    connection.Open();
+                    MessageBox.Show("Connexion réussie ! ");
                 }
+                else
+                {
+                    MessageBox.Show("Connexion encore fermé");
+                }
+            } catch (SqlException exc)
+            {
+                MessageBox.Show("Erreur : " + exc.Message);
+            }
+
+        }
+
+        public void CloseConnection()
+        {
+            if (connection.State == System.Data.ConnectionState.Open)
+            {
+                connection.Close();
             }
         }
     }

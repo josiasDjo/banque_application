@@ -25,9 +25,11 @@ namespace banque_application.disign
         private string date_embaucheB;
         private string contactB;
         private decimal salaireB;
-        //public service_personnel() { 
-        //    InitializeComponent(); 
-        //}
+        public service_personnel()
+        {
+            InitializeComponent();
+            connection = new SqlConnection(connexion);
+        }
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
         {

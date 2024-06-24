@@ -33,23 +33,23 @@ namespace banque_application.disign
 
         void InnitialiseConnection()
         {
-            connDb();
-            try
-            {
-                if (reqSql == null && reqSql.State == ConnectionState.Open)
-                {
-                    reqSql.Open();
-                }
-                else
-                {
-                    reqSql.Close();
-                    reqSql.Dispose();
-                }
-            }
-            catch (SqlException exc)
-            {
-                MessageBox.Show("Une erreur s'est produite : " + exc.Message);
-            }
+            OpenConnection();
+            //try
+            //{
+            //    if (reqSql == null && reqSql.State == ConnectionState.Open)
+            //    {
+            //        reqSql.Open();
+            //    }
+            //    else
+            //    {
+            //        reqSql.Close();
+            //        reqSql.Dispose();
+            //    }
+            //}
+            //catch (SqlException exc)
+            //{
+            //    MessageBox.Show("Une erreur s'est produite : " + exc.Message);
+            //}
             //finally
             //{
             //    reqSql.Close();
@@ -179,85 +179,86 @@ namespace banque_application.disign
 
 
 
-        //        //=========== INSERTION ET MODIFICATION ==============================
+        //=========== INSERTION ET MODIFICATION ==============================
 
 
-        //        //======== ENREGISTREMENT POUR LE CLIENT ============================================
+        //======== ENREGISTREMENT POUR LE CLIENT ============================================
 
 
-        //        public void EnregistrerClient(Client cls)
-        //        {
-        //            try
-        //            {
-        //                InnitialiseConnection();
-        //                //con.Open();
-        //                using (SqlConnection con = new SqlConnection(conndb.connexion))
-        //                {
-        //                    string req = "INSERT INTO tClient (id_client,nom,postnom,prenom,adresse,phone,date_naissance,photo) values (@i,@nom,@postnom,@prenom,@adresse,@phone,@date,@photo)";
-        //                    using (SqlCommand cmd = new SqlCommand(req, con))
-        //                    {
-        //                        cmd.Parameters.AddWithValue("@i", cls.Id_client);
-        //                        cmd.Parameters.AddWithValue("@nom", cls.Nom);
-        //                        cmd.Parameters.AddWithValue("@postnom", cls.Postnom);
-        //                        cmd.Parameters.AddWithValue("@prenom", cls.Prenom);
-        //                        cmd.Parameters.AddWithValue("@adresse", cls.Adresse);
-        //                        cmd.Parameters.AddWithValue("@phone", cls.Phone);
-        //                        cmd.Parameters.AddWithValue("@date", cls.Datenaissance);
-        //                        cmd.Parameters.AddWithValue("@photo", cls.Photo);
-        //                        cmd.ExecuteNonQuery();
-        //                        con.Close();
-        //                        MessageBox.Show("Client enregistré avec succes");
-        //                    }
-        //                }
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                MessageBox.Show(ex.Message);
-        //            }
-        //            finally
-        //            {
-        //                conndb.reqSql.Close();
-        //                conndb.reqSql.Dispose();
-        //            }
-        //        }
+        public void EnregistrerClient()
+        {
+            Client cls = new Client();
+            try
+            {
+                OpenConnection();
 
-        //       // =========Modification du client ====================
+                SqlConnection connection = GetConnection();
+                InnitialiseConnection();
+                MessageBox.Show("Ident : " + cls.Id_client + " " + cls.Prenom);
 
-        //        public void ModifierClient(Client cls)
-        //        {
-        //            try
-        //            {
-        //                InnitialiseConnection();
-        //                //con.Open();
-        //                using (SqlConnection con = new SqlConnection(conndb.connexion))
-        //                {
-        //                    string req = "UPDATE  tClient set nom=@nom,postnom=@postnom,prenom=@prenom,adresse=@adresse,phone=@phone,date_naissance=@date,photo =@photo  where id_client = @i";
-        //                    using (SqlCommand cmd = new SqlCommand(req, con))
-        //                    {
-        //                        cmd.Parameters.AddWithValue("@i", cls.Id_client);
-        //                        cmd.Parameters.AddWithValue("@nom", cls.Nom);
-        //                        cmd.Parameters.AddWithValue("@postnom", cls.Postnom);
-        //                        cmd.Parameters.AddWithValue("@prenom", cls.Prenom);
-        //                        cmd.Parameters.AddWithValue("@adresse", cls.Adresse);
-        //                        cmd.Parameters.AddWithValue("@phone", cls.Phone);
-        //                        cmd.Parameters.AddWithValue("@date", cls.Datenaissance);
-        //                        cmd.Parameters.AddWithValue("@photo", cls.Photo);
-        //                        cmd.ExecuteNonQuery();
-        //                        con.Close();
+                    string req = "INSERT INTO tClient (id_client,nom,postnom,prenom,adresse,phone,date_naissance,photo) values (@i,@nom,@postnom,@prenom,@adresse,@phone,@date,@photo)";
+                    using (SqlCommand cmd = new SqlCommand(req, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@i", cls.Id_client);
+                        cmd.Parameters.AddWithValue("@nom", cls.Nom);
+                        cmd.Parameters.AddWithValue("@postnom", cls.Postnom);
+                        cmd.Parameters.AddWithValue("@prenom", cls.Prenom);
+                        cmd.Parameters.AddWithValue("@adresse", cls.Adresse);
+                        cmd.Parameters.AddWithValue("@phone", cls.Phone);
+                        cmd.Parameters.AddWithValue("@date", cls.Datenaissance);
+                        cmd.Parameters.AddWithValue("@photo", cls.Photo);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Client enregistré avec succes");
+                    }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
 
-        //                        MessageBox.Show("Modification faite avec succes");
-        //                    }
-        //                }
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                MessageBox.Show(ex.Message);
-        //            } finally
-        //            {
-        //                conndb.reqSql.Close();
-        //                conndb.reqSql.Dispose();
-        //            }
-        //        }
+        // =========Modification du client ====================
+
+        public void ModifierClient()
+        {
+            try
+            {
+                InnitialiseConnection();
+                Client cls = new Client();
+                using (SqlConnection con = new SqlConnection(connexion))
+                {
+                    string req = "UPDATE  tClient set nom=@nom,postnom=@postnom,prenom=@prenom,adresse=@adresse,phone=@phone,date_naissance=@date,photo =@photo  where id_client = @i";
+                    using (SqlCommand cmd = new SqlCommand(req, con))
+                    {
+                        cmd.Parameters.AddWithValue("@i", cls.Id_client);
+                        cmd.Parameters.AddWithValue("@nom", cls.Nom);
+                        cmd.Parameters.AddWithValue("@postnom", cls.Postnom);
+                        cmd.Parameters.AddWithValue("@prenom", cls.Prenom);
+                        cmd.Parameters.AddWithValue("@adresse", cls.Adresse);
+                        cmd.Parameters.AddWithValue("@phone", cls.Phone);
+                        cmd.Parameters.AddWithValue("@date", cls.Datenaissance);
+                        cmd.Parameters.AddWithValue("@photo", cls.Photo);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+
+                        MessageBox.Show("Modification faite avec succes");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
 
 
 
@@ -527,12 +528,11 @@ namespace banque_application.disign
         //        }
 
 
-                //============================ajout d'un employe==============
+        //============================ajout d'un employe==============
         public void EnregistrerEmploye()
         {
-            service_personnel_ srv = new service_personnel_();
-            //Employe em = new Employe(id_employe, nom, postnom, prenom, grade, dateEmbauche, contact, salaire);
-            service_personnel_ cont = new service_personnel_();
+            service_personnel srv = new service_personnel();
+            service_personnel cont = new service_personnel();
 
             MessageBox.Show("Backend activer" );
 
@@ -574,11 +574,7 @@ namespace banque_application.disign
             }
             finally
             {
-                if (reqSql != null && reqSql.State == ConnectionState.Open)
-                {
-                    reqSql.Close();
-                    reqSql.Dispose();
-                }
+                CloseConnection();
             }
         }
 
@@ -614,8 +610,7 @@ namespace banque_application.disign
             }
             finally
             {
-                reqSql.Close();
-                reqSql.Dispose();
+                CloseConnection();
             }
         }
 

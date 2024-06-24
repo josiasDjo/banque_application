@@ -60,7 +60,6 @@
             this.txtTypeCarte = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.RichTextBox();
-            this.btnValider = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -80,6 +79,7 @@
             this.btnValiderClient.TabIndex = 146;
             this.btnValiderClient.Text = "Valider";
             this.btnValiderClient.UseVisualStyleBackColor = false;
+            this.btnValiderClient.Click += new System.EventHandler(this.btnValiderClient_Click);
             // 
             // txtDevise
             // 
@@ -346,23 +346,10 @@
             this.txtPassword.TabIndex = 137;
             this.txtPassword.Text = "";
             // 
-            // btnValider
-            // 
-            this.btnValider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnValider.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValider.ForeColor = System.Drawing.Color.White;
-            this.btnValider.Location = new System.Drawing.Point(228, 678);
-            this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(396, 47);
-            this.btnValider.TabIndex = 146;
-            this.btnValider.Text = "Modifier";
-            this.btnValider.UseVisualStyleBackColor = false;
-            // 
             // guichetAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnValider);
             this.Controls.Add(this.btnValiderClient);
             this.Controls.Add(this.txtDevise);
             this.Controls.Add(this.dateNaissanceCli);
@@ -433,6 +420,5 @@
         private System.Windows.Forms.RichTextBox txtTypeCarte;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox txtPassword;
-        private System.Windows.Forms.Button btnValider;
     }
 }

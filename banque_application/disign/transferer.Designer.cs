@@ -330,7 +330,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::banque_application.Properties.Resources.Download_premium_psd___image_of_Investment_finance_line_icon_psd_by_Aew_about_dollar_sign_money__home__receitas_finance__finance__and_coin_2891000;
             this.pictureBox3.Location = new System.Drawing.Point(1068, 105);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(90, 72);
