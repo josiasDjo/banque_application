@@ -74,6 +74,7 @@
             this.btnValiderTransfere.TabIndex = 52;
             this.btnValiderTransfere.Text = "Valider";
             this.btnValiderTransfere.UseVisualStyleBackColor = false;
+            this.btnValiderTransfere.Click += new System.EventHandler(this.btnValiderTransfere_Click);
             // 
             // txtDevise
             // 
@@ -104,6 +105,7 @@
             this.txtNumCompteCre.Size = new System.Drawing.Size(847, 40);
             this.txtNumCompteCre.TabIndex = 37;
             this.txtNumCompteCre.Text = "";
+            this.txtNumCompteCre.TextChanged += new System.EventHandler(this.txtNumCompteCre_TextChanged);
             // 
             // txtNomCre
             // 
@@ -142,6 +144,7 @@
             this.txtAdresseDeb.Size = new System.Drawing.Size(847, 40);
             this.txtAdresseDeb.TabIndex = 36;
             this.txtAdresseDeb.Text = "";
+            this.txtAdresseDeb.TextChanged += new System.EventHandler(this.txtAdresseDeb_TextChanged);
             // 
             // label18
             // 

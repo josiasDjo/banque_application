@@ -81,6 +81,7 @@
             this.btnValiderCredit.TabIndex = 52;
             this.btnValiderCredit.Text = "Valider";
             this.btnValiderCredit.UseVisualStyleBackColor = false;
+            this.btnValiderCredit.Click += new System.EventHandler(this.btnValiderCredit_Click);
             // 
             // txtDevise
             // 

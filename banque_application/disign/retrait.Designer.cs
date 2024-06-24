@@ -37,7 +37,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtDevise = new System.Windows.Forms.ComboBox();
             this.txtNumCompte = new System.Windows.Forms.RichTextBox();
-            this.txtMontantCredit = new System.Windows.Forms.RichTextBox();
+            this.txtMontantRetrait = new System.Windows.Forms.RichTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtAdresse = new System.Windows.Forms.RichTextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -69,6 +69,7 @@
             this.btnValiderCredit.TabIndex = 73;
             this.btnValiderCredit.Text = "Valider";
             this.btnValiderCredit.UseVisualStyleBackColor = false;
+            this.btnValiderCredit.Click += new System.EventHandler(this.btnValiderCredit_Click);
             // 
             // pictureBox6
             // 
@@ -138,13 +139,13 @@
             this.txtNumCompte.TabIndex = 63;
             this.txtNumCompte.Text = "";
             // 
-            // txtMontantCredit
+            // txtMontantRetrait
             // 
-            this.txtMontantCredit.Location = new System.Drawing.Point(95, 396);
-            this.txtMontantCredit.Name = "txtMontantCredit";
-            this.txtMontantCredit.Size = new System.Drawing.Size(847, 40);
-            this.txtMontantCredit.TabIndex = 61;
-            this.txtMontantCredit.Text = "";
+            this.txtMontantRetrait.Location = new System.Drawing.Point(95, 396);
+            this.txtMontantRetrait.Name = "txtMontantRetrait";
+            this.txtMontantRetrait.Size = new System.Drawing.Size(847, 40);
+            this.txtMontantRetrait.TabIndex = 61;
+            this.txtMontantRetrait.Text = "";
             // 
             // label12
             // 
@@ -157,11 +158,12 @@
             // 
             // txtAdresse
             // 
-            this.txtAdresse.Location = new System.Drawing.Point(94, 320);
+            this.txtAdresse.Location = new System.Drawing.Point(96, 246);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(847, 40);
             this.txtAdresse.TabIndex = 62;
             this.txtAdresse.Text = "";
+            this.txtAdresse.TextChanged += new System.EventHandler(this.txtAdresse_TextChanged);
             // 
             // label18
             // 
@@ -177,13 +179,13 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(91, 373);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(133, 20);
+            this.label16.Size = new System.Drawing.Size(126, 20);
             this.label16.TabIndex = 58;
-            this.label16.Text = "Montant du crédit";
+            this.label16.Text = "Montant à rétirer";
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(94, 180);
+            this.txtPhone.Location = new System.Drawing.Point(95, 320);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(847, 40);
             this.txtPhone.TabIndex = 64;
@@ -192,7 +194,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(90, 294);
+            this.label8.Location = new System.Drawing.Point(92, 220);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 20);
             this.label8.TabIndex = 57;
@@ -200,7 +202,7 @@
             // 
             // txtPrenom
             // 
-            this.txtPrenom.Location = new System.Drawing.Point(94, 251);
+            this.txtPrenom.Location = new System.Drawing.Point(94, 177);
             this.txtPrenom.Name = "txtPrenom";
             this.txtPrenom.Size = new System.Drawing.Size(847, 40);
             this.txtPrenom.TabIndex = 66;
@@ -209,7 +211,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(91, 158);
+            this.label7.Location = new System.Drawing.Point(92, 298);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 20);
             this.label7.TabIndex = 56;
@@ -226,7 +228,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(91, 226);
+            this.label6.Location = new System.Drawing.Point(91, 152);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 20);
             this.label6.TabIndex = 55;
@@ -270,7 +272,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtDevise);
             this.Controls.Add(this.txtNumCompte);
-            this.Controls.Add(this.txtMontantCredit);
+            this.Controls.Add(this.txtMontantRetrait);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtAdresse);
             this.Controls.Add(this.label18);
@@ -306,7 +308,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ComboBox txtDevise;
         private System.Windows.Forms.RichTextBox txtNumCompte;
-        private System.Windows.Forms.RichTextBox txtMontantCredit;
+        private System.Windows.Forms.RichTextBox txtMontantRetrait;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RichTextBox txtAdresse;
         private System.Windows.Forms.Label label18;

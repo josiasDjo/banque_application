@@ -84,12 +84,21 @@ namespace banque_application.disign
             prenom = txtPrenom.Text;
             if (nom == "" && prenom == "")
             {
-                MessageBox.Show("Nulle : ");
+                MessageBox.Show("Veillez remplir le nom et le prenom pour continuer");
             }
             else
             {
                 try
                 {
+                    //nettoyage des input
+                    txtNom.Text = "";
+                    txtPrenom.Text = "";
+                    txtAdresse.Text = "";
+                    txtPhone.Text = "";
+                    txtNumCompte.Text = "";
+                    txtMontantDepot.Text = "";
+
+
                     sp.OpenConnection();
                     SqlConnection connection = sp.GetConnection();
                     string req = "SELECT * FROM tClient WHERE nom=@nom AND prenom=@prenom";
