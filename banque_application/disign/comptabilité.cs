@@ -52,7 +52,6 @@ namespace banque_application.disign
                             {
                                 clientTotal += decimal.Parse(rd["solde_compte"].ToString());
                             }
-                            //MessageBox.Show("Client totale : " + clientTotal);
                             txtDepenseTotal.Text = clientTotal.ToString();
                         }
                     }
@@ -65,7 +64,6 @@ namespace banque_application.disign
                                 detteTotal += decimal.Parse(rd["montant_restat"].ToString());
                                 revenuTotal += decimal.Parse(rd["taux_interet"].ToString());
                             }
-                            //MessageBox.Show("Client totale : " + clientTotal);
                             dettelabel.Text = detteTotal.ToString();
                             txtRevenuTotal.Text = revenuTotal.ToString();
                         }
@@ -73,7 +71,6 @@ namespace banque_application.disign
                     soldeTotal = revenuTotal + detteTotal + clientTotal;
                     txtSoldeTotal.Text = soldeTotal.ToString();
                 }
-
             }
             catch (Exception ex)
             {
