@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\comptabilit\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\comptabilit\u00E9.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\comptabilit\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\retrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\disign\\retrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|solutionrelative:banque_application\\class\\contenneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E6F028C-6123-4CFB-A669-77FC004497FE}|banque_application\\banque_application.csproj|d:\\vs 2015 project\\banque_application\\banque_application\\disign\\retrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "comptabilit\u00E9.Designer.cs",
+              "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.Designer.cs",
+              "RelativeDocumentMoniker": "banque_application\\disign\\comptabilit\u00E9.Designer.cs",
+              "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.Designer.cs",
+              "RelativeToolTip": "banque_application\\disign\\comptabilit\u00E9.Designer.cs",
+              "ViewState": "AQIAAOgAAAAAAAAAAAAgwPQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T23:53:53.571Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,14 +61,14 @@
               "RelativeDocumentMoniker": "banque_application\\disign\\comptabilit\u00E9.cs",
               "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs",
               "RelativeToolTip": "banque_application\\disign\\comptabilit\u00E9.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAATAAAA",
+              "ViewState": "AQIAADcAAAAAzczMzMwcwEQAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T22:44:36.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "comptabilit\u00E9.cs [Design]",
               "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\comptabilit\u00E9.cs",
               "RelativeDocumentMoniker": "banque_application\\disign\\comptabilit\u00E9.cs",
@@ -69,14 +86,14 @@
               "RelativeDocumentMoniker": "banque_application\\disign\\retrait.cs",
               "ToolTip": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\retrait.cs",
               "RelativeToolTip": "banque_application\\disign\\retrait.cs",
-              "ViewState": "AQIAAK4AAAAgMzMzMzMjwLoAAAANAAAA",
+              "ViewState": "AQIAAJAAAABAMzMzMzMjwMAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T20:11:17.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "retrait.cs [Design]",
               "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\disign\\retrait.cs",
               "RelativeDocumentMoniker": "banque_application\\disign\\retrait.cs",
@@ -88,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "contenneur.cs",
               "DocumentMoniker": "D:\\vs 2015 project\\banque_application\\banque_application\\class\\contenneur.cs",
               "RelativeDocumentMoniker": "banque_application\\class\\contenneur.cs",
