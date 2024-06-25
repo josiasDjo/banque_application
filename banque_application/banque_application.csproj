@@ -198,9 +198,6 @@
     <EmbeddedResource Include="disign\retrait.resx">
       <DependentUpon>retrait.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="disign\Service_personnel.resx">
-      <DependentUpon>Service_personnel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="disign\transferer.resx">
       <DependentUpon>transferer.cs</DependentUpon>
     </EmbeddedResource>
