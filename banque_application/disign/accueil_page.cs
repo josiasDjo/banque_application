@@ -95,5 +95,12 @@ namespace banque_application.disign
             this.Controls.Clear();
             this.Controls.Add(accueilPagePrinc);         
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            payementPret pyPret = new payementPret();
+            panel1_showData_accueil.Controls.Clear();
+            panel1_showData_accueil.Controls.Add(pyPret);
+        }
     }
 }

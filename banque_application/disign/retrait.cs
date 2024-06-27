@@ -52,7 +52,6 @@ namespace banque_application.disign
             dateTransaction = currentD.ToString("dd-MM-yyyy");
             heureTransaction = currentD.ToString("HH:mm");
             typeTransaction = "Retrait";
-            Compte_source = "null";
             Compte_beneficiaire = "null";
 
             int length = 4;
@@ -73,7 +72,6 @@ namespace banque_application.disign
         private void txtAdresse_TextChanged(object sender, EventArgs e)
         {
             service_personnel sp = new service_personnel();
-
             nom = txtNom.Text;
             prenom = txtPrenom.Text;
             if (nom == "" && prenom == "")
@@ -143,10 +141,8 @@ namespace banque_application.disign
         public void search_compt()
         {
             service_personnel sp = new service_personnel();
-
             try
             {
-
                 sp.OpenConnection();
                 SqlConnection connection = sp.GetConnection();
                 string req = "SELECT * FROM tCompte WHERE id_client=@id_client";
@@ -162,6 +158,7 @@ namespace banque_application.disign
                             id_compte = rd["id_compte"].ToString();
                             numCompte = rd["num_compte"].ToString();
                             txtNumCompte.Text = numCompte;
+                            Compte_source = numCompte;
                         }
                         else
                         {

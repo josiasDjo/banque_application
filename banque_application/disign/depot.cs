@@ -20,6 +20,7 @@ namespace banque_application.disign
         public decimal solde;
         public string devise;
         public string numCompte;
+        public string numCarte;
         public string dateTransaction;
         public string typeTransaction;
         public string Compte_source;
@@ -28,6 +29,8 @@ namespace banque_application.disign
         public string heureTransaction;
         public string search_IdClient;
         public string id_compte;
+
+        service_personnel sp = new service_personnel();
         public depot()
         {
             InitializeComponent();
@@ -53,7 +56,6 @@ namespace banque_application.disign
             heureTransaction = currentD.ToString("HH:mm");
             typeTransaction = "Dépôt";
             Compte_source = "null";
-            Compte_beneficiaire = "null";
 
             int length = 4;
             Random random = new Random();
@@ -78,8 +80,6 @@ namespace banque_application.disign
         //rechercher les informations sur le client
         private void txtAdresse_TextChanged(object sender, EventArgs e)
         {
-            service_personnel sp = new service_personnel();
-
             nom = txtNom.Text;
             prenom = txtPrenom.Text;
             if (nom == "" && prenom == "")
@@ -142,8 +142,6 @@ namespace banque_application.disign
         //reschercher le compte client 
         public void search_compt()
         {
-            service_personnel sp = new service_personnel();
-
             try
             {
                
@@ -162,6 +160,7 @@ namespace banque_application.disign
                             id_compte = rd["id_compte"].ToString();
                             numCompte = rd["num_compte"].ToString();
                             txtNumCompte.Text = numCompte;
+                            Compte_beneficiaire = numCompte;
                         }
                         else
                         {
@@ -180,69 +179,67 @@ namespace banque_application.disign
             }
         }
         //Rechercher le nom et prenom dans la base de données
-        //public void checkCompteInfo()
-        //{
-        //    service_personnel sp = new service_personnel();
-        //    try
-        //    {
-        //        sp.OpenConnection();
+        public void checkCompteInfo()
+        {
+            try
+            {
+                sp.OpenConnection();
 
-        //        SqlConnection connection = sp.GetConnection();
+                SqlConnection connection = sp.GetConnection();
 
-        //        string req1 = "SELECT * FROM tCompte WHERE num_compte=@num_compte";
-        //        string req2 = "SELECT * FROM tCarte WHERE numero_carte=@num_carte";
+                string req1 = "SELECT * FROM tCompte WHERE num_compte=@num_compte";
+                string req2 = "SELECT * FROM tCarte WHERE numero_carte=@num_carte";
 
-        //        using (SqlCommand cmd1 = new SqlCommand(req1, connection))
-        //        {
-        //            cmd1.Parameters.AddWithValue("@num_compte", NumCompte);
+                using (SqlCommand cmd1 = new SqlCommand(req1, connection))
+                {
+                    cmd1.Parameters.AddWithValue("@num_compte", numCompte);
 
-        //            using (SqlDataReader rd = cmd1.ExecuteReader())
-        //            {
-        //                if (rd.HasRows)
-        //                {
-        //                    while (rd.Read())
-        //                    {
-        //                        string numCompteTest = rd["num_compte"].ToString();
-        //                        numCarteProduct();
-        //                    }
-        //                }
-        //                else
-        //                {
-        //                    txtNumeroCompte.Text = NumCompte;
-        //                }
-        //            }
-        //        }
+                    using (SqlDataReader rd = cmd1.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                string numCompteTest = rd["num_compte"].ToString();
+                            }
+                        }
+                        else
+                        {
+                            txtNumCompte.Text = numCompte;
+                        }
+                    }
+                }
 
-        //        using (SqlCommand cmd2 = new SqlCommand(req2, connection))
-        //        {
-        //            cmd2.Parameters.AddWithValue("@num_carte", NumCompte);
+                //using (SqlCommand cmd2 = new SqlCommand(req2, connection))
+                //{
+                //    cmd2.Parameters.AddWithValue("@num_carte", numCompte);
 
-        //            using (SqlDataReader rd = cmd2.ExecuteReader())
-        //            {
-        //                if (rd.HasRows)
-        //                {
-        //                    while (rd.Read())
-        //                    {
-        //                        string numCompteTest = rd["num_carte"].ToString();
-        //                        numCarteProduct();
-        //                    }
-        //                }
-        //                else
-        //                {
-        //                    txtNumCarte.Text = NumeroCarte;
-        //                }
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Une erreur est survenue : " + ex.Message);
-        //    }
-        //    finally
-        //    {
-        //        sp.CloseConnection();
-        //    }
-        //}
+                //    using (SqlDataReader rd = cmd2.ExecuteReader())
+                //    {
+                //        if (rd.HasRows)
+                //        {
+                //            while (rd.Read())
+                //            {
+                //                string numCompteTest = rd["num_carte"].ToString();
+                //                numCarte = numCompte;
+                //            }
+                //        }
+                //        else
+                //        {
+                //            //txtNumCarte.Text = numCarte;
+                //        }
+                //    }
+                //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Une erreur est survenue : " + ex.Message);
+            }
+            finally
+            {
+                sp.CloseConnection();
+            }
+        }
 
     }
 }

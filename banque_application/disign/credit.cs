@@ -34,6 +34,10 @@ namespace banque_application.disign
         decimal montantTotal;
         private decimal montant_Interet;
         private decimal montant_restant;
+        private string Id_trasenctionPret;
+        private string idClientB;
+
+        service_personnel sp = new service_personnel();
         public credit()
         {
             InitializeComponent();
@@ -90,16 +94,17 @@ namespace banque_application.disign
             string num2 = (random.Next(minValue, maxValue + 1)).ToString();
             string num3 = (random.Next(minValue, maxValue + 1)).ToString();
 
+            string num1Payepret = "PAYE";
+
+            Id_trasenctionPret = num1Payepret + dateTransaction + "." + heureTransaction + "." + num2 + num3;
             Id_trasenction = num1 + dateTransaction + "." + heureTransaction + "." + num2 + num3;
 
-            EnregistrerPret();
+            check_Client_dette();
         }
 
         //rechercher les infos du client
         private void txtAdresse_TextChanged(object sender, EventArgs e)
         {
-            service_personnel sp = new service_personnel();
-
             nom = txtNom.Text;
             prenom = txtPrenom.Text;
             if (nom == "" && prenom == "")
@@ -125,13 +130,12 @@ namespace banque_application.disign
                         {
                             if (rd.Read())
                             {
-                                string idClientB = rd["id_client"].ToString();
+                                idClientB = rd["id_client"].ToString();
                                 string nomB = rd["nom"].ToString();
                                 string prenomB = rd["prenom"].ToString();
                                 txtAdresse.Text = rd["adresse"].ToString();
                                 txtPhone.Text = rd["phone"].ToString();
                                 search_IdClient = idClientB;
-                                search_compt();
                             }
                             else
                             {
@@ -147,6 +151,7 @@ namespace banque_application.disign
                 finally
                 {
                     sp.CloseConnection();
+                    search_compt();
                 }
             }
         }
@@ -154,8 +159,6 @@ namespace banque_application.disign
         //rechercher le compte du client
         public void search_compt()
         {
-            service_personnel sp = new service_personnel();
-
             try
             {
 
@@ -191,28 +194,86 @@ namespace banque_application.disign
                 sp.CloseConnection();
             }
         }
+        //============================vérifier si le client a déjà une dêtte
+
+        private void check_Client_dette()
+        {
+            sp.OpenConnection();
+            SqlConnection connection = sp.GetConnection();
+            try
+            {
+                string req2 = "SELECT * FROM tPayementPret WHERE id_client=@id_client";
+
+                //decimal montant_rest_chk = 0m;
+                //txtNumCompte.Text = numCompte;
+                using (SqlCommand cmdDt2 = new SqlCommand(req2, connection))
+                {
+                    cmdDt2.Parameters.AddWithValue("@id_client", search_IdClient);
+                    //cmdDt2.Parameters.AddWithValue("@montant_restant", montant_rest_chk);
+
+                    using (SqlDataReader rdr = cmdDt2.ExecuteReader())
+                    {
+                        if (rdr.Read())
+                        {
+                            MessageBox.Show("Ce compte n'a plus de dette ");
+                        }
+                        else
+                        {
+                            //enregistrement payement
+                            sp.CloseConnection();
+                            MessageBox.Show("Ce compte a déjà une dette non remboursée");
+                            //EnregistrerPayementPret();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur : " + ex.Message);
+            }
+            finally
+            {
+                sp.CloseConnection();
+            }
+        }
+
         //============================ajout d'un pret=====================
         public void EnregistrerPret()
         {
-            service_personnel sp = new service_personnel();
             try
             {
                 sp.OpenConnection();
+                //SqlConnection connection = sp.GetConnection();
                 using (SqlConnection con = sp.GetConnection())
                 {
                     string req = "INSERT INTO tPret (id_pret,date_debut,date_fin,taux_interet,montan_total,montant_restat,id_client)  values (@i,@debut,@fin,@taux,@tmontant,@reste,@id_client)";
-                    using (SqlCommand cmd = new SqlCommand(req, con))
+                    using (SqlCommand cmd1 = new SqlCommand(req, con))
                     {
-                        cmd.Parameters.AddWithValue("@i", Id_trasenction);
-                        cmd.Parameters.AddWithValue("@debut", dateDebut);
-                        cmd.Parameters.AddWithValue("@fin", dateFin);
-                        cmd.Parameters.AddWithValue("@taux", montant_Interet);
-                        cmd.Parameters.AddWithValue("@tmontant", montantTotal);
-                        cmd.Parameters.AddWithValue("@reste", montant_restant);
-                        cmd.Parameters.AddWithValue("@id_client", search_IdClient);
-                        cmd.ExecuteNonQuery();
-                        con.Close();
-                        MessageBox.Show("Enregistrement reussi");
+                        cmd1.Parameters.AddWithValue("@i", Id_trasenction);
+                        cmd1.Parameters.AddWithValue("@debut", dateDebut);
+                        cmd1.Parameters.AddWithValue("@fin", dateFin);
+                        cmd1.Parameters.AddWithValue("@taux", montant_Interet);
+                        cmd1.Parameters.AddWithValue("@tmontant", montantTotal);
+                        cmd1.Parameters.AddWithValue("@reste", montant_restant);
+                        cmd1.Parameters.AddWithValue("@id_client", search_IdClient);
+                        cmd1.ExecuteNonQuery();
+                        MessageBox.Show("Enregistrement reussit");
+                        cmd1.Dispose();
+                    }
+
+                    decimal montantTotalDefaut = 0m;
+
+                    string req2 = "INSERT INTO tPayementPret (id_payement,montant_paye,montant_restat,id_pret,date_payement,id_client)  values (@i,@tmontant,@reste,@id_pret,@date_payement,@id_client)";
+                    using (SqlCommand cmd2 = new SqlCommand(req2, con))
+                    {
+                        cmd2.Parameters.AddWithValue("@i", Id_trasenction);
+                        cmd2.Parameters.AddWithValue("@tmontant", montantTotalDefaut);
+                        cmd2.Parameters.AddWithValue("@reste", montant_restant);
+                        cmd2.Parameters.AddWithValue("@id_pret", Id_trasenctionPret);
+                        cmd2.Parameters.AddWithValue("@date_payement", dateTransaction);
+                        cmd2.Parameters.AddWithValue("@id_client", search_IdClient);
+                        cmd2.ExecuteNonQuery();
+                        cmd2.Dispose();
                     }
                 }
             }
@@ -223,6 +284,14 @@ namespace banque_application.disign
             finally
             {
                 sp.CloseConnection();
+                txtNom.Text = "";
+                txtPrenom.Text = "";
+                txtAdresse.Text = "";
+                txtNumCompte.Text = "";
+                txtPhone.Text = "";
+                txtDevise.Text = "";
+                txtMontantCredit.Text = "";
+                txtDuree.Text = "";
             }
         }
     }

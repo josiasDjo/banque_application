@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using banque_application.disign;
 
 namespace banque_application.disign
 {
     public partial class pageAccueilPrinc : UserControl
     {
+        service_personnel servicePerso = new service_personnel();
         public pageAccueilPrinc()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace banque_application.disign
 
         private void accueilShow()
         {
-            tsAccu accueiilPageContainer = new tsAccu();
+            banque_application.Resources.tsAccu accueiilPageContainer = new banque_application.Resources.tsAccu();
 
             pageAccueilContenu.Controls.Clear();
             pageAccueilContenu.Controls.Add(accueiilPageContainer);
@@ -34,8 +34,6 @@ namespace banque_application.disign
 
         private void button2_Click(object sender, EventArgs e)
         {
-            service_personnel servicePerso = new service_personnel();
-
             pageAccueilContenu.Controls.Clear();
             pageAccueilContenu.Controls.Add(servicePerso);
         }

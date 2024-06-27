@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using banque_application;
 using banque_application.disign;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace banque_application
 {
@@ -60,6 +60,8 @@ namespace banque_application
         {
             //string nom = txtNom.Text;
         }
-
     }
 }
+
+
+

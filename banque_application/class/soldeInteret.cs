@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace banque_application
+namespace banque_application.classes
 {
     class soldeInteret
 {

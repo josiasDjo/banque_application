@@ -8,14 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using banque_application.classes;
 
 namespace banque_application.disign
 {
     public partial class guichetAccueil : UserControl
     {
-        service_personnel srv = new service_personnel();
-
         int numeroBanque = 1560;
         int numIDcarte = 4000;
         public string Id_client;
@@ -62,8 +59,6 @@ namespace banque_application.disign
             string num = (random.Next(1000)).ToString();
 
 
-            Client cls = new Client();
-
             Nom = txtNom.Text;
             Postnom = txtPostNom.Text;
             Prenom = txtPrenom.Text;
@@ -80,8 +75,6 @@ namespace banque_application.disign
             Photo = "";
 
             Id_client = prenomTestId + "_" + annee + num;
-
-            MessageBox.Show("Classe : " + cls.Id_client + cls.Nom + cls.Postnom);
 
             EnregistrerClient();
         }
@@ -122,7 +115,6 @@ namespace banque_application.disign
 
         public void checkCompteInfo()
         {
-            service_personnel sp = new service_personnel();
             try
             {
                 sp.OpenConnection();
@@ -181,7 +173,5 @@ namespace banque_application.disign
                 sp.CloseConnection();
             }
         }
-
-
     }
 }

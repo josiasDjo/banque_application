@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace banque_application.disign
+namespace banque_application.Resources
 {
     public partial class tsAccu : UserControl
     {

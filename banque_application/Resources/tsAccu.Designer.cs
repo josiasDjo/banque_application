@@ -1,4 +1,4 @@
-﻿namespace banque_application.disign
+﻿namespace banque_application.Resources
 {
     partial class tsAccu
     {

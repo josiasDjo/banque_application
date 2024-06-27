@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace banque_application
+namespace banque_application.disign
 {
     public class Employe
     {
@@ -138,13 +138,11 @@ namespace banque_application
             }
         }
     }
-    public partial class service_personnel : UserControl
+    public partial class service_personnel
     {
-        public void sendData()
+        public void Enregistrer()
         {
-            service_personnel srv = new service_personnel();
-            //srv.sendData();
-            
+
         }
     }
 }

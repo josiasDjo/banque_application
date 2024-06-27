@@ -77,7 +77,9 @@
   <ItemGroup>
     <Compile Include="class\Agence.cs" />
     <Compile Include="class\Carte.cs" />
-    <Compile Include="class\Cback.cs" />
+    <Compile Include="class\Cback_Pp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="class\Client.cs" />
     <Compile Include="class\compte.cs" />
     <Compile Include="class\compteAgence.cs" />
@@ -142,6 +144,9 @@
     <Compile Include="disign\pageAccueilPrinc.Designer.cs">
       <DependentUpon>pageAccueilPrinc.cs</DependentUpon>
     </Compile>
+    <Compile Include="disign\payementPret.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="disign\retrait.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,13 +200,18 @@
     <EmbeddedResource Include="disign\pageAccueilPrinc.resx">
       <DependentUpon>pageAccueilPrinc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="disign\payementPret.resx">
+      <DependentUpon>payementPret.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="disign\retrait.resx">
       <DependentUpon>retrait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="disign\Service_personnel.resx">
+      <DependentUpon>Service_personnel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="disign\transferer.resx">
       <DependentUpon>transferer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Resources\tsAccu.resx">
       <DependentUpon>tsAccu.cs</DependentUpon>
     </EmbeddedResource>

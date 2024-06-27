@@ -7,11 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using banque_application;
-using banque_application.classes;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
-using banque_application.Properties;
+using banque_application;
 
 namespace banque_application.disign
 {

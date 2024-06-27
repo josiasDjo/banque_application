@@ -1,0 +1,7 @@
+D:\vs 2015 project\banque_application\testLs\bin\Debug\testLs.exe.config
+D:\vs 2015 project\banque_application\testLs\bin\Debug\testLs.exe
+D:\vs 2015 project\banque_application\testLs\bin\Debug\testLs.pdb
+D:\vs 2015 project\banque_application\testLs\obj\Debug\testLs.csproj.AssemblyReference.cache
+D:\vs 2015 project\banque_application\testLs\obj\Debug\testLs.csproj.CoreCompileInputs.cache
+D:\vs 2015 project\banque_application\testLs\obj\Debug\testLs.exe
+D:\vs 2015 project\banque_application\testLs\obj\Debug\testLs.pdb

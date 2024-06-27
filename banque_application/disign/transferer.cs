@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using banque_application.disign;
 using System.Data.SqlClient;
 
 namespace banque_application.disign
@@ -37,6 +36,7 @@ namespace banque_application.disign
         public string id_compte_benef;
         public string search_IdClient_benef;
 
+        service_personnel sp = new service_personnel();
         public transferer()
         {
             InitializeComponent();
@@ -93,8 +93,6 @@ namespace banque_application.disign
         //recherche infos client
         private void txtAdresseDeb_TextChanged(object sender, EventArgs e)
         {
-            service_personnel sp = new service_personnel();
-
             nomDeb = txtNomDeb.Text;
             prenomDeb = txtPrenomDeb.Text;
             if (nomDeb == "" && prenomDeb == "")
@@ -149,8 +147,6 @@ namespace banque_application.disign
         //recherche du compte client
         public void search_compt()
         {
-            service_personnel sp = new service_personnel();
-
             try
             {
 
@@ -190,8 +186,6 @@ namespace banque_application.disign
         //rechercher le compte bénéficiaire
         private void txtNumCompteCre_TextChanged(object sender, EventArgs e)
         {
-            service_personnel sp = new service_personnel();
-
             nomCre = txtNomDeb.Text;
             prenomCre = txtPrenomDeb.Text;
             if (nomDeb == "" && prenomDeb == "")
@@ -245,8 +239,6 @@ namespace banque_application.disign
 
         public void search_compt_Benef()
         {
-            service_personnel sp = new service_personnel();
-
             try
             {
 
@@ -284,7 +276,6 @@ namespace banque_application.disign
         }
         public void EnregistrerTrans()
         {
-            service_personnel sp = new service_personnel();
             try
             {
                 sp.OpenConnection();

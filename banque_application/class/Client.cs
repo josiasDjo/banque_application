@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using banque_application.disign;
 using banque_application.classes;
-using System.Windows.Controls;
 
 namespace banque_application.classes
 {

@@ -39,13 +39,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtEmployeur = new System.Windows.Forms.RichTextBox();
             this.txtAdresse = new System.Windows.Forms.RichTextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,7 +53,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -63,6 +60,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtDuree = new System.Windows.Forms.RichTextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtEmployeur = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -172,14 +172,6 @@
             this.label11.TabIndex = 32;
             this.label11.Text = "Objet du crédit";
             // 
-            // txtEmployeur
-            // 
-            this.txtEmployeur.Location = new System.Drawing.Point(76, 293);
-            this.txtEmployeur.Name = "txtEmployeur";
-            this.txtEmployeur.Size = new System.Drawing.Size(396, 40);
-            this.txtEmployeur.TabIndex = 36;
-            this.txtEmployeur.Text = "";
-            // 
             // txtAdresse
             // 
             this.txtAdresse.Location = new System.Drawing.Point(76, 179);
@@ -228,16 +220,6 @@
             this.label15.Size = new System.Drawing.Size(114, 22);
             this.label15.TabIndex = 27;
             this.label15.Text = "Poste occupé";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(72, 270);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(145, 22);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Employeur actuel";
             // 
             // label9
             // 
@@ -324,17 +306,6 @@
             this.label19.TabIndex = 19;
             this.label19.Text = "Information sur le crédit demandé";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(73, 241);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(199, 22);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Information sur l\'emploi";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -402,6 +373,35 @@
             this.txtDuree.Size = new System.Drawing.Size(396, 40);
             this.txtDuree.TabIndex = 35;
             this.txtDuree.Text = "";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Gray;
+            this.label13.Location = new System.Drawing.Point(73, 241);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(199, 22);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Information sur l\'emploi";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(72, 270);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(145, 22);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "Employeur actuel";
+            // 
+            // txtEmployeur
+            // 
+            this.txtEmployeur.Location = new System.Drawing.Point(76, 293);
+            this.txtEmployeur.Name = "txtEmployeur";
+            this.txtEmployeur.Size = new System.Drawing.Size(396, 40);
+            this.txtEmployeur.TabIndex = 36;
+            this.txtEmployeur.Text = "";
             // 
             // credit
             // 
@@ -472,13 +472,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RichTextBox txtEmployeur;
         private System.Windows.Forms.RichTextBox txtAdresse;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RichTextBox txtPhone;
         private System.Windows.Forms.Label label8;
@@ -488,8 +486,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox txtDuree;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.RichTextBox txtEmployeur;
     }
 }
