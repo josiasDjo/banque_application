@@ -51,6 +51,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.panelShowFacture = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -261,10 +262,19 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Informations Personnelles";
             // 
+            // panelShowFacture
+            // 
+            this.panelShowFacture.Location = new System.Drawing.Point(48, 719);
+            this.panelShowFacture.Name = "panelShowFacture";
+            this.panelShowFacture.Size = new System.Drawing.Size(1084, 657);
+            this.panelShowFacture.TabIndex = 53;
+            // 
             // depot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.Controls.Add(this.panelShowFacture);
             this.Controls.Add(this.btnValiderCredit);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox8);
@@ -287,7 +297,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "depot";
-            this.Size = new System.Drawing.Size(1202, 784);
+            this.Size = new System.Drawing.Size(1176, 784);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -322,5 +332,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelShowFacture;
     }
 }

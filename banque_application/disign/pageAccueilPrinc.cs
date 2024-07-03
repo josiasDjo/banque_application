@@ -13,6 +13,7 @@ namespace banque_application.disign
     public partial class pageAccueilPrinc : UserControl
     {
         service_personnel servicePerso = new service_personnel();
+        header hd = new header();
         public pageAccueilPrinc()
         {
             InitializeComponent();
@@ -26,14 +27,17 @@ namespace banque_application.disign
 
         private void accueilShow()
         {
+            //1501; 87 => panel2
+            //1501; 749 => pageAccueilContenu
             banque_application.Resources.tsAccu accueiilPageContainer = new banque_application.Resources.tsAccu();
 
             pageAccueilContenu.Controls.Clear();
-            pageAccueilContenu.Controls.Add(accueiilPageContainer);
+            //pageAccueilContenu.Controls.Add(accueiilPageContainer);
+            pageAccueilContenu.BackgroundImage = global::banque_application.Properties.Resources.buy_real_instagram_followers_https___buyrealsocialmarketing_com_instagram;
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
+            pageAccueilContenu.BackgroundImage = null;
             pageAccueilContenu.Controls.Clear();
             pageAccueilContenu.Controls.Add(servicePerso);
         }
@@ -44,13 +48,17 @@ namespace banque_application.disign
 
             pageAccueilContenu.Controls.Clear();
             pageAccueilContenu.Controls.Add(guichetAcc);
+            pageAccueilContenu.BackgroundImage = null;
+
         }
 
         private void btnDeconnexion_Click(object sender, EventArgs e)
         {
             connexionPage connPage = new connexionPage();
             this.Controls.Clear();
-            this.Controls.Add(connPage);   
+            this.Controls.Add(connPage);  
+            pageAccueilContenu.BackgroundImage = null;
+
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)

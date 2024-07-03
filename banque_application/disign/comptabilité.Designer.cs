@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
             this.dataGridViewTransaction = new System.Windows.Forms.DataGridView();
             this.statistiquePanel = new System.Windows.Forms.Panel();
             this.txtDepenseTotal = new System.Windows.Forms.Label();
@@ -54,6 +60,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idnum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomsGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typetransGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datetransGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montantGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idtransactionGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransaction)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -63,6 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewTransaction
@@ -71,11 +87,11 @@
             this.dataGridViewTransaction.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewTransaction.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewTransaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTransaction.Location = new System.Drawing.Point(49, 526);
+            this.dataGridViewTransaction.Location = new System.Drawing.Point(58, 539);
             this.dataGridViewTransaction.Name = "dataGridViewTransaction";
             this.dataGridViewTransaction.RowHeadersWidth = 62;
             this.dataGridViewTransaction.RowTemplate.Height = 28;
-            this.dataGridViewTransaction.Size = new System.Drawing.Size(933, 254);
+            this.dataGridViewTransaction.Size = new System.Drawing.Size(1140, 251);
             this.dataGridViewTransaction.TabIndex = 15;
             // 
             // statistiquePanel
@@ -359,11 +375,104 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.IsTextAutoFit = false;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(48, 290);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            dataPoint1.Label = "Révenu";
+            dataPoint2.Label = "Client";
+            dataPoint3.Label = "Dettes";
+            series1.Points.Add(dataPoint1);
+            series1.Points.Add(dataPoint2);
+            series1.Points.Add(dataPoint3);
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(454, 181);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idnum,
+            this.nomsGrid,
+            this.typetransGrid,
+            this.datetransGrid,
+            this.montantGrid,
+            this.idtransactionGrid});
+            this.dataGridView2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataGridView2.Location = new System.Drawing.Point(58, 539);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 62;
+            this.dataGridView2.RowTemplate.Height = 28;
+            this.dataGridView2.Size = new System.Drawing.Size(1140, 251);
+            this.dataGridView2.TabIndex = 17;
+            // 
+            // idnum
+            // 
+            this.idnum.FillWeight = 27.27273F;
+            this.idnum.HeaderText = "N°";
+            this.idnum.MinimumWidth = 8;
+            this.idnum.Name = "idnum";
+            this.idnum.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // nomsGrid
+            // 
+            this.nomsGrid.FillWeight = 114.5455F;
+            this.nomsGrid.HeaderText = "Noms";
+            this.nomsGrid.MinimumWidth = 8;
+            this.nomsGrid.Name = "nomsGrid";
+            // 
+            // typetransGrid
+            // 
+            this.typetransGrid.FillWeight = 114.5455F;
+            this.typetransGrid.HeaderText = "Type";
+            this.typetransGrid.MinimumWidth = 8;
+            this.typetransGrid.Name = "typetransGrid";
+            // 
+            // datetransGrid
+            // 
+            this.datetransGrid.FillWeight = 114.5455F;
+            this.datetransGrid.HeaderText = "Date";
+            this.datetransGrid.MinimumWidth = 8;
+            this.datetransGrid.Name = "datetransGrid";
+            // 
+            // montantGrid
+            // 
+            this.montantGrid.FillWeight = 114.5455F;
+            this.montantGrid.HeaderText = "Montant";
+            this.montantGrid.MinimumWidth = 8;
+            this.montantGrid.Name = "montantGrid";
+            // 
+            // idtransactionGrid
+            // 
+            this.idtransactionGrid.FillWeight = 114.5455F;
+            this.idtransactionGrid.HeaderText = "Id Transaction";
+            this.idtransactionGrid.MinimumWidth = 8;
+            this.idtransactionGrid.Name = "idtransactionGrid";
+            // 
             // comptabilte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.dataGridViewTransaction);
             this.Controls.Add(this.statistiquePanel);
             this.Controls.Add(this.panel1);
@@ -389,6 +498,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,5 +533,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idnum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomsGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typetransGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datetransGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn montantGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idtransactionGrid;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

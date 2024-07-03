@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using banque_application;
 
 namespace banque_application.disign
 {
     public partial class depot : UserControl
     {
+        etatDeSorti etSorti = new etatDeSorti();
         public string nom;
         public string prenom;
         public string adresse;
@@ -29,11 +31,14 @@ namespace banque_application.disign
         public string heureTransaction;
         public string search_IdClient;
         public string id_compte;
+        public decimal soldeCompte;
+        public decimal soldeCompteFinal;
 
         service_personnel sp = new service_personnel();
         public depot()
         {
             InitializeComponent();
+            //panelShowFacture.Controls.Add(etSorti);
         }
 
         private void btnValiderCredit_Click(object sender, EventArgs e)
@@ -49,6 +54,7 @@ namespace banque_application.disign
             solde = decimal.Parse(txtMontantDepot.Text);
             devise = txtDevise.Text;
             numCompte = txtNumCompte.Text;
+            soldeCompteFinal = solde + soldeCompte;
 
             DateTime currentD = DateTime.Now;
 
@@ -68,6 +74,7 @@ namespace banque_application.disign
 
             Id_trasenction = num1 + dateTransaction + "." + heureTransaction + "." + num2 + num3;
 
+            MessageBox.Show("Ancien solde est : " + soldeCompte + " Solde Final est " + soldeCompteFinal);
             EnregistrerTrans();
         }
 
@@ -90,15 +97,6 @@ namespace banque_application.disign
             {
                 try
                 {
-                    //nettoyage des input
-                    txtNom.Text = "";
-                    txtPrenom.Text = "";
-                    txtAdresse.Text = "";
-                    txtPhone.Text = "";
-                    txtNumCompte.Text = "";
-                    txtMontantDepot.Text = "";
-
-
                     sp.OpenConnection();
                     SqlConnection connection = sp.GetConnection();
                     string req = "SELECT * FROM tClient WHERE nom=@nom AND prenom=@prenom";
@@ -116,10 +114,13 @@ namespace banque_application.disign
                                 string idClientB = rd["id_client"].ToString();
                                 string nomB = rd["nom"].ToString();
                                 string prenomB = rd["prenom"].ToString();
-                                txtAdresse.Text = rd["adresse"].ToString();
-                                txtPhone.Text = rd["phone"].ToString();
+                                adresse = rd["adresse"].ToString();
+                                phone = rd["phone"].ToString();
                                 search_IdClient = idClientB;
                                 MessageBox.Show("Existe : " + idClientB + nomB + " " + prenomB);
+                                txtAdresse.Text = adresse;
+                                txtPhone.Text = phone;
+                                sp.CloseConnection();
                                 search_compt();
                             }
                             else
@@ -143,8 +144,7 @@ namespace banque_application.disign
         public void search_compt()
         {
             try
-            {
-               
+            {             
                 sp.OpenConnection();
                 SqlConnection connection = sp.GetConnection();
                 string req = "SELECT * FROM tCompte WHERE id_client=@id_client";
@@ -159,8 +159,14 @@ namespace banque_application.disign
                         {
                             id_compte = rd["id_compte"].ToString();
                             numCompte = rd["num_compte"].ToString();
+                            string comptesolde = rd["solde_compte"].ToString();
+                            soldeCompte = decimal.Parse(comptesolde);
+
                             txtNumCompte.Text = numCompte;
                             Compte_beneficiaire = numCompte;
+
+                            MessageBox.Show("Comptesolde = " + comptesolde + " soldeCompte = " + soldeCompte);
+
                         }
                         else
                         {
@@ -184,7 +190,6 @@ namespace banque_application.disign
             try
             {
                 sp.OpenConnection();
-
                 SqlConnection connection = sp.GetConnection();
 
                 string req1 = "SELECT * FROM tCompte WHERE num_compte=@num_compte";
@@ -207,29 +212,31 @@ namespace banque_application.disign
                         {
                             txtNumCompte.Text = numCompte;
                         }
+                        rd.Close();
                     }
+                    cmd1.Clone();
                 }
 
-                //using (SqlCommand cmd2 = new SqlCommand(req2, connection))
-                //{
-                //    cmd2.Parameters.AddWithValue("@num_carte", numCompte);
+                using (SqlCommand cmd2 = new SqlCommand(req2, connection))
+                {
+                    cmd2.Parameters.AddWithValue("@num_carte", numCompte);
 
-                //    using (SqlDataReader rd = cmd2.ExecuteReader())
-                //    {
-                //        if (rd.HasRows)
-                //        {
-                //            while (rd.Read())
-                //            {
-                //                string numCompteTest = rd["num_carte"].ToString();
-                //                numCarte = numCompte;
-                //            }
-                //        }
-                //        else
-                //        {
-                //            //txtNumCarte.Text = numCarte;
-                //        }
-                //    }
-                //}
+                    using (SqlDataReader rd = cmd2.ExecuteReader())
+                    {
+                        if (rd.HasRows)
+                        {
+                            while (rd.Read())
+                            {
+                                string numCompteTest = rd["num_carte"].ToString();
+                                numCarte = numCompte;
+                            }
+                        }
+                        else
+                        {
+                            //txtNumCarte.Text = numCarte;
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -240,6 +247,5 @@ namespace banque_application.disign
                 sp.CloseConnection();
             }
         }
-
     }
 }

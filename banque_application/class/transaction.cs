@@ -1,6 +1,8 @@
-﻿using System;
+﻿using DevExpress.XtraEditors.Filtering.Templates;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -132,6 +134,7 @@ namespace banque_application.disign
         //============================ajout Transection==============
         public void EnregistrerTrans()
         {
+            etatDeSorti etSorti = new etatDeSorti();
             service_personnel sp = new service_personnel();
             try
             {
@@ -153,6 +156,49 @@ namespace banque_application.disign
                         MessageBox.Show("Transaction  effectué avec succes");
                     }
                 }
+                sp.CloseConnection();
+                soldeCompteChange();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("La transaction a échouée " + ex.Message);
+            }
+            finally
+            {
+                sp.CloseConnection();
+            }
+        }
+        public void soldeCompteChange()
+        {
+            etatDeSorti etSorti = new etatDeSorti();
+            service_personnel sp = new service_personnel();
+            try
+            {
+                sp.OpenConnection();
+                using (SqlConnection con = sp.GetConnection())
+                {
+                    string req = "UPDATE  tCompte set solde_compte=@soldeCompte  where id_compte=@i";
+                    using (SqlCommand cmd = new SqlCommand(req, con))
+                    {
+                        cmd.Parameters.AddWithValue("@i", id_compte);
+                        cmd.Parameters.AddWithValue("@soldeCompte", soldeCompteFinal);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                }
+
+                etSorti.nomEtat = nom;
+                etSorti.prenomEtat = prenom;
+                etSorti.montantEtat = solde;
+                etSorti.dateToDayEtat = dateTransaction;
+                etSorti.idTransactionEtat = Id_trasenction;
+                etSorti.adresseEtat = adresse;
+                etSorti.phoneEtat = phone;
+                etSorti.typeTransEtat = typeTransaction;
+
+                etSorti.Main();
+
+                etSorti.Show();
             }
             catch (Exception ex)
             {

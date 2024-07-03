@@ -90,6 +90,7 @@ namespace banque_application.disign
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Image = global::banque_application.Properties.Resources.images;
             this.pictureBox9.Location = new System.Drawing.Point(570, 22);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(49, 49);
@@ -199,9 +200,10 @@ namespace banque_application.disign
             // 
             // pageAccueilContenu
             // 
-            this.pageAccueilContenu.Location = new System.Drawing.Point(0, 87);
+            this.pageAccueilContenu.BackgroundImage = global::banque_application.Properties.Resources.buy_real_instagram_followers_https___buyrealsocialmarketing_com_instagram;
+            this.pageAccueilContenu.Location = new System.Drawing.Point(1, 87);
             this.pageAccueilContenu.Name = "pageAccueilContenu";
-            this.pageAccueilContenu.Size = new System.Drawing.Size(1501, 749);
+            this.pageAccueilContenu.Size = new System.Drawing.Size(1500, 749);
             this.pageAccueilContenu.TabIndex = 0;
             this.pageAccueilContenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pageAccueilContenu_Paint);
             // 

@@ -100,3 +100,8 @@ D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Pd
 D:\vs 2015 project\banque_application\banque_application\bin\Debug\DevExpress.Pdf.v23.2.Drawing.xml
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_a.DB5D458C.Up2Date
 D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.payementPret.resources
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\BouncyCastle.Crypto.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\itextsharp.dll
+D:\vs 2015 project\banque_application\banque_application\bin\Debug\itextsharp.xml
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.etatDeSorti.resources
+D:\vs 2015 project\banque_application\banque_application\obj\Debug\banque_application.disign.header.resources

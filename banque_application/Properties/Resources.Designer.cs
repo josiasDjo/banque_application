@@ -63,6 +63,16 @@ namespace banque_application.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0509_3_780x470 {
+            get {
+                object obj = ResourceManager.GetObject("0509-3-780x470", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _0fb444f0_d206_497a_96cc_b7467f7b563b {
             get {
                 object obj = ResourceManager.GetObject("0fb444f0-d206-497a-96cc-b7467f7b563b", resourceCulture);
@@ -86,6 +96,16 @@ namespace banque_application.Properties {
         internal static System.Drawing.Bitmap bank_logo {
             get {
                 object obj = ResourceManager.GetObject("bank_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banque_1068x601 {
+            get {
+                object obj = ResourceManager.GetObject("banque-1068x601", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -178,6 +198,16 @@ namespace banque_application.Properties {
         internal static System.Drawing.Bitmap imageBanque {
             get {
                 object obj = ResourceManager.GetObject("imageBanque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
