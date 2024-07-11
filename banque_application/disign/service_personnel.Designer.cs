@@ -56,6 +56,10 @@ namespace banque_application.disign
             this.recherche = new System.Windows.Forms.TextBox();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnModifier = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.psdEmploye = new System.Windows.Forms.MaskedTextBox();
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showpswd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnValiderCredit
@@ -83,7 +87,7 @@ namespace banque_application.disign
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Symbol", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(527, 615);
+            this.label12.Location = new System.Drawing.Point(527, 673);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(165, 28);
             this.label12.TabIndex = 81;
@@ -202,7 +206,7 @@ namespace banque_application.disign
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 615);
+            this.label1.Location = new System.Drawing.Point(18, 673);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 28);
             this.label1.TabIndex = 80;
@@ -210,16 +214,16 @@ namespace banque_application.disign
             // 
             // txtdateEmbauche
             // 
-            this.txtdateEmbauche.Location = new System.Drawing.Point(713, 614);
+            this.txtdateEmbauche.Location = new System.Drawing.Point(698, 672);
             this.txtdateEmbauche.Name = "txtdateEmbauche";
-            this.txtdateEmbauche.Size = new System.Drawing.Size(267, 26);
+            this.txtdateEmbauche.Size = new System.Drawing.Size(282, 26);
             this.txtdateEmbauche.TabIndex = 95;
             // 
             // txtdateNaissance
             // 
-            this.txtdateNaissance.Location = new System.Drawing.Point(206, 615);
+            this.txtdateNaissance.Location = new System.Drawing.Point(206, 673);
             this.txtdateNaissance.Name = "txtdateNaissance";
-            this.txtdateNaissance.Size = new System.Drawing.Size(278, 26);
+            this.txtdateNaissance.Size = new System.Drawing.Size(303, 26);
             this.txtdateNaissance.TabIndex = 96;
             // 
             // label2
@@ -286,10 +290,50 @@ namespace banque_application.disign
             this.btnModifier.UseVisualStyleBackColor = false;
             this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 606);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 28);
+            this.label3.TabIndex = 80;
+            this.label3.Text = "Password";
+            // 
+            // psdEmploye
+            // 
+            this.psdEmploye.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.psdEmploye.Location = new System.Drawing.Point(207, 610);
+            this.psdEmploye.Name = "psdEmploye";
+            this.psdEmploye.PasswordChar = '*';
+            this.psdEmploye.Size = new System.Drawing.Size(495, 29);
+            this.psdEmploye.TabIndex = 151;
+            // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip3.Name = "contextMenuStrip3";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
+            // 
+            // showpswd
+            // 
+            this.showpswd.BackColor = System.Drawing.Color.Gray;
+            this.showpswd.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showpswd.ForeColor = System.Drawing.Color.White;
+            this.showpswd.Location = new System.Drawing.Point(698, 608);
+            this.showpswd.Name = "showpswd";
+            this.showpswd.Size = new System.Drawing.Size(105, 37);
+            this.showpswd.TabIndex = 153;
+            this.showpswd.Text = "Montrer";
+            this.showpswd.UseVisualStyleBackColor = false;
+            this.showpswd.Click += new System.EventHandler(this.showpswd_Click);
+            // 
             // service_personnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.showpswd);
+            this.Controls.Add(this.psdEmploye);
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.recherche);
             this.Controls.Add(this.txtPoste);
@@ -299,6 +343,7 @@ namespace banque_application.disign
             this.Controls.Add(this.txtSalaire);
             this.Controls.Add(this.txtPhoneEm);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAdresse);
@@ -345,5 +390,9 @@ namespace banque_application.disign
         private System.Windows.Forms.TextBox recherche;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.Button btnModifier;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox psdEmploye;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
+        private System.Windows.Forms.Button showpswd;
     }
 }

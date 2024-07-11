@@ -93,6 +93,9 @@
     <Compile Include="class\connexionDb.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="class\connexionPrincip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="class\contenneur.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +105,7 @@
     </Compile>
     <Compile Include="class\PayementPret.cs" />
     <Compile Include="class\Pret.cs" />
+    <Compile Include="class\rounded.cs" />
     <Compile Include="class\SoldeBanque.cs" />
     <Compile Include="class\SoldeClient.cs" />
     <Compile Include="class\soldeInteret.cs" />
@@ -355,6 +359,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\banque-1068x601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5761961-icone-banque-depot-bancaire-financement-argent-recu-icone-icone-fonds-d-envoi-gratuit-vectoriel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

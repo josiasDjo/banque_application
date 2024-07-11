@@ -65,7 +65,7 @@ namespace banque_application.disign
 
             Id_trasenction = num1 + dateTransaction + "." + heureTransaction + "." + num2 + num3;
 
-            EnregistrerPayementPret();
+            check_Montant_Restant();
         }
 
         //rechercher les infos du client
@@ -101,7 +101,6 @@ namespace banque_application.disign
                                 string prenomB = rd["prenom"].ToString();
                                 txtAdresse.Text = rd["adresse"].ToString();
                                 txtPhone.Text = rd["phone"].ToString();
-                                
                             }
                             else
                             {
@@ -204,7 +203,7 @@ namespace banque_application.disign
             finally
             {
                 sp.CloseConnection();
-                check_Montant_Restant();
+                //check_Montant_Restant();
             }
         }
 
@@ -216,26 +215,40 @@ namespace banque_application.disign
             SqlConnection connection = sp.GetConnection();
             try
             {
-                string req2 = "SELECT * FROM tPayementPret WHERE id_pret=@id_pret AND montant_restat=@montant_restant";
+                string req2 = "SELECT * FROM tPayementPret WHERE id_pret=@id_pret";
 
-                decimal montant_rest_chk = 0m;
+                //decimal montant_rest_chk = 0m;
                 //txtNumCompte.Text = numCompte;
                 using (SqlCommand cmdDt2 = new SqlCommand(req2, connection))
                 {
                     cmdDt2.Parameters.AddWithValue("@id_pret", id_pret);
-                    cmdDt2.Parameters.AddWithValue("@montant_restant", montant_rest_chk);
+                    //cmdDt2.Parameters.AddWithValue("@montant_restant", montant_rest_chk);
 
                     using (SqlDataReader rdr = cmdDt2.ExecuteReader())
                     {
-                        if (rdr.Read())
+                        if (rdr.HasRows)
                         {
-                            MessageBox.Show("Ce compte n'a plus de dette ");
+                            while (rdr.Read())
+                            {
+                                decimal check_somme = decimal.Parse(rdr["montant_restat"].ToString());
+
+                                if (check_somme > 0m)
+                                {
+                                    MessageBox.Show("Ce compte a déjà une dette non remboursée");
+                                }
+                                else if (check_somme == 0m)
+                                {
+                                    MessageBox.Show("Ce compte n'a plus de dette ");
+                                    sp.CloseConnection();
+                                    EnregistrerPayementPret();
+                                }
+                            }
                         }
                         else
                         {
                             //enregistrement payement
                             sp.CloseConnection();
-                            //EnregistrerPayementPret();
+                            EnregistrerPayementPret();
                         }
                     }
                 }
@@ -257,6 +270,7 @@ namespace banque_application.disign
                 sp.OpenConnection();
                 using (SqlConnection con = sp.GetConnection())
                 {
+                    string req2 = "update tPret set montant_restat=@montant_restat where id_client=@id_client";
                     string req = "INSERT INTO tPayementPret (id_payement,montant_paye,montant_restat,id_pret,date_payement)  values (@i,@tmontant,@reste,@id_pret,@date_payement)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
                     {
@@ -266,6 +280,11 @@ namespace banque_application.disign
                         cmd.Parameters.AddWithValue("@id_pret", id_pret);
                         cmd.Parameters.AddWithValue("@date_payement", dateTransaction);
                         cmd.ExecuteNonQuery();
+                    }
+                    using (SqlCommand cmd2 = new SqlCommand(req2, con))
+                    {
+                        cmd2.Parameters.AddWithValue("@montant_restat", montant_restant);
+                        cmd2.ExecuteNonQuery();
                         con.Close();
                         MessageBox.Show("Enregistrement reussi");
                     }

@@ -23,6 +23,7 @@ namespace banque_application.disign
         private string date_embaucheB;
         private string contactB;
         private decimal salaireB;
+        private string passwordEmplye;
         public service_personnel()
         {
             InitializeComponent();
@@ -113,6 +114,7 @@ namespace banque_application.disign
             date_embaucheB = (txtdateEmbauche.Value).ToString("dd/MM/yyyy");
             contactB = txtPhoneEm.Text;
             salaireB = decimal.Parse(txtSalaire.Text);
+            passwordEmplye = psdEmploye.Text;
 
             //effacer les tout input
             txtNomEm.Text = "";
@@ -122,6 +124,7 @@ namespace banque_application.disign
             txtPhoneEm.Text = "";
             txtSalaire.Text = "";
             txtAdresse.Text = "";
+            psdEmploye.Text = "";
 
             EnregistrerEmploye();
         }
@@ -141,7 +144,22 @@ namespace banque_application.disign
             txtPhoneEm.Text = "";
             txtSalaire.Text = "";
             txtAdresse.Text = "";
+
             ModifierEmploye();
+        }
+
+        private void showpswd_Click(object sender, EventArgs e)
+        {
+            string condi = showpswd.Text;
+            if (condi == "Montrer")
+            {
+                psdEmploye.PasswordChar = '\0';
+                showpswd.Text = "Cacher";
+            } else if (condi == "Cacher")
+            {
+                psdEmploye.PasswordChar = '*';
+                showpswd.Text = "Montrer";
+            }
         }
     }
 }

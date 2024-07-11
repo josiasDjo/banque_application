@@ -113,6 +113,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = global::banque_application.Properties.Resources.Withdraw_money_from_ATM_slot;
             this.pictureBox3.Location = new System.Drawing.Point(1068, 105);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(90, 72);

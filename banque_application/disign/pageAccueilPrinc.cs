@@ -27,8 +27,11 @@ namespace banque_application.disign
 
         private void accueilShow()
         {
-            //1501; 87 => panel2
-            //1501; 749 => pageAccueilContenu
+            btnAccueil.ForeColor = System.Drawing.Color.Black;
+            btnDashboard.ForeColor = System.Drawing.Color.White;
+            btnDepot.ForeColor = System.Drawing.Color.White;
+            button2.ForeColor = System.Drawing.Color.White;
+
             banque_application.Resources.tsAccu accueiilPageContainer = new banque_application.Resources.tsAccu();
 
             pageAccueilContenu.Controls.Clear();
@@ -37,6 +40,11 @@ namespace banque_application.disign
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            btnAccueil.ForeColor = System.Drawing.Color.White;
+            btnDashboard.ForeColor = System.Drawing.Color.White;
+            btnDepot.ForeColor = System.Drawing.Color.White;
+            button2.ForeColor = System.Drawing.Color.Black;
+
             pageAccueilContenu.BackgroundImage = null;
             pageAccueilContenu.Controls.Clear();
             pageAccueilContenu.Controls.Add(servicePerso);
@@ -45,6 +53,11 @@ namespace banque_application.disign
         private void btnDepot_Click(object sender, EventArgs e)
         {
             guichetAccueil guichetAcc = new guichetAccueil();
+
+            btnAccueil.ForeColor = System.Drawing.Color.White;
+            btnDashboard.ForeColor = System.Drawing.Color.White;
+            btnDepot.ForeColor = System.Drawing.Color.Black;
+            button2.ForeColor = System.Drawing.Color.White;
 
             pageAccueilContenu.Controls.Clear();
             pageAccueilContenu.Controls.Add(guichetAcc);
@@ -63,6 +76,11 @@ namespace banque_application.disign
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            btnAccueil.ForeColor = System.Drawing.Color.White;
+            btnDashboard.ForeColor = System.Drawing.Color.Black;
+            btnDepot.ForeColor = System.Drawing.Color.White;
+            button2.ForeColor = System.Drawing.Color.White;
+
             accueil_page accueilP = new accueil_page();
             this.Controls.Clear();
             this.Controls.Add(accueilP);

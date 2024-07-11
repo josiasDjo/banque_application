@@ -93,6 +93,17 @@ namespace banque_application.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5761961_icone_banque_depot_bancaire_financement_argent_recu_icone_icone_fonds_d_envoi_gratuit_vectoriel {
+            get {
+                object obj = ResourceManager.GetObject("5761961-icone-banque-depot-bancaire-financement-argent-recu-icone-icone-fonds-d-e" +
+                        "nvoi-gratuit-vectoriel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bank_logo {
             get {
                 object obj = ResourceManager.GetObject("bank_logo", resourceCulture);
@@ -208,6 +219,16 @@ namespace banque_application.Properties {
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images1 {
+            get {
+                object obj = ResourceManager.GetObject("images1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

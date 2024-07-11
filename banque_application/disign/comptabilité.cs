@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Windows.Forms.DataVisualization.Charting;
+using banque_application.disgn;
 
 namespace banque_application.disign
 {
@@ -22,6 +23,13 @@ namespace banque_application.disign
         public comptabilte()
         {
             InitializeComponent();
+            panel1.SetRoundedCorners(7);
+            panel2.SetRoundedCorners(7);
+            panel3.SetRoundedCorners(7);
+            panel4.SetRoundedCorners(7);
+
+            statistiquePanel.SetRoundedCorners(7);
+            panel5.SetRoundedCorners(7);
             show();
         }
         private void show()
@@ -69,7 +77,7 @@ namespace banque_application.disign
                             txtRevenuTotal.Text = revenuTotal.ToString();
                         }
                     }
-                    soldeTotal = revenuTotal + detteTotal + clientTotal;
+                    soldeTotal =  detteTotal + clientTotal;
                     txtSoldeTotal.Text = soldeTotal.ToString();
 
                     Series serie = new Series();
@@ -79,8 +87,8 @@ namespace banque_application.disign
                     serie.Points.AddXY("",clientTotal);
                     serie.Points.AddXY("",detteTotal);
 
-                    serie.Points[0].LegendText = "Solde Total";
-                    serie.Points[1].LegendText = "Revenu Total";
+                    serie.Points[0].LegendText = "Revenu Total";
+                    serie.Points[1].LegendText = "Solde Total";
                     serie.Points[2].LegendText = "Dette Total";
 
                     chart1.Series.Clear();

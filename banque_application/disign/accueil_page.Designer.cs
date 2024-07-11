@@ -38,6 +38,9 @@
             this.btnAccueil = new System.Windows.Forms.Button();
             this.btnTransfert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1_showData_accueil = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -46,10 +49,8 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.panel1_showData_accueil = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -58,7 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -221,6 +221,39 @@
             this.panel2.Size = new System.Drawing.Size(279, 838);
             this.panel2.TabIndex = 29;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(32, 552);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(206, 67);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Payement";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1_showData_accueil
+            // 
+            this.panel1_showData_accueil.Location = new System.Drawing.Point(278, 0);
+            this.panel1_showData_accueil.Name = "panel1_showData_accueil";
+            this.panel1_showData_accueil.Size = new System.Drawing.Size(1220, 836);
+            this.panel1_showData_accueil.TabIndex = 30;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::banque_application.Properties.Resources.Premium_Vector___Cash_icon_design_illustration_vector_template;
+            this.pictureBox2.Location = new System.Drawing.Point(32, 559);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 55;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox16
             // 
             this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -254,6 +287,7 @@
             // 
             // pictureBox10
             // 
+            this.pictureBox10.Image = global::banque_application.Properties.Resources.images1;
             this.pictureBox10.Location = new System.Drawing.Point(32, 473);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(49, 49);
@@ -273,6 +307,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Image = global::banque_application.Properties.Resources._5761961_icone_banque_depot_bancaire_financement_argent_recu_icone_icone_fonds_d_envoi_gratuit_vectoriel;
             this.pictureBox9.Location = new System.Drawing.Point(32, 299);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(49, 49);
@@ -300,33 +335,6 @@
             this.pictureBox14.TabIndex = 55;
             this.pictureBox14.TabStop = false;
             // 
-            // panel1_showData_accueil
-            // 
-            this.panel1_showData_accueil.Location = new System.Drawing.Point(278, 0);
-            this.panel1_showData_accueil.Name = "panel1_showData_accueil";
-            this.panel1_showData_accueil.Size = new System.Drawing.Size(1220, 836);
-            this.panel1_showData_accueil.TabIndex = 30;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::banque_application.Properties.Resources.Premium_Vector___Cash_icon_design_illustration_vector_template;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 559);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 55;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(32, 552);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 67);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Payement";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // accueil_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -337,6 +345,7 @@
             this.Size = new System.Drawing.Size(1501, 836);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -345,7 +354,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -466,8 +466,6 @@ namespace banque_application.disign
         {
             //service_personnel srv = new service_personnel();
 
-            MessageBox.Show("Backend activer" );
-
             try
             {
                 OpenConnection();
@@ -481,9 +479,9 @@ namespace banque_application.disign
                     }
                     else
                     {
-                        MessageBox.Show("id : " + em.Id_employe);
+                        //MessageBox.Show("id : " + em.Id_employe);
                     }
-                    string req = "INSERT INTO tEmploye (id_employe,nom,postnom,prenom,grade,date_Embauche,contact,salaire) values (@i,@nom,@postnom,@prenom,@grade,@date,@contact,@salaire)";
+                    string req = "INSERT INTO tEmploye (id_employe,nom,postnom,prenom,grade,date_Embauche,contact,salaire,mdp) values (@i,@nom,@postnom,@prenom,@grade,@date,@contact,@salaire,@mdp)";
                     using (SqlCommand cmd = new SqlCommand(req, con))
                     {
                         cmd.Parameters.AddWithValue("@i", id_employeB ?? (object)DBNull.Value);
@@ -494,6 +492,7 @@ namespace banque_application.disign
                         cmd.Parameters.AddWithValue("@date", date_embaucheB ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@contact", contactB ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@salaire", salaireB);
+                        cmd.Parameters.AddWithValue("@mdp", passwordEmplye);
                         cmd.ExecuteNonQuery();
                         con.Close();
                         MessageBox.Show("Enregistrement reussi");

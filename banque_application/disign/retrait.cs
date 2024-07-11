@@ -28,6 +28,8 @@ namespace banque_application.disign
         public string heureTransaction;
         public string search_IdClient;
         public string id_compte;
+        public decimal soldeCompteFinal;
+        public decimal soldeCompteInit;
         public retrait()
         {
             InitializeComponent();
@@ -39,33 +41,42 @@ namespace banque_application.disign
         }
         public void getDataRetrait()
         {
-            nom = txtNom.Text;
-            prenom = txtPrenom.Text;
-            adresse = txtAdresse.Text;
-            phone = txtPhone.Text;
             solde = decimal.Parse(txtMontantRetrait.Text);
-            devise = txtDevise.Text;
-            numCompte = txtNumCompte.Text;
 
-            DateTime currentD = DateTime.Now;
+            if (soldeCompteInit > solde)
+            {
+                nom = txtNom.Text;
+                prenom = txtPrenom.Text;
+                adresse = txtAdresse.Text;
+                phone = txtPhone.Text;
+                devise = txtDevise.Text;
+                numCompte = txtNumCompte.Text;
+                soldeCompteFinal = soldeCompteInit - solde;
+                DateTime currentD = DateTime.Now;
 
-            dateTransaction = currentD.ToString("dd-MM-yyyy");
-            heureTransaction = currentD.ToString("HH:mm");
-            typeTransaction = "Retrait";
-            Compte_beneficiaire = "null";
+                dateTransaction = currentD.ToString("dd-MM-yyyy");
+                heureTransaction = currentD.ToString("HH:mm");
+                typeTransaction = "Retrait";
+                Compte_beneficiaire = "null";
 
-            int length = 4;
-            Random random = new Random();
-            int minValue = (int)Math.Pow(10, length - 1);
-            int maxValue = (int)Math.Pow(10, length) - 1;
+                int length = 4;
+                Random random = new Random();
+                int minValue = (int)Math.Pow(10, length - 1);
+                int maxValue = (int)Math.Pow(10, length) - 1;
 
-            string num1 = "RT";
-            string num2 = (random.Next(minValue, maxValue + 1)).ToString();
-            string num3 = (random.Next(minValue, maxValue + 1)).ToString();
+                string num1 = "RT";
+                string num2 = (random.Next(minValue, maxValue + 1)).ToString();
+                string num3 = (random.Next(minValue, maxValue + 1)).ToString();
 
-            Id_trasenction = num1 + dateTransaction + "." + heureTransaction + "." + num2 + num3;
+                Id_trasenction = num1 + dateTransaction + "." + heureTransaction + "." + num2 + num3;
 
-            EnregistrerTrans();
+                EnregistrerTrans();
+            } else
+            {
+                decimal montantRetraitValable = soldeCompteInit - 15m;
+                MessageBox.Show("Montant insuffisant pour effectuer ce retrait !! Montant Valable : " + montantRetraitValable);
+            }
+            
         }
 
         //récupération des infos users
@@ -82,15 +93,6 @@ namespace banque_application.disign
             {
                 try
                 {
-                    //nettoyage des input
-                    txtNom.Text = "";
-                    txtPrenom.Text = "";
-                    txtAdresse.Text = "";
-                    txtPhone.Text = "";
-                    txtNumCompte.Text = "";
-                    txtMontantRetrait.Text = "";
-
-
                     sp.OpenConnection();
                     SqlConnection connection = sp.GetConnection();
                     string req = "SELECT * FROM tClient WHERE nom=@nom AND prenom=@prenom";
@@ -157,6 +159,7 @@ namespace banque_application.disign
                         {
                             id_compte = rd["id_compte"].ToString();
                             numCompte = rd["num_compte"].ToString();
+                            soldeCompteInit = decimal.Parse(rd["solde_compte"].ToString());
                             txtNumCompte.Text = numCompte;
                             Compte_source = numCompte;
                         }
@@ -198,8 +201,60 @@ namespace banque_application.disign
                         cmd.ExecuteNonQuery();
                         con.Close();
                         MessageBox.Show("Transaction  effectué avec succes");
+
+                        //nettoyage des input
+                        txtNom.Text = "";
+                        txtPrenom.Text = "";
+                        txtAdresse.Text = "";
+                        txtPhone.Text = "";
+                        txtNumCompte.Text = "";
+                        txtMontantRetrait.Text = "";
+                        sp.CloseConnection();
+                        soldeCompteChange();
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("La transaction a échouée " + ex.Message);
+            }
+            finally
+            {
+                sp.CloseConnection();
+            }
+        }
+
+        public void soldeCompteChange()
+        {
+            etatDeSorti etSorti = new etatDeSorti();
+            service_personnel sp = new service_personnel();
+            try
+            {
+                sp.OpenConnection();
+                using (SqlConnection con = sp.GetConnection())
+                {
+                    string req = "UPDATE  tCompte set solde_compte=@soldeCompte  where id_compte=@i";
+                    using (SqlCommand cmd = new SqlCommand(req, con))
+                    {
+                        cmd.Parameters.AddWithValue("@i", id_compte);
+                        cmd.Parameters.AddWithValue("@soldeCompte", soldeCompteFinal);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                }
+
+                etSorti.nomEtat = nom;
+                etSorti.prenomEtat = prenom;
+                etSorti.montantEtat = solde;
+                etSorti.dateToDayEtat = dateTransaction;
+                etSorti.idTransactionEtat = Id_trasenction;
+                etSorti.adresseEtat = adresse;
+                etSorti.phoneEtat = phone;
+                etSorti.typeTransEtat = typeTransaction;
+
+                etSorti.Main();
+
+                etSorti.Show();
             }
             catch (Exception ex)
             {

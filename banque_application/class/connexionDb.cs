@@ -13,7 +13,7 @@ namespace banque_application.disign
     partial class service_personnel
     {
 
-        public string connexion = "Data Source=DJODEV;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
+        public string connexion = "Data Source=192.168.1.100;Initial Catalog=COMPTABILITE_BANQUE_EXAMEN;Integrated Security=True";
         public SqlConnection connection;
 
         //public service_personnel()
@@ -32,7 +32,7 @@ namespace banque_application.disign
                 if (connection.State == System.Data.ConnectionState.Closed)
                 {
                     connection.Open();
-                    MessageBox.Show("Connexion réussie ! ");
+                    //MessageBox.Show("Connexion réussie ! ");
                 }
                 else
                 {

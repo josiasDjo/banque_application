@@ -117,7 +117,7 @@ namespace banque_application.disign
                                 adresse = rd["adresse"].ToString();
                                 phone = rd["phone"].ToString();
                                 search_IdClient = idClientB;
-                                MessageBox.Show("Existe : " + idClientB + nomB + " " + prenomB);
+                                //MessageBox.Show("Existe : " + idClientB + nomB + " " + prenomB);
                                 txtAdresse.Text = adresse;
                                 txtPhone.Text = phone;
                                 sp.CloseConnection();

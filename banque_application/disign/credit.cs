@@ -194,8 +194,11 @@ namespace banque_application.disign
                 sp.CloseConnection();
             }
         }
-        //============================vérifier si le client a déjà une dêtte
+        //============================vérifier si le client a déjà demandé une dette au moins ene fois==========================
+        
 
+
+        //============================vérifier si le client a déjà une dêtte non payé
         private void check_Client_dette()
         {
             sp.OpenConnection();
@@ -213,16 +216,29 @@ namespace banque_application.disign
 
                     using (SqlDataReader rdr = cmdDt2.ExecuteReader())
                     {
-                        if (rdr.Read())
+                        if (rdr.HasRows)
                         {
-                            MessageBox.Show("Ce compte n'a plus de dette ");
+                            while (rdr.Read())
+                            {
+                                decimal check_somme = decimal.Parse(rdr["montant_restat"].ToString());
+
+                                if (check_somme > 0m)
+                                {
+                                    MessageBox.Show("Ce compte a déjà une dette non remboursée");
+                                }
+                                else if (check_somme == 0m) 
+                                {
+                                    MessageBox.Show("Ce compte n'a plus de dette ");
+                                    sp.CloseConnection();
+                                    EnregistrerPret();
+                                }
+                            }
                         }
                         else
                         {
                             //enregistrement payement
                             sp.CloseConnection();
-                            MessageBox.Show("Ce compte a déjà une dette non remboursée");
-                            //EnregistrerPayementPret();
+                            EnregistrerPret();
                         }
                     }
                 }
@@ -257,7 +273,6 @@ namespace banque_application.disign
                         cmd1.Parameters.AddWithValue("@reste", montant_restant);
                         cmd1.Parameters.AddWithValue("@id_client", search_IdClient);
                         cmd1.ExecuteNonQuery();
-                        MessageBox.Show("Enregistrement reussit");
                         cmd1.Dispose();
                     }
 
@@ -274,6 +289,17 @@ namespace banque_application.disign
                         cmd2.Parameters.AddWithValue("@id_client", search_IdClient);
                         cmd2.ExecuteNonQuery();
                         cmd2.Dispose();
+
+                        txtNom.Text = "";
+                        txtPrenom.Text = "";
+                        txtAdresse.Text = "";
+                        txtNumCompte.Text = "";
+                        txtPhone.Text = "";
+                        txtDevise.Text = "";
+                        txtMontantCredit.Text = "";
+                        txtDuree.Text = "";
+
+                        MessageBox.Show("Enregistrement reussit");
                     }
                 }
             }
@@ -284,14 +310,6 @@ namespace banque_application.disign
             finally
             {
                 sp.CloseConnection();
-                txtNom.Text = "";
-                txtPrenom.Text = "";
-                txtAdresse.Text = "";
-                txtNumCompte.Text = "";
-                txtPhone.Text = "";
-                txtDevise.Text = "";
-                txtMontantCredit.Text = "";
-                txtDuree.Text = "";
             }
         }
     }

@@ -34,7 +34,6 @@
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            this.dataGridViewTransaction = new System.Windows.Forms.DataGridView();
             this.statistiquePanel = new System.Windows.Forms.Panel();
             this.txtDepenseTotal = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -68,7 +67,7 @@
             this.datetransGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montantGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idtransactionGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransaction)).BeginInit();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
@@ -79,20 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dataGridViewTransaction
-            // 
-            this.dataGridViewTransaction.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridViewTransaction.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridViewTransaction.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewTransaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTransaction.Location = new System.Drawing.Point(58, 539);
-            this.dataGridViewTransaction.Name = "dataGridViewTransaction";
-            this.dataGridViewTransaction.RowHeadersWidth = 62;
-            this.dataGridViewTransaction.RowTemplate.Height = 28;
-            this.dataGridViewTransaction.Size = new System.Drawing.Size(1140, 251);
-            this.dataGridViewTransaction.TabIndex = 15;
             // 
             // statistiquePanel
             // 
@@ -383,7 +370,7 @@
             legend1.IsTextAutoFit = false;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(48, 290);
+            this.chart1.Location = new System.Drawing.Point(63, 305);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -397,7 +384,7 @@
             series1.Points.Add(dataPoint2);
             series1.Points.Add(dataPoint3);
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(454, 181);
+            this.chart1.Size = new System.Drawing.Size(424, 163);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -406,6 +393,7 @@
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -416,11 +404,11 @@
             this.montantGrid,
             this.idtransactionGrid});
             this.dataGridView2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataGridView2.Location = new System.Drawing.Point(58, 539);
+            this.dataGridView2.Location = new System.Drawing.Point(16, 4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(1140, 251);
+            this.dataGridView2.Size = new System.Drawing.Size(1030, 231);
             this.dataGridView2.TabIndex = 17;
             // 
             // idnum
@@ -466,14 +454,22 @@
             this.idtransactionGrid.MinimumWidth = 8;
             this.idtransactionGrid.Name = "idtransactionGrid";
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.dataGridView2);
+            this.panel5.Location = new System.Drawing.Point(49, 543);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1066, 242);
+            this.panel5.TabIndex = 18;
+            // 
             // comptabilte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.dataGridViewTransaction);
             this.Controls.Add(this.statistiquePanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
@@ -485,7 +481,6 @@
             this.Controls.Add(this.label5);
             this.Name = "comptabilte";
             this.Size = new System.Drawing.Size(1238, 831);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransaction)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -500,6 +495,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,7 +505,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.DataGridView dataGridViewTransaction;
         private System.Windows.Forms.Panel statistiquePanel;
         private System.Windows.Forms.Label txtDepenseTotal;
         private System.Windows.Forms.Label label12;
@@ -541,5 +536,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn montantGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn idtransactionGrid;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Panel panel5;
     }
 }

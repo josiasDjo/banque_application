@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnValiderCredit = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtDevise = new System.Windows.Forms.ComboBox();
             this.txtNumCompte = new System.Windows.Forms.RichTextBox();
             this.txtMontantDepot = new System.Windows.Forms.RichTextBox();
@@ -51,7 +46,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.panelShowFacture = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -64,7 +63,7 @@
             this.btnValiderCredit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnValiderCredit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValiderCredit.ForeColor = System.Drawing.Color.White;
-            this.btnValiderCredit.Location = new System.Drawing.Point(544, 595);
+            this.btnValiderCredit.Location = new System.Drawing.Point(488, 603);
             this.btnValiderCredit.Name = "btnValiderCredit";
             this.btnValiderCredit.Size = new System.Drawing.Size(396, 47);
             this.btnValiderCredit.TabIndex = 52;
@@ -72,69 +71,20 @@
             this.btnValiderCredit.UseVisualStyleBackColor = false;
             this.btnValiderCredit.Click += new System.EventHandler(this.btnValiderCredit_Click);
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::banque_application.Properties.Resources.téléchargement__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(1068, 630);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(90, 72);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 47;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::banque_application.Properties.Resources.Premium_Photo___Dollar_Sign_Isolated_Dolar_symbol_on_Round_green_icon_3D_rendering;
-            this.pictureBox8.Location = new System.Drawing.Point(1068, 507);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(90, 72);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 48;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::banque_application.Properties.Resources.Logo_Du_Comptable_PNG___Compte__Comptable__La_Comptabilité_PNG_et_vecteur_pour_téléchargement_gratuit;
-            this.pictureBox5.Location = new System.Drawing.Point(1068, 373);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(90, 72);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 49;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::banque_application.Properties.Resources._0fb444f0_d206_497a_96cc_b7467f7b563b;
-            this.pictureBox4.Location = new System.Drawing.Point(1068, 241);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(90, 72);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 50;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(1068, 105);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(90, 72);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 51;
-            this.pictureBox3.TabStop = false;
-            // 
             // txtDevise
             // 
             this.txtDevise.FormattingEnabled = true;
             this.txtDevise.Items.AddRange(new object[] {
             "USD",
             "FC"});
-            this.txtDevise.Location = new System.Drawing.Point(93, 606);
+            this.txtDevise.Location = new System.Drawing.Point(37, 614);
             this.txtDevise.Name = "txtDevise";
             this.txtDevise.Size = new System.Drawing.Size(340, 28);
             this.txtDevise.TabIndex = 46;
             // 
             // txtNumCompte
             // 
-            this.txtNumCompte.Location = new System.Drawing.Point(92, 495);
+            this.txtNumCompte.Location = new System.Drawing.Point(36, 503);
             this.txtNumCompte.Name = "txtNumCompte";
             this.txtNumCompte.Size = new System.Drawing.Size(847, 40);
             this.txtNumCompte.TabIndex = 38;
@@ -142,7 +92,7 @@
             // 
             // txtMontantDepot
             // 
-            this.txtMontantDepot.Location = new System.Drawing.Point(93, 406);
+            this.txtMontantDepot.Location = new System.Drawing.Point(37, 414);
             this.txtMontantDepot.Name = "txtMontantDepot";
             this.txtMontantDepot.Size = new System.Drawing.Size(847, 40);
             this.txtMontantDepot.TabIndex = 35;
@@ -157,7 +107,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(95, 574);
+            this.label12.Location = new System.Drawing.Point(39, 582);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(57, 20);
             this.label12.TabIndex = 31;
@@ -165,7 +115,7 @@
             // 
             // txtAdresse
             // 
-            this.txtAdresse.Location = new System.Drawing.Point(91, 241);
+            this.txtAdresse.Location = new System.Drawing.Point(35, 249);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(847, 40);
             this.txtAdresse.TabIndex = 37;
@@ -175,7 +125,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(87, 475);
+            this.label18.Location = new System.Drawing.Point(31, 483);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(144, 20);
             this.label18.TabIndex = 30;
@@ -184,7 +134,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(88, 386);
+            this.label16.Location = new System.Drawing.Point(32, 394);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(135, 20);
             this.label16.TabIndex = 28;
@@ -192,7 +142,7 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(93, 324);
+            this.txtPhone.Location = new System.Drawing.Point(37, 332);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(847, 40);
             this.txtPhone.TabIndex = 42;
@@ -201,7 +151,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(86, 221);
+            this.label8.Location = new System.Drawing.Point(30, 229);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 20);
             this.label8.TabIndex = 24;
@@ -209,7 +159,7 @@
             // 
             // txtPrenom
             // 
-            this.txtPrenom.Location = new System.Drawing.Point(93, 173);
+            this.txtPrenom.Location = new System.Drawing.Point(37, 181);
             this.txtPrenom.Name = "txtPrenom";
             this.txtPrenom.Size = new System.Drawing.Size(847, 40);
             this.txtPrenom.TabIndex = 44;
@@ -219,7 +169,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(88, 304);
+            this.label7.Location = new System.Drawing.Point(32, 312);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 20);
             this.label7.TabIndex = 23;
@@ -227,7 +177,7 @@
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(94, 105);
+            this.txtNom.Location = new System.Drawing.Point(38, 113);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(847, 40);
             this.txtNom.TabIndex = 43;
@@ -236,7 +186,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(88, 153);
+            this.label6.Location = new System.Drawing.Point(32, 161);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 20);
             this.label6.TabIndex = 22;
@@ -245,7 +195,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(90, 72);
+            this.label4.Location = new System.Drawing.Point(34, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 20);
             this.label4.TabIndex = 21;
@@ -256,25 +206,66 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(90, 21);
+            this.label5.Location = new System.Drawing.Point(34, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(214, 22);
             this.label5.TabIndex = 18;
             this.label5.Text = "Informations Personnelles";
             // 
-            // panelShowFacture
+            // pictureBox6
             // 
-            this.panelShowFacture.Location = new System.Drawing.Point(48, 719);
-            this.panelShowFacture.Name = "panelShowFacture";
-            this.panelShowFacture.Size = new System.Drawing.Size(1084, 657);
-            this.panelShowFacture.TabIndex = 53;
+            this.pictureBox6.Image = global::banque_application.Properties.Resources.téléchargement__1_;
+            this.pictureBox6.Location = new System.Drawing.Point(991, 636);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(90, 72);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 47;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::banque_application.Properties.Resources.Premium_Photo___Dollar_Sign_Isolated_Dolar_symbol_on_Round_green_icon_3D_rendering;
+            this.pictureBox8.Location = new System.Drawing.Point(991, 513);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(90, 72);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 48;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::banque_application.Properties.Resources.Logo_Du_Comptable_PNG___Compte__Comptable__La_Comptabilité_PNG_et_vecteur_pour_téléchargement_gratuit;
+            this.pictureBox5.Location = new System.Drawing.Point(991, 379);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(90, 72);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 49;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::banque_application.Properties.Resources._0fb444f0_d206_497a_96cc_b7467f7b563b;
+            this.pictureBox4.Location = new System.Drawing.Point(991, 247);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(90, 72);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 50;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::banque_application.Properties.Resources.Withdraw_money_from_ATM_slot;
+            this.pictureBox3.Location = new System.Drawing.Point(991, 111);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(90, 72);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 51;
+            this.pictureBox3.TabStop = false;
             // 
             // depot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.Controls.Add(this.panelShowFacture);
             this.Controls.Add(this.btnValiderCredit);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox8);
@@ -297,7 +288,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "depot";
-            this.Size = new System.Drawing.Size(1176, 784);
+            this.Size = new System.Drawing.Size(1124, 732);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -332,6 +323,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panelShowFacture;
     }
 }
